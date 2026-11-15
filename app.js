@@ -9,6 +9,12 @@ const emptyState = document.querySelector("#empty-state");
 const errorState = document.querySelector("#error-state");
 const loadingState = storyList.querySelector(".loading-state");
 const categoryColors = ["#27725d", "#e27b4f", "#477a93", "#9b6b46", "#bd664c"];
+const categoryPriority = {
+  World: 0,
+  Business: 1,
+  Science: 2,
+  Technology: 3,
+};
 
 let stories = [];
 let activeCategory = "all";
@@ -81,6 +87,11 @@ function makeElement(tag, className, text) {
   return element;
 }
 
+function categorySortValue(name) {
+  const priority = categoryPriority[name] ?? Number.MAX_SAFE_INTEGER;
+  return [priority, name || ""].join("|");
+}
+
 function populateFilters(data) {
   const categories = new Map();
   const sources = new Set();
@@ -95,7 +106,11 @@ function populateFilters(data) {
   categoryNav.replaceChildren();
   const allButton = makeCategoryButton("Everything", "all", stories.length);
   categoryNav.append(allButton);
-  [...categories.entries()].sort(([a], [b]) => a.localeCompare(b)).forEach(([name, count], index) => {
+  [...categories.entries()].sort(([left], [right]) => {
+    const leftValue = categorySortValue(left);
+    const rightValue = categorySortValue(right);
+    return leftValue.localeCompare(rightValue);
+  }).forEach(([name, count], index) => {
     categoryNav.append(makeCategoryButton(name, name, count, categoryColors[index % categoryColors.length]));
   });
 
@@ -130,6 +145,10 @@ function visibleStories() {
     return categoryMatches && sourceMatches && (!query || searchable.includes(query));
   });
   result.sort((first, second) => {
+    const firstPriority = categoryPriority[first.category] ?? Number.MAX_SAFE_INTEGER;
+    const secondPriority = categoryPriority[second.category] ?? Number.MAX_SAFE_INTEGER;
+    const categoryDelta = firstPriority - secondPriority;
+    if (categoryDelta !== 0) return categoryDelta;
     const direction = sortOrder.value === "oldest" ? 1 : -1;
     return direction * ((safeDate(first.publishedAt)?.getTime() || 0) - (safeDate(second.publishedAt)?.getTime() || 0));
   });
