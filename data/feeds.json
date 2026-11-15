@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T02:24:43.436148+00:00",
+  "generatedAt": "2026-11-15T06:13:32.146969+00:00",
   "sources": [
     {
       "name": "BBC World",
@@ -29,6 +29,102 @@
   ],
   "entries": [
     {
+      "title": "Gymshark in trademark battle that threatens future of small fitness business",
+      "url": "https://www.theguardian.com/law/2026/nov/15/gymshark-trademark-battle-the-conditioning-club-gloucestershire",
+      "excerpt": "Exclusive: British sportswear firm is seeking to obtain rights to The Conditioning Club, which is also the name of a Gloucestershire gym Gymshark, the £1bn British sportswear firm started in a family garage , is locked in a trademark battle that threatens the future of a small fitness business. Ben Francis, the university dropout who started sewing his own…",
+      "publishedAt": "2026-11-15T06:00:07+00:00",
+      "source": "The Guardian Business",
+      "category": "Business"
+    },
+    {
+      "title": "‘Jensen Huang lost his mind’: how AI’s smartest man fell for the world’s oldest trick",
+      "url": "https://www.theguardian.com/technology/2026/nov/14/jensen-huang-affair-nvidia-nightmare",
+      "excerpt": "Jensen Huang’s affair with a suspected spy is Silicon Valley’s worst nightmare come true The resignation this week of Nvidia’s founder and CEO Jensen Huang is one of the most astonishing corporate scandals in memory, featuring allegations of international espionage and extramarital affairs involving one of the world’s most powerful men. As investigations…",
+      "publishedAt": "2026-11-15T06:00:06+00:00",
+      "source": "The Guardian Business",
+      "category": "Business"
+    },
+    {
+      "title": "Show HN: Gawain – Require type hints on all Python variables",
+      "url": "https://github.com/matheuzgomes/gawain",
+      "excerpt": "Yes, i really hate \"dict[str, ANY]\" Comments URL: https://news.ycombinator.com/item?id=50504072 Points: 21 # Comments: 6",
+      "publishedAt": "2026-11-15T04:39:25+00:00",
+      "source": "Hacker News",
+      "category": "Technology"
+    },
+    {
+      "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
+      "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
+      "excerpt": "Article URL: https://github.com/Tthanh2k6/turbo-browser-mcp Comments URL: https://news.ycombinator.com/item?id=50503930 Points: 14 # Comments: 0",
+      "publishedAt": "2026-11-15T04:09:11+00:00",
+      "source": "Hacker News",
+      "category": "Technology"
+    },
+    {
+      "title": "World leaders head to Asia for back-to-back diplomatic summits",
+      "url": "https://www.theguardian.com/world/2026/nov/15/asia-diplomatic-summits-trump-xi-putin-apec-asean",
+      "excerpt": "Tussle for influence as trade, tech and regional security to take centre stage in China, Philippines and Cambodia meetings The global political centre of gravity will be firmly in Asia this week as world leaders fly in for back-to-back high-level summits against the backdrop of the tussle for influence between the superpowers China and the US. Beijing will…",
+      "publishedAt": "2026-11-15T04:00:02+00:00",
+      "source": "The Guardian Business",
+      "category": "Business"
+    },
+    {
+      "title": "Osint Case Studies",
+      "url": "https://osintsearch.org/blog/osint-case-studies",
+      "excerpt": "Article URL: https://osintsearch.org/blog/osint-case-studies Comments URL: https://news.ycombinator.com/item?id=50503731 Points: 13 # Comments: 3",
+      "publishedAt": "2026-11-15T03:33:41+00:00",
+      "source": "Hacker News",
+      "category": "Technology"
+    },
+    {
+      "title": "Judge temporarily blocks Trump from closing Washington DC golf course for renovation",
+      "url": "https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o?at_medium=RSS&at_campaign=rss",
+      "excerpt": "It is the latest development in a months-long challenge to the president's plans for East Potomac Golf Links.",
+      "publishedAt": "2026-11-15T03:21:04+00:00",
+      "source": "BBC World",
+      "category": "World"
+    },
+    {
+      "title": "Pope Leo speaks of community 'suffering' on visit to remote Andes town",
+      "url": "https://www.bbc.co.uk/news/articles/cr4gnz0lv2vlo?at_medium=RSS&at_campaign=rss",
+      "excerpt": "Santa Cruz de Succhabamba is part of the Diocese of Chiclayo, where the pope served as bishop from 2015 to 2023.",
+      "publishedAt": "2026-11-15T02:49:45+00:00",
+      "source": "BBC World",
+      "category": "World"
+    },
+    {
+      "title": "My favourite modern NES games",
+      "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
+      "excerpt": "Article URL: https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/ Comments URL: https://news.ycombinator.com/item?id=50503465 Points: 16 # Comments: 0",
+      "publishedAt": "2026-11-15T02:41:25+00:00",
+      "source": "Hacker News",
+      "category": "Technology"
+    },
+    {
+      "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
+      "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
+      "excerpt": "Article URL: https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches Comments URL: https://news.ycombinator.com/item?id=50503255 Points: 164 # Comments: 38",
+      "publishedAt": "2026-11-15T02:00:54+00:00",
+      "source": "Hacker News",
+      "category": "Technology"
+    },
+    {
+      "title": "Court denies motion to dismiss DRAM price fixing case",
+      "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+      "excerpt": "Article URL: https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal Comments URL: https://news.ycombinator.com/item?id=50502988 Points: 31 # Comments: 2",
+      "publishedAt": "2026-11-15T01:18:36+00:00",
+      "source": "Hacker News",
+      "category": "Technology"
+    },
+    {
+      "title": "Show HN: A custom font based on the Jamaican flag alphabet",
+      "url": "https://bobbiec.github.io/jamaican-font.html",
+      "excerpt": "Article URL: https://bobbiec.github.io/jamaican-font.html Comments URL: https://news.ycombinator.com/item?id=50502839 Points: 23 # Comments: 5",
+      "publishedAt": "2026-11-15T00:56:45+00:00",
+      "source": "Hacker News",
+      "category": "Technology"
+    },
+    {
       "title": "My mother told me I would die if I sought treatment for Ebola - I am proof you can survive",
       "url": "https://www.bbc.co.uk/news/articles/cmvg2e2q28w1o?at_medium=RSS&at_campaign=rss",
       "excerpt": "Fear and misinformation surrounds the Ebola outbreak in DR Congo - Dr Kamwanga's mother was not immune.",
@@ -53,14 +149,6 @@
       "category": "World"
     },
     {
-      "title": "L3Harris statement on the Nov. 13 ground stop",
-      "url": "https://www.l3harris.com/newsroom/press-release/2026/11/l3harris-statement-nov-13-ground-stop",
-      "excerpt": "Article URL: https://www.l3harris.com/newsroom/press-release/2026/11/l3harris-statement-nov-13-ground-stop Comments URL: https://news.ycombinator.com/item?id=50501844 Points: 69 # Comments: 41",
-      "publishedAt": "2026-11-14T22:51:44+00:00",
-      "source": "Hacker News",
-      "category": "Technology"
-    },
-    {
       "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
       "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
       "excerpt": "The US has not confirmed the Ukrainian president's comments - a US official told the BBC \"many ideas continue to be discussed\".",
@@ -71,7 +159,7 @@
     {
       "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
       "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
-      "excerpt": "Article URL: https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html Comments URL: https://news.ycombinator.com/item?id=50501631 Points: 205 # Comments: 116",
+      "excerpt": "Article URL: https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html Comments URL: https://news.ycombinator.com/item?id=50501631 Points: 392 # Comments: 193",
       "publishedAt": "2026-11-14T22:26:30+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -79,7 +167,7 @@
     {
       "title": "How did Woz write the Apple 1 BASIC before building the computer?",
       "url": "https://retrocomputing.stackexchange.com/questions/17957",
-      "excerpt": "Article URL: https://retrocomputing.stackexchange.com/questions/17957 Comments URL: https://news.ycombinator.com/item?id=50501594 Points: 98 # Comments: 33",
+      "excerpt": "Article URL: https://retrocomputing.stackexchange.com/questions/17957 Comments URL: https://news.ycombinator.com/item?id=50501594 Points: 166 # Comments: 67",
       "publishedAt": "2026-11-14T22:22:49+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -103,18 +191,10 @@
     {
       "title": "SpaceX catches the Starship to end Flight 15",
       "url": "https://www.spacex.com/launches/starship-flight-15",
-      "excerpt": "https://x.com/SpaceX/status/2121316300702056595 https://youtu.be/jHlpfNSpBmw?t=3233 Comments URL: https://news.ycombinator.com/item?id=50500963 Points: 748 # Comments: 508",
+      "excerpt": "https://x.com/SpaceX/status/2121316300702056595 https://youtu.be/jHlpfNSpBmw?t=3233 Comments URL: https://news.ycombinator.com/item?id=50500963 Points: 999 # Comments: 670",
       "publishedAt": "2026-11-14T21:22:24+00:00",
       "source": "Hacker News",
       "category": "Technology"
-    },
-    {
-      "title": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
-      "url": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
-      "excerpt": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for.",
-      "publishedAt": "2026-11-14T20:23:06+00:00",
-      "source": "BBC World",
-      "category": "World"
     },
     {
       "title": "Watch: Cruise ship overturns after collision with tanker in New Orleans",
@@ -131,14 +211,6 @@
       "publishedAt": "2026-11-14T19:12:25+00:00",
       "source": "BBC World",
       "category": "World"
-    },
-    {
-      "title": "LinkedIn, Monster take down over 1000 fake job postings after CBC investigation",
-      "url": "https://www.cbc.ca/news/canada/linkedin-monster-take-down-over-1-000-fake-job-postings-after-cbc-investigation-9.7415379",
-      "excerpt": "Article URL: https://www.cbc.ca/news/canada/linkedin-monster-take-down-over-1-000-fake-job-postings-after-cbc-investigation-9.7415379 Comments URL: https://news.ycombinator.com/item?id=50499723 Points: 198 # Comments: 112",
-      "publishedAt": "2026-11-14T18:56:47+00:00",
-      "source": "Hacker News",
-      "category": "Technology"
     },
     {
       "title": "Italy fines Meta €805m over accessing users' photos",
@@ -167,7 +239,7 @@
     {
       "title": "A family tree of software job titles",
       "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
-      "excerpt": "Article URL: https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/ Comments URL: https://news.ycombinator.com/item?id=50499038 Points: 216 # Comments: 106",
+      "excerpt": "Article URL: https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/ Comments URL: https://news.ycombinator.com/item?id=50499038 Points: 267 # Comments: 130",
       "publishedAt": "2026-11-14T17:45:19+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -175,7 +247,7 @@
     {
       "title": "Lovable apps expose passport details and more than 200K private messages",
       "url": "https://www.crissyfield.de/research/lovable-en/",
-      "excerpt": "Article URL: https://www.crissyfield.de/research/lovable-en/ Comments URL: https://news.ycombinator.com/item?id=50499017 Points: 661 # Comments: 279",
+      "excerpt": "Article URL: https://www.crissyfield.de/research/lovable-en/ Comments URL: https://news.ycombinator.com/item?id=50499017 Points: 744 # Comments: 297",
       "publishedAt": "2026-11-14T17:43:10+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -187,14 +259,6 @@
       "publishedAt": "2026-11-14T17:11:18+00:00",
       "source": "The Guardian Business",
       "category": "Business"
-    },
-    {
-      "title": "Creating a self booting ZIP archive",
-      "url": "https://goliath32.com/blog/ziphead.html",
-      "excerpt": "Article URL: https://goliath32.com/blog/ziphead.html Comments URL: https://news.ycombinator.com/item?id=50498295 Points: 54 # Comments: 7",
-      "publishedAt": "2026-11-14T16:29:05+00:00",
-      "source": "Hacker News",
-      "category": "Technology"
     },
     {
       "title": "A rapid interest rate rise seems inevitable – and households are expected to pick up the tab",
@@ -223,7 +287,7 @@
     {
       "title": "PyPI's redesigned project pages with clearer security signals are now live",
       "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
-      "excerpt": "Article URL: https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/ Comments URL: https://news.ycombinator.com/item?id=50497892 Points: 209 # Comments: 93",
+      "excerpt": "Article URL: https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/ Comments URL: https://news.ycombinator.com/item?id=50497892 Points: 226 # Comments: 99",
       "publishedAt": "2026-11-14T15:40:52+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -239,16 +303,8 @@
     {
       "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
       "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
-      "excerpt": "Article URL: https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax Comments URL: https://news.ycombinator.com/item?id=50497589 Points: 181 # Comments: 9",
+      "excerpt": "Article URL: https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax Comments URL: https://news.ycombinator.com/item?id=50497589 Points: 213 # Comments: 12",
       "publishedAt": "2026-11-14T15:04:15+00:00",
-      "source": "Hacker News",
-      "category": "Technology"
-    },
-    {
-      "title": "Demystifying phone unlocking tools: A technical overview",
-      "url": "https://osservatorionessuno.org/blog/2026/05/demystifying-phone-unlocking-tools-a-technical-overview/",
-      "excerpt": "Article URL: https://osservatorionessuno.org/blog/2026/05/demystifying-phone-unlocking-tools-a-technical-overview/ Comments URL: https://news.ycombinator.com/item?id=50497416 Points: 84 # Comments: 7",
-      "publishedAt": "2026-11-14T14:44:28+00:00",
       "source": "Hacker News",
       "category": "Technology"
     },
@@ -261,14 +317,6 @@
       "category": "Business"
     },
     {
-      "title": "Show HN: Fursoy – Out-of-order RV64IMAFDV core in SystemVerilog (Linux 6.6)",
-      "url": "https://github.com/FURSOY/fursoy-cpu",
-      "excerpt": "Article URL: https://github.com/FURSOY/fursoy-cpu Comments URL: https://news.ycombinator.com/item?id=50497137 Points: 71 # Comments: 23",
-      "publishedAt": "2026-11-14T14:06:34+00:00",
-      "source": "Hacker News",
-      "category": "Technology"
-    },
-    {
       "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
       "url": "https://gitlab.com/snipedbywifi/terminactory",
       "excerpt": "Hey HN readers! I'm snipedbywifi ( https://gitlab.com/snipedbywifi ), and i've been working on terminactory. Please try it out if you'd like to play a cozy factory game while waiting for long agent tasks to finish! The game is a factory game (overused niche, i know xD), but runs in your terminal. Reason i built it? glad you asked: So basically, it started…",
@@ -277,52 +325,20 @@
       "category": "Technology"
     },
     {
-      "title": "Italy fines Meta $887M over Android users' data access",
-      "url": "https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/",
-      "excerpt": "Article URL: https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/ Comments URL: https://news.ycombinator.com/item?id=50497009 Points: 337 # Comments: 226",
-      "publishedAt": "2026-11-14T13:48:06+00:00",
-      "source": "Hacker News",
-      "category": "Technology"
-    },
-    {
       "title": "KDE: The documentary [video]",
       "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
-      "excerpt": "Article URL: https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c Comments URL: https://news.ycombinator.com/item?id=50496976 Points: 391 # Comments: 85",
+      "excerpt": "Article URL: https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c Comments URL: https://news.ycombinator.com/item?id=50496976 Points: 430 # Comments: 91",
       "publishedAt": "2026-11-14T13:43:28+00:00",
-      "source": "Hacker News",
-      "category": "Technology"
-    },
-    {
-      "title": "A visual explanation of reinforcement learning",
-      "url": "https://aatishb.com/myriad/how-brains-learn/",
-      "excerpt": "Article URL: https://aatishb.com/myriad/how-brains-learn/ Comments URL: https://news.ycombinator.com/item?id=50496885 Points: 126 # Comments: 6",
-      "publishedAt": "2026-11-14T13:31:06+00:00",
       "source": "Hacker News",
       "category": "Technology"
     },
     {
       "title": "Advancing science and engineering with Antigravity's /teamwork",
       "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
-      "excerpt": "Article URL: https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/ Comments URL: https://news.ycombinator.com/item?id=50496811 Points: 168 # Comments: 37",
+      "excerpt": "Article URL: https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/ Comments URL: https://news.ycombinator.com/item?id=50496811 Points: 189 # Comments: 40",
       "publishedAt": "2026-11-14T13:20:43+00:00",
       "source": "Hacker News",
       "category": "Technology"
-    },
-    {
-      "title": "Tech companies are trying to shift the concept of privacy again",
-      "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
-      "excerpt": "Article URL: https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again Comments URL: https://news.ycombinator.com/item?id=50496602 Points: 471 # Comments: 175",
-      "publishedAt": "2026-11-14T12:45:45+00:00",
-      "source": "Hacker News",
-      "category": "Technology"
-    },
-    {
-      "title": "‘Enough is enough’: rising number of deadly ebike battery fires spark fear in New York City",
-      "url": "https://www.theguardian.com/us-news/2026/nov/14/new-york-city-ebike-battery-fires-deaths",
-      "excerpt": "City has failed to build infrastructure that could reduce threat, and saw 400 fires, 83 injuries and 12 deaths this year Fires from lithium-ion batteries, which power ebikes and scooters, have become regular occurrences in New York, causing deaths and fear among residents, but the city has failed to build infrastructure that could reduce the threat. New…",
-      "publishedAt": "2026-11-14T12:00:44+00:00",
-      "source": "The Guardian Business",
-      "category": "Business"
     },
     {
       "title": "Health is wealth? Polymarket and Kalshi now host bets on measles and other US health crises",
@@ -351,7 +367,7 @@
     {
       "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
       "url": "https://projectzero.google/2026/11/disclosure-policy.html",
-      "excerpt": "Article URL: https://projectzero.google/2026/11/disclosure-policy.html Comments URL: https://news.ycombinator.com/item?id=50496051 Points: 167 # Comments: 45",
+      "excerpt": "Article URL: https://projectzero.google/2026/11/disclosure-policy.html Comments URL: https://news.ycombinator.com/item?id=50496051 Points: 220 # Comments: 76",
       "publishedAt": "2026-11-14T11:13:17+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -429,14 +445,6 @@
       "category": "Business"
     },
     {
-      "title": "Microsoft says services fully restored after day-long global outage",
-      "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&at_campaign=rss",
-      "excerpt": "Efforts to address the underlying problem with Outlook, Teams and Copilot are complete, the tech firm says.",
-      "publishedAt": "2026-11-14T06:42:27+00:00",
-      "source": "BBC World",
-      "category": "World"
-    },
-    {
       "title": "‘An environmental and welfare disaster’: British salmon loses its organic status",
       "url": "https://www.theguardian.com/environment/2026/nov/14/salmon-organic-british-farmed-environmental-welfare",
       "excerpt": "This week the Soil Association withdrew certification from organic salmon after 20 years. What went wrong? The first haul of farmed salmon in Britain was a relatively modest 14 tonnes, produced off the west coast of Scotland near Fort William in 1971. For Unilever, the vast multinational that pioneered salmon farming, it was a triumph after years of…",
@@ -485,6 +493,14 @@
       "category": "Business"
     },
     {
+      "title": "One Man's Quest to Create the Perfect Whiskey Glass",
+      "url": "https://www.nytimes.com/2026/11/13/dining/drinks/kurt-josef-zalto-whiskey-glass.html",
+      "excerpt": "Article URL: https://www.nytimes.com/2026/11/13/dining/drinks/kurt-josef-zalto-whiskey-glass.html Comments URL: https://news.ycombinator.com/item?id=50486880 Points: 21 # Comments: 1",
+      "publishedAt": "2026-11-13T17:37:32+00:00",
+      "source": "Hacker News",
+      "category": "Technology"
+    },
+    {
       "title": "Fight the climate crisis or go for growth? There is a way Burnham can do both | Jonathan Freedland",
       "url": "https://www.theguardian.com/commentisfree/2026/nov/13/fight-climate-crisis-growth-andy-burnham-economic-leaders",
       "excerpt": "The environmental and economic dilemmas he faces are formidable but, with a bold plan, he could set an example for leaders around the world For politicians of the centre-left especially, it’s the great dilemma of the age. How do you do what everyone can see is essential to save the planet from boiling – even as your voters demand action to get the economy…",
@@ -519,7 +535,7 @@
     {
       "title": "500 Lines or Less A 3D Modeller",
       "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
-      "excerpt": "Article URL: https://aosabook.org/en/500L/a-3d-modeller.html Comments URL: https://news.ycombinator.com/item?id=50483431 Points: 10 # Comments: 0",
+      "excerpt": "Article URL: https://aosabook.org/en/500L/a-3d-modeller.html Comments URL: https://news.ycombinator.com/item?id=50483431 Points: 36 # Comments: 4",
       "publishedAt": "2026-11-13T13:47:42+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -533,28 +549,12 @@
       "category": "Business"
     },
     {
-      "title": "Farewell, Cybertruck: why the winding down of the ‘Maga hat on wheels’ is a sign of the times",
-      "url": "https://www.theguardian.com/technology/ng-interactive/2026/nov/13/cybertruck-maga-hat-on-wheels-end",
-      "excerpt": "Eccentric and overhyped, Tesla’s Cybertruck became a stand-in for Elon Musk during his ascent in the Republican party. It will join the ranks of other vehicles symbolic of their eras – for better or for worse Three days after a historic blue tsunami changed America’s political landscape, Elon Musk announced Tesla would end production of its hulking…",
-      "publishedAt": "2026-11-13T11:00:17+00:00",
-      "source": "The Guardian Business",
-      "category": "Business"
-    },
-    {
       "title": "SpaceX's giant rocket may leave NASA in the dust",
       "url": "https://www.npr.org/2026/11/13/nx-s1-6039312/spacex-nasa-starship-iss-dragon-falcon-musk",
       "excerpt": "As it races to develop its new massive rocket, the space launch company is preparing to retire NASA's main ride to the International Space Station.",
       "publishedAt": "2026-11-13T10:00:00+00:00",
       "source": "NPR Science",
       "category": "Science"
-    },
-    {
-      "title": "‘They’ve cut all entry-level jobs’: unlikely seaside town on frontline of AI threat",
-      "url": "https://www.theguardian.com/business/2026/nov/13/ai-uk-finance-jobs-bournemouth-tech",
-      "excerpt": "Bournemouth became a hub for thousands of finance jobs after the 1980s big bang, but new tech risks hurting Dorset’s economy A few minutes’ drive from Bournemouth’s sandy beachfront, on the site of a former farm, lies an unlikely nerve centre of international finance. Here, miles from the glass towers of London’s Canary Wharf, more than 5,300 staff…",
-      "publishedAt": "2026-11-13T06:00:11+00:00",
-      "source": "The Guardian Business",
-      "category": "Business"
     },
     {
       "title": "APOD: 2026 November 13 – NGC 206 and the Star Clouds of Andromeda",
@@ -723,6 +723,1574 @@
       "publishedAt": "2026-11-06T22:24:10+00:00",
       "source": "NPR Science",
       "category": "Science"
+    }
+  ],
+  "groups": [
+    {
+      "id": "9bbc450964fc",
+      "title": "Gymshark in trademark battle that threatens future of small fitness business",
+      "category": "Business",
+      "publishedAt": "2026-11-15T06:00:07+00:00",
+      "summary": "Exclusive: British sportswear firm is seeking to obtain rights to The Conditioning Club, which is also the name of a Gloucestershire gym Gymshark, the £1bn British sportswear firm started in a family garage , is locked in a trademark battle that threatens the future of a small fitness business. Ben Francis, the university dropout who started sewing his own…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Gymshark in trademark battle that threatens future of small fitness business",
+          "url": "https://www.theguardian.com/law/2026/nov/15/gymshark-trademark-battle-the-conditioning-club-gloucestershire",
+          "excerpt": "Exclusive: British sportswear firm is seeking to obtain rights to The Conditioning Club, which is also the name of a Gloucestershire gym Gymshark, the £1bn British sportswear firm started in a family garage , is locked in a trademark battle that threatens the future of a small fitness business. Ben Francis, the university dropout who started sewing his own…",
+          "publishedAt": "2026-11-15T06:00:07+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "2460d1d60ca9",
+      "title": "‘Jensen Huang lost his mind’: how AI’s smartest man fell for the world’s oldest trick",
+      "category": "Business",
+      "publishedAt": "2026-11-15T06:00:06+00:00",
+      "summary": "Jensen Huang’s affair with a suspected spy is Silicon Valley’s worst nightmare come true The resignation this week of Nvidia’s founder and CEO Jensen Huang is one of the most astonishing corporate scandals in memory, featuring allegations of international espionage and extramarital affairs involving one of the world’s most powerful men. As investigations…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "‘Jensen Huang lost his mind’: how AI’s smartest man fell for the world’s oldest trick",
+          "url": "https://www.theguardian.com/technology/2026/nov/14/jensen-huang-affair-nvidia-nightmare",
+          "excerpt": "Jensen Huang’s affair with a suspected spy is Silicon Valley’s worst nightmare come true The resignation this week of Nvidia’s founder and CEO Jensen Huang is one of the most astonishing corporate scandals in memory, featuring allegations of international espionage and extramarital affairs involving one of the world’s most powerful men. As investigations…",
+          "publishedAt": "2026-11-15T06:00:06+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "5ec3910099d5",
+      "title": "Show HN: Gawain – Require type hints on all Python variables",
+      "category": "Technology",
+      "publishedAt": "2026-11-15T04:39:25+00:00",
+      "summary": "Yes, i really hate \"dict[str, ANY]\" Comments URL: https://news.ycombinator.com/item?id=50504072 Points: 21 # Comments: 6",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Show HN: Gawain – Require type hints on all Python variables",
+          "url": "https://github.com/matheuzgomes/gawain",
+          "excerpt": "Yes, i really hate \"dict[str, ANY]\" Comments URL: https://news.ycombinator.com/item?id=50504072 Points: 21 # Comments: 6",
+          "publishedAt": "2026-11-15T04:39:25+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "fa6f9a523c4f",
+      "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
+      "category": "Technology",
+      "publishedAt": "2026-11-15T04:09:11+00:00",
+      "summary": "Article URL: https://github.com/Tthanh2k6/turbo-browser-mcp Comments URL: https://news.ycombinator.com/item?id=50503930 Points: 14 # Comments: 0",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
+          "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
+          "excerpt": "Article URL: https://github.com/Tthanh2k6/turbo-browser-mcp Comments URL: https://news.ycombinator.com/item?id=50503930 Points: 14 # Comments: 0",
+          "publishedAt": "2026-11-15T04:09:11+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "e6ff120e40a3",
+      "title": "World leaders head to Asia for back-to-back diplomatic summits",
+      "category": "Business",
+      "publishedAt": "2026-11-15T04:00:02+00:00",
+      "summary": "Tussle for influence as trade, tech and regional security to take centre stage in China, Philippines and Cambodia meetings The global political centre of gravity will be firmly in Asia this week as world leaders fly in for back-to-back high-level summits against the backdrop of the tussle for influence between the superpowers China and the US. Beijing will…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "World leaders head to Asia for back-to-back diplomatic summits",
+          "url": "https://www.theguardian.com/world/2026/nov/15/asia-diplomatic-summits-trump-xi-putin-apec-asean",
+          "excerpt": "Tussle for influence as trade, tech and regional security to take centre stage in China, Philippines and Cambodia meetings The global political centre of gravity will be firmly in Asia this week as world leaders fly in for back-to-back high-level summits against the backdrop of the tussle for influence between the superpowers China and the US. Beijing will…",
+          "publishedAt": "2026-11-15T04:00:02+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "99bf9b452d2d",
+      "title": "Osint Case Studies",
+      "category": "Technology",
+      "publishedAt": "2026-11-15T03:33:41+00:00",
+      "summary": "Article URL: https://osintsearch.org/blog/osint-case-studies Comments URL: https://news.ycombinator.com/item?id=50503731 Points: 13 # Comments: 3",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Osint Case Studies",
+          "url": "https://osintsearch.org/blog/osint-case-studies",
+          "excerpt": "Article URL: https://osintsearch.org/blog/osint-case-studies Comments URL: https://news.ycombinator.com/item?id=50503731 Points: 13 # Comments: 3",
+          "publishedAt": "2026-11-15T03:33:41+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "76222d4d3122",
+      "title": "Judge temporarily blocks Trump from closing Washington DC golf course for renovation",
+      "category": "World",
+      "publishedAt": "2026-11-15T03:21:04+00:00",
+      "summary": "It is the latest development in a months-long challenge to the president's plans for East Potomac Golf Links.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Judge temporarily blocks Trump from closing Washington DC golf course for renovation",
+          "url": "https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o?at_medium=RSS&at_campaign=rss",
+          "excerpt": "It is the latest development in a months-long challenge to the president's plans for East Potomac Golf Links.",
+          "publishedAt": "2026-11-15T03:21:04+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "9f25a7bec450",
+      "title": "Pope Leo speaks of community 'suffering' on visit to remote Andes town",
+      "category": "World",
+      "publishedAt": "2026-11-15T02:49:45+00:00",
+      "summary": "Santa Cruz de Succhabamba is part of the Diocese of Chiclayo, where the pope served as bishop from 2015 to 2023.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Pope Leo speaks of community 'suffering' on visit to remote Andes town",
+          "url": "https://www.bbc.co.uk/news/articles/cr4gnz0lv2vlo?at_medium=RSS&at_campaign=rss",
+          "excerpt": "Santa Cruz de Succhabamba is part of the Diocese of Chiclayo, where the pope served as bishop from 2015 to 2023.",
+          "publishedAt": "2026-11-15T02:49:45+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "7a08a67eadce",
+      "title": "My favourite modern NES games",
+      "category": "Technology",
+      "publishedAt": "2026-11-15T02:41:25+00:00",
+      "summary": "Article URL: https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/ Comments URL: https://news.ycombinator.com/item?id=50503465 Points: 16 # Comments: 0",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "My favourite modern NES games",
+          "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
+          "excerpt": "Article URL: https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/ Comments URL: https://news.ycombinator.com/item?id=50503465 Points: 16 # Comments: 0",
+          "publishedAt": "2026-11-15T02:41:25+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "4f0ce258a369",
+      "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
+      "category": "Technology",
+      "publishedAt": "2026-11-15T02:00:54+00:00",
+      "summary": "Article URL: https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches Comments URL: https://news.ycombinator.com/item?id=50503255 Points: 164 # Comments: 38",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
+          "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
+          "excerpt": "Article URL: https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches Comments URL: https://news.ycombinator.com/item?id=50503255 Points: 164 # Comments: 38",
+          "publishedAt": "2026-11-15T02:00:54+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "14ba8d169059",
+      "title": "Court denies motion to dismiss DRAM price fixing case",
+      "category": "Technology",
+      "publishedAt": "2026-11-15T01:18:36+00:00",
+      "summary": "Article URL: https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal Comments URL: https://news.ycombinator.com/item?id=50502988 Points: 31 # Comments: 2",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Court denies motion to dismiss DRAM price fixing case",
+          "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+          "excerpt": "Article URL: https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal Comments URL: https://news.ycombinator.com/item?id=50502988 Points: 31 # Comments: 2",
+          "publishedAt": "2026-11-15T01:18:36+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "59e30295289f",
+      "title": "Show HN: A custom font based on the Jamaican flag alphabet",
+      "category": "Technology",
+      "publishedAt": "2026-11-15T00:56:45+00:00",
+      "summary": "Article URL: https://bobbiec.github.io/jamaican-font.html Comments URL: https://news.ycombinator.com/item?id=50502839 Points: 23 # Comments: 5",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Show HN: A custom font based on the Jamaican flag alphabet",
+          "url": "https://bobbiec.github.io/jamaican-font.html",
+          "excerpt": "Article URL: https://bobbiec.github.io/jamaican-font.html Comments URL: https://news.ycombinator.com/item?id=50502839 Points: 23 # Comments: 5",
+          "publishedAt": "2026-11-15T00:56:45+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "1ac3da7d3147",
+      "title": "My mother told me I would die if I sought treatment for Ebola - I am proof you can survive",
+      "category": "World",
+      "publishedAt": "2026-11-15T00:06:55+00:00",
+      "summary": "Fear and misinformation surrounds the Ebola outbreak in DR Congo - Dr Kamwanga's mother was not immune.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "My mother told me I would die if I sought treatment for Ebola - I am proof you can survive",
+          "url": "https://www.bbc.co.uk/news/articles/cmvg2e2q28w1o?at_medium=RSS&at_campaign=rss",
+          "excerpt": "Fear and misinformation surrounds the Ebola outbreak in DR Congo - Dr Kamwanga's mother was not immune.",
+          "publishedAt": "2026-11-15T00:06:55+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "7e33db6957fb",
+      "title": "Judo champion shakes up French presidential race with surprise candidacy",
+      "category": "World",
+      "publishedAt": "2026-11-15T00:06:51+00:00",
+      "summary": "Teddy Riner is one of the most popular figures in modern-day France, and one in five voters say they could support him.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Judo champion shakes up French presidential race with surprise candidacy",
+          "url": "https://www.bbc.co.uk/news/articles/c6dj1e8wyykmo?at_medium=RSS&at_campaign=rss",
+          "excerpt": "Teddy Riner is one of the most popular figures in modern-day France, and one in five voters say they could support him.",
+          "publishedAt": "2026-11-15T00:06:51+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "fb9303c76708",
+      "title": "How telecoms upgrade work sparked US flight chaos",
+      "category": "World",
+      "publishedAt": "2026-11-14T23:11:27+00:00",
+      "summary": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "How telecoms upgrade work sparked US flight chaos",
+          "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
+          "excerpt": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack.",
+          "publishedAt": "2026-11-14T23:11:27+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "1476d670af2a",
+      "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+      "category": "World",
+      "publishedAt": "2026-11-14T22:37:25+00:00",
+      "summary": "The US has not confirmed the Ukrainian president's comments - a US official told the BBC \"many ideas continue to be discussed\".",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+          "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
+          "excerpt": "The US has not confirmed the Ukrainian president's comments - a US official told the BBC \"many ideas continue to be discussed\".",
+          "publishedAt": "2026-11-14T22:37:25+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "0322d2a0d024",
+      "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
+      "category": "Technology",
+      "publishedAt": "2026-11-14T22:26:30+00:00",
+      "summary": "Article URL: https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html Comments URL: https://news.ycombinator.com/item?id=50501631 Points: 392 # Comments: 193",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
+          "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
+          "excerpt": "Article URL: https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html Comments URL: https://news.ycombinator.com/item?id=50501631 Points: 392 # Comments: 193",
+          "publishedAt": "2026-11-14T22:26:30+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "cce942626afe",
+      "title": "How did Woz write the Apple 1 BASIC before building the computer?",
+      "category": "Technology",
+      "publishedAt": "2026-11-14T22:22:49+00:00",
+      "summary": "Article URL: https://retrocomputing.stackexchange.com/questions/17957 Comments URL: https://news.ycombinator.com/item?id=50501594 Points: 166 # Comments: 67",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "How did Woz write the Apple 1 BASIC before building the computer?",
+          "url": "https://retrocomputing.stackexchange.com/questions/17957",
+          "excerpt": "Article URL: https://retrocomputing.stackexchange.com/questions/17957 Comments URL: https://news.ycombinator.com/item?id=50501594 Points: 166 # Comments: 67",
+          "publishedAt": "2026-11-14T22:22:49+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "06a1e4f4652e",
+      "title": "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
+      "category": "World",
+      "publishedAt": "2026-11-14T22:09:40+00:00",
+      "summary": "SpaceX has performed the historic catch using mechanical arms nicknamed \"chopsticks\".",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
+          "url": "https://www.bbc.co.uk/news/videos/cwlym2gy3y3eo?at_medium=RSS&at_campaign=rss",
+          "excerpt": "SpaceX has performed the historic catch using mechanical arms nicknamed \"chopsticks\".",
+          "publishedAt": "2026-11-14T22:09:40+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "5f3128295c2d",
+      "title": "SpaceX successfully catches Starship and makes history",
+      "category": "Science",
+      "publishedAt": "2026-11-14T21:42:41+00:00",
+      "summary": "The company's spacecraft returned to its Texas launchpad in dramatic fashion — by carefully lowering itself until two metal arms attached to the launch tower could secure it.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "SpaceX successfully catches Starship and makes history",
+          "url": "https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history",
+          "excerpt": "The company's spacecraft returned to its Texas launchpad in dramatic fashion — by carefully lowering itself until two metal arms attached to the launch tower could secure it.",
+          "publishedAt": "2026-11-14T21:42:41+00:00",
+          "source": "NPR Science",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "4e501f9826d0",
+      "title": "SpaceX catches the Starship to end Flight 15",
+      "category": "Technology",
+      "publishedAt": "2026-11-14T21:22:24+00:00",
+      "summary": "https://x.com/SpaceX/status/2121316300702056595 https://youtu.be/jHlpfNSpBmw?t=3233 Comments URL: https://news.ycombinator.com/item?id=50500963 Points: 999 # Comments: 670",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "SpaceX catches the Starship to end Flight 15",
+          "url": "https://www.spacex.com/launches/starship-flight-15",
+          "excerpt": "https://x.com/SpaceX/status/2121316300702056595 https://youtu.be/jHlpfNSpBmw?t=3233 Comments URL: https://news.ycombinator.com/item?id=50500963 Points: 999 # Comments: 670",
+          "publishedAt": "2026-11-14T21:22:24+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "0db8dc11d577",
+      "title": "Watch: Cruise ship overturns after collision with tanker in New Orleans",
+      "category": "World",
+      "publishedAt": "2026-11-14T19:14:33+00:00",
+      "summary": "Around 130 people were rescued from a cruise ship after it was struck by a tanker while docked in New Orleans, Louisiana on Friday.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Watch: Cruise ship overturns after collision with tanker in New Orleans",
+          "url": "https://www.bbc.co.uk/news/videos/ck4gn4y77m40o?at_medium=RSS&at_campaign=rss",
+          "excerpt": "Around 130 people were rescued from a cruise ship after it was struck by a tanker while docked in New Orleans, Louisiana on Friday.",
+          "publishedAt": "2026-11-14T19:14:33+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "a34f168e066d",
+      "title": "Copper wire upgrade caused nationwide flight suspension, US transport secretary says",
+      "category": "World",
+      "publishedAt": "2026-11-14T19:12:25+00:00",
+      "summary": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Copper wire upgrade caused nationwide flight suspension, US transport secretary says",
+          "url": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss",
+          "excerpt": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment.",
+          "publishedAt": "2026-11-14T19:12:25+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "359fb450257d",
+      "title": "Italy fines Meta €805m over accessing users' photos",
+      "category": "World",
+      "publishedAt": "2026-11-14T18:28:06+00:00",
+      "summary": "The social media giant is accused of not informing 20 million users it had access to their photos.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Italy fines Meta €805m over accessing users' photos",
+          "url": "https://www.bbc.co.uk/news/articles/cwn83gxemk35o?at_medium=RSS&at_campaign=rss",
+          "excerpt": "The social media giant is accused of not informing 20 million users it had access to their photos.",
+          "publishedAt": "2026-11-14T18:28:06+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "03eb88a9ba92",
+      "title": "Philippines wins first Eurovision Song Contest Asia",
+      "category": "World",
+      "publishedAt": "2026-11-14T18:17:58+00:00",
+      "summary": "Front-runner Carmelle emerges victorious with her women's empowerment anthem Sobra-Sobra.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Philippines wins first Eurovision Song Contest Asia",
+          "url": "https://www.bbc.co.uk/news/articles/cqrlgnx9dx6eo?at_medium=RSS&at_campaign=rss",
+          "excerpt": "Front-runner Carmelle emerges victorious with her women's empowerment anthem Sobra-Sobra.",
+          "publishedAt": "2026-11-14T18:17:58+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "95238972c93d",
+      "title": "Sotheby's auction of $180m Van Gogh challenged over claims it was 'sold under duress'",
+      "category": "World",
+      "publishedAt": "2026-11-14T18:00:10+00:00",
+      "summary": "Sotheby's says it will work with the heirs of a family who had previously owned the artwork to try and reach a solution.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Sotheby's auction of $180m Van Gogh challenged over claims it was 'sold under duress'",
+          "url": "https://www.bbc.co.uk/news/articles/cmwy05gg75lvo?at_medium=RSS&at_campaign=rss",
+          "excerpt": "Sotheby's says it will work with the heirs of a family who had previously owned the artwork to try and reach a solution.",
+          "publishedAt": "2026-11-14T18:00:10+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "2d95802617f2",
+      "title": "A family tree of software job titles",
+      "category": "Technology",
+      "publishedAt": "2026-11-14T17:45:19+00:00",
+      "summary": "Article URL: https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/ Comments URL: https://news.ycombinator.com/item?id=50499038 Points: 267 # Comments: 130",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "A family tree of software job titles",
+          "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+          "excerpt": "Article URL: https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/ Comments URL: https://news.ycombinator.com/item?id=50499038 Points: 267 # Comments: 130",
+          "publishedAt": "2026-11-14T17:45:19+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "c8d55e521b5b",
+      "title": "Lovable apps expose passport details and more than 200K private messages",
+      "category": "Technology",
+      "publishedAt": "2026-11-14T17:43:10+00:00",
+      "summary": "Article URL: https://www.crissyfield.de/research/lovable-en/ Comments URL: https://news.ycombinator.com/item?id=50499017 Points: 744 # Comments: 297",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Lovable apps expose passport details and more than 200K private messages",
+          "url": "https://www.crissyfield.de/research/lovable-en/",
+          "excerpt": "Article URL: https://www.crissyfield.de/research/lovable-en/ Comments URL: https://news.ycombinator.com/item?id=50499017 Points: 744 # Comments: 297",
+          "publishedAt": "2026-11-14T17:43:10+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "a2fafccb073f",
+      "title": "US officials say flight stoppage stemmed from ‘routine maintenance’ as travel chaos continues",
+      "category": "Business",
+      "publishedAt": "2026-11-14T17:11:18+00:00",
+      "summary": "Thousands of flights still canceled as officials blamed ageing air control system for nationwide grounding The Trump administration says Friday’s four-hour nationwide Federal Aviation Administration (FAA) ground stop that delayed or canceled thousands of flight stemmed from routine maintenance. At a news briefing on Saturday, the US transportation…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "US officials say flight stoppage stemmed from ‘routine maintenance’ as travel chaos continues",
+          "url": "https://www.theguardian.com/world/2026/nov/14/faa-ground-stop-flights-resume-airport-chaos",
+          "excerpt": "Thousands of flights still canceled as officials blamed ageing air control system for nationwide grounding The Trump administration says Friday’s four-hour nationwide Federal Aviation Administration (FAA) ground stop that delayed or canceled thousands of flight stemmed from routine maintenance. At a news briefing on Saturday, the US transportation…",
+          "publishedAt": "2026-11-14T17:11:18+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "c45402730d90",
+      "title": "A rapid interest rate rise seems inevitable – and households are expected to pick up the tab",
+      "category": "Business",
+      "publishedAt": "2026-11-14T16:00:48+00:00",
+      "summary": "Raising borrowing costs too far risks laying waste to whatever growth there is in the economy A head of steam is building up behind the Bank of England raising interest rates again. With the latest forecasts by the central bank showing inflation rising to 5% next spring, another increase in the cost of borrowing seems inevitable, and may come as soon as…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "A rapid interest rate rise seems inevitable – and households are expected to pick up the tab",
+          "url": "https://www.theguardian.com/business/2026/nov/14/interest-rate-rise-phillip-inman-inflation-economy",
+          "excerpt": "Raising borrowing costs too far risks laying waste to whatever growth there is in the economy A head of steam is building up behind the Bank of England raising interest rates again. With the latest forecasts by the central bank showing inflation rising to 5% next spring, another increase in the cost of borrowing seems inevitable, and may come as soon as…",
+          "publishedAt": "2026-11-14T16:00:48+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "92720765a427",
+      "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+      "category": "World",
+      "publishedAt": "2026-11-14T15:53:55+00:00",
+      "summary": "Trump will discuss the \"reduction of nuclear weapons\" during the unprecedented talks, a spokeswoman says.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+          "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
+          "excerpt": "Trump will discuss the \"reduction of nuclear weapons\" during the unprecedented talks, a spokeswoman says.",
+          "publishedAt": "2026-11-14T15:53:55+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "f913251039d6",
+      "title": "Nigeria cautions against travel via Ethiopia's main airport due to altitude",
+      "category": "World",
+      "publishedAt": "2026-11-14T15:42:54+00:00",
+      "summary": "The foreign ministry in Abuja says 6 Nigerians with underlying health problems have died this year while transiting through Addis Ababa.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Nigeria cautions against travel via Ethiopia's main airport due to altitude",
+          "url": "https://www.bbc.co.uk/news/articles/cmz6qjpdy2wqo?at_medium=RSS&at_campaign=rss",
+          "excerpt": "The foreign ministry in Abuja says 6 Nigerians with underlying health problems have died this year while transiting through Addis Ababa.",
+          "publishedAt": "2026-11-14T15:42:54+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "85898c079664",
+      "title": "PyPI's redesigned project pages with clearer security signals are now live",
+      "category": "Technology",
+      "publishedAt": "2026-11-14T15:40:52+00:00",
+      "summary": "Article URL: https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/ Comments URL: https://news.ycombinator.com/item?id=50497892 Points: 226 # Comments: 99",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "PyPI's redesigned project pages with clearer security signals are now live",
+          "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
+          "excerpt": "Article URL: https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/ Comments URL: https://news.ycombinator.com/item?id=50497892 Points: 226 # Comments: 99",
+          "publishedAt": "2026-11-14T15:40:52+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "796b977da194",
+      "title": "Andy Burnham says UK has ‘lost more than we gained’ through Brexit",
+      "category": "Business",
+      "publishedAt": "2026-11-14T15:34:54+00:00",
+      "summary": "PM accuses Tories of burning ‘all our bridges’ and says deal he is pursuing with EU will ‘get food prices down’ Andy Burnham has said the UK has “lost more than we gained” since leaving the EU, the prime minister’s latest in a string of comments criticising Brexit. Outlining his desire to form closer ties with Brussels, Burnham accused the Conservative…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Andy Burnham says UK has ‘lost more than we gained’ through Brexit",
+          "url": "https://www.theguardian.com/world/2026/nov/14/andy-burnham-says-uk-lost-more-than-we-gained-brexit",
+          "excerpt": "PM accuses Tories of burning ‘all our bridges’ and says deal he is pursuing with EU will ‘get food prices down’ Andy Burnham has said the UK has “lost more than we gained” since leaving the EU, the prime minister’s latest in a string of comments criticising Brexit. Outlining his desire to form closer ties with Brussels, Burnham accused the Conservative…",
+          "publishedAt": "2026-11-14T15:34:54+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "ad8b3d5bdfd0",
+      "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
+      "category": "Technology",
+      "publishedAt": "2026-11-14T15:04:15+00:00",
+      "summary": "Article URL: https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax Comments URL: https://news.ycombinator.com/item?id=50497589 Points: 213 # Comments: 12",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
+          "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
+          "excerpt": "Article URL: https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax Comments URL: https://news.ycombinator.com/item?id=50497589 Points: 213 # Comments: 12",
+          "publishedAt": "2026-11-14T15:04:15+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "759845822a92",
+      "title": "Interest rate rises likely in coming months, Bank of England’s chief economist says",
+      "category": "Business",
+      "publishedAt": "2026-11-14T14:42:27+00:00",
+      "summary": "‘We have further to go,’ says Huw Pill after increase to 4% this month as Bank seeks to tackle rising inflation The Bank of England will probably need to raise interest rates next month and again in early 2027 to combat rising inflation, its chief economist has said. Signalling a sharp rise in mortgage payments for an estimated 2.3 million homeowners who…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Interest rate rises likely in coming months, Bank of England’s chief economist says",
+          "url": "https://www.theguardian.com/business/2026/nov/14/interest-rate-rises-inflation-bank-of-england-chief-economist",
+          "excerpt": "‘We have further to go,’ says Huw Pill after increase to 4% this month as Bank seeks to tackle rising inflation The Bank of England will probably need to raise interest rates next month and again in early 2027 to combat rising inflation, its chief economist has said. Signalling a sharp rise in mortgage payments for an estimated 2.3 million homeowners who…",
+          "publishedAt": "2026-11-14T14:42:27+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "5bfa2e37b7da",
+      "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
+      "category": "Technology",
+      "publishedAt": "2026-11-14T14:05:54+00:00",
+      "summary": "Hey HN readers! I'm snipedbywifi ( https://gitlab.com/snipedbywifi ), and i've been working on terminactory. Please try it out if you'd like to play a cozy factory game while waiting for long agent tasks to finish! The game is a factory game (overused niche, i know xD), but runs in your terminal. Reason i built it? glad you asked: So basically, it started…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
+          "url": "https://gitlab.com/snipedbywifi/terminactory",
+          "excerpt": "Hey HN readers! I'm snipedbywifi ( https://gitlab.com/snipedbywifi ), and i've been working on terminactory. Please try it out if you'd like to play a cozy factory game while waiting for long agent tasks to finish! The game is a factory game (overused niche, i know xD), but runs in your terminal. Reason i built it? glad you asked: So basically, it started…",
+          "publishedAt": "2026-11-14T14:05:54+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "fbb4c2fd353e",
+      "title": "KDE: The documentary [video]",
+      "category": "Technology",
+      "publishedAt": "2026-11-14T13:43:28+00:00",
+      "summary": "Article URL: https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c Comments URL: https://news.ycombinator.com/item?id=50496976 Points: 430 # Comments: 91",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "KDE: The documentary [video]",
+          "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
+          "excerpt": "Article URL: https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c Comments URL: https://news.ycombinator.com/item?id=50496976 Points: 430 # Comments: 91",
+          "publishedAt": "2026-11-14T13:43:28+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "90d40fe08702",
+      "title": "Advancing science and engineering with Antigravity's /teamwork",
+      "category": "Technology",
+      "publishedAt": "2026-11-14T13:20:43+00:00",
+      "summary": "Article URL: https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/ Comments URL: https://news.ycombinator.com/item?id=50496811 Points: 189 # Comments: 40",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Advancing science and engineering with Antigravity's /teamwork",
+          "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+          "excerpt": "Article URL: https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/ Comments URL: https://news.ycombinator.com/item?id=50496811 Points: 189 # Comments: 40",
+          "publishedAt": "2026-11-14T13:20:43+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "f005ff303816",
+      "title": "Health is wealth? Polymarket and Kalshi now host bets on measles and other US health crises",
+      "category": "Business",
+      "publishedAt": "2026-11-14T12:00:44+00:00",
+      "summary": "Experts warn of risks of platforms hosting bets tied to US public health – including vaccine mandates and drug trials The sign was pasted on a construction fence next to an elementary school in the Brooklyn borough of New York City. “Vaccines,” it proclaimed in bold capital letters against a blue star-spangled background – appearing, at first glance, to be…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Health is wealth? Polymarket and Kalshi now host bets on measles and other US health crises",
+          "url": "https://www.theguardian.com/world/2026/nov/14/measles-kalshi-polymarket-betting",
+          "excerpt": "Experts warn of risks of platforms hosting bets tied to US public health – including vaccine mandates and drug trials The sign was pasted on a construction fence next to an elementary school in the Brooklyn borough of New York City. “Vaccines,” it proclaimed in bold capital letters against a blue star-spangled background – appearing, at first glance, to be…",
+          "publishedAt": "2026-11-14T12:00:44+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "ed7f4a8f0e28",
+      "title": "‘Don’t lie to me to get free stuff’: how small businesses are fighting back against influencers",
+      "category": "Business",
+      "publishedAt": "2026-11-14T12:00:43+00:00",
+      "summary": "From diva-like behaviour to freebie requests that never result in a review, ‘entitled’ content creators are a growing blight on small-business owners. Now entrepreneurs are calling them out Nicole Flanagin remembers exactly the moment an influencer came after her business. It was the early hours of a March morning and the cat cafe owner in Lenoir, North…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "‘Don’t lie to me to get free stuff’: how small businesses are fighting back against influencers",
+          "url": "https://www.theguardian.com/media/2026/nov/14/small-businesses-fighting-back-influencers-behaving-badly",
+          "excerpt": "From diva-like behaviour to freebie requests that never result in a review, ‘entitled’ content creators are a growing blight on small-business owners. Now entrepreneurs are calling them out Nicole Flanagin remembers exactly the moment an influencer came after her business. It was the early hours of a March morning and the cat cafe owner in Lenoir, North…",
+          "publishedAt": "2026-11-14T12:00:43+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "b67c4d635d9d",
+      "title": "Microsoft says services fully restored after global outage hits governments",
+      "category": "Business",
+      "publishedAt": "2026-11-14T11:54:31+00:00",
+      "summary": "Tech company says operations restored to all customers and regions affected by one of worst IT failures in years Microsoft has said its service has been fully restored after a massive outage that resulted in widespread disruption to governments, businesses and public services around the world. The technology company said on Saturday morning it had restored…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Microsoft says services fully restored after global outage hits governments",
+          "url": "https://www.theguardian.com/technology/2026/nov/14/microsoft-says-services-fully-restored-after-global-outage",
+          "excerpt": "Tech company says operations restored to all customers and regions affected by one of worst IT failures in years Microsoft has said its service has been fully restored after a massive outage that resulted in widespread disruption to governments, businesses and public services around the world. The technology company said on Saturday morning it had restored…",
+          "publishedAt": "2026-11-14T11:54:31+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "1838248a60d9",
+      "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
+      "category": "Technology",
+      "publishedAt": "2026-11-14T11:13:17+00:00",
+      "summary": "Article URL: https://projectzero.google/2026/11/disclosure-policy.html Comments URL: https://news.ycombinator.com/item?id=50496051 Points: 220 # Comments: 76",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
+          "url": "https://projectzero.google/2026/11/disclosure-policy.html",
+          "excerpt": "Article URL: https://projectzero.google/2026/11/disclosure-policy.html Comments URL: https://news.ycombinator.com/item?id=50496051 Points: 220 # Comments: 76",
+          "publishedAt": "2026-11-14T11:13:17+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "5d65e92e58ff",
+      "title": "Zelenskyy accuses SpaceX of lying about Starshield – and says US floated Donbas-for-Nato deal",
+      "category": "Business",
+      "publishedAt": "2026-11-14T11:05:33+00:00",
+      "summary": "Throttling of Elon Musk’s military-grade satellite system affecting whole frontline, says Ukraine’s president Volodymyr Zelenskyy has accused SpaceX of not telling the truth over restrictions to Ukraine’s Starshield satellite system , saying the decision to impose speed limits appears to be “political” rather than “technical”. Speaking on Friday, Ukraine’s…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Zelenskyy accuses SpaceX of lying about Starshield – and says US floated Donbas-for-Nato deal",
+          "url": "https://www.theguardian.com/world/2026/nov/14/spacex-not-honest-slowing-starshield-elon-musk-volodymyr-zelenskyy",
+          "excerpt": "Throttling of Elon Musk’s military-grade satellite system affecting whole frontline, says Ukraine’s president Volodymyr Zelenskyy has accused SpaceX of not telling the truth over restrictions to Ukraine’s Starshield satellite system , saying the decision to impose speed limits appears to be “political” rather than “technical”. Speaking on Friday, Ukraine’s…",
+          "publishedAt": "2026-11-14T11:05:33+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "f40368461e04",
+      "title": "Greenpeace boulders may delay building of £12bn windfarms in North Sea",
+      "category": "Business",
+      "publishedAt": "2026-11-14T11:00:43+00:00",
+      "summary": "Activists dumped rocks off Norfolk coast on site of Burnham-backed project in protest against seabed trawling The giant offshore windfarms backed by Andy Burnham this week may face unexpected stumbling blocks after Greenpeace activists unwittingly dumped about 15 tonnes of boulders on to the site as part of a campaign against seabed trawling in the North…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Greenpeace boulders may delay building of £12bn windfarms in North Sea",
+          "url": "https://www.theguardian.com/environment/2026/nov/14/greenpeace-boulders-norfolk-vanguard-windfarms",
+          "excerpt": "Activists dumped rocks off Norfolk coast on site of Burnham-backed project in protest against seabed trawling The giant offshore windfarms backed by Andy Burnham this week may face unexpected stumbling blocks after Greenpeace activists unwittingly dumped about 15 tonnes of boulders on to the site as part of a campaign against seabed trawling in the North…",
+          "publishedAt": "2026-11-14T11:00:43+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "bead0b725e38",
+      "title": "Ecuadorian fishermen who survived US boat strikes sue Trump administration",
+      "category": "Business",
+      "publishedAt": "2026-11-14T11:00:42+00:00",
+      "summary": "US military has killed nearly 250 people in attack on ‘narco-terrorism’, and on 17 March, sank the 16 plaintiffs’ boat, leaving two with serious burns More than a dozen Ecuadorian fishermen are suing the US government after they survived a military drone attack in the Pacific ocean earlier this year that sank their boat and left two of them with serious…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Ecuadorian fishermen who survived US boat strikes sue Trump administration",
+          "url": "https://www.theguardian.com/us-news/2026/nov/14/ecuadorian-fishermen-lawsuit-trump-boat-strike",
+          "excerpt": "US military has killed nearly 250 people in attack on ‘narco-terrorism’, and on 17 March, sank the 16 plaintiffs’ boat, leaving two with serious burns More than a dozen Ecuadorian fishermen are suing the US government after they survived a military drone attack in the Pacific ocean earlier this year that sank their boat and left two of them with serious…",
+          "publishedAt": "2026-11-14T11:00:42+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "f8a8437145fb",
+      "title": "Hungarian authorities uncover $20m during probe of Orbán-era minister",
+      "category": "World",
+      "publishedAt": "2026-11-14T10:42:20+00:00",
+      "summary": "Prime Minister Péter Magyar promised a sweeping anti-corruption drive after ousting Orbán in April.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Hungarian authorities uncover $20m during probe of Orbán-era minister",
+          "url": "https://www.bbc.co.uk/news/articles/ckjwj03w4w0qo?at_medium=RSS&at_campaign=rss",
+          "excerpt": "Prime Minister Péter Magyar promised a sweeping anti-corruption drive after ousting Orbán in April.",
+          "publishedAt": "2026-11-14T10:42:20+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "ffbd1a64645c",
+      "title": "‘The social contract is broken’: young people on feeling shut out of careers",
+      "category": "Business",
+      "publishedAt": "2026-11-14T10:00:42+00:00",
+      "summary": "In the first instalment of a new series, four young people reveal the impact of an endless cycle of applications and rejections Guardian to follow lives of eight young people in their search for jobs “I’ve been demoralised by the process, just constantly applying, then interviewing. I’ve just been applying to any jobs that I could find. I’d really like to…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "‘The social contract is broken’: young people on feeling shut out of careers",
+          "url": "https://www.theguardian.com/business/2026/nov/14/young-people-shut-out-of-work-ai",
+          "excerpt": "In the first instalment of a new series, four young people reveal the impact of an endless cycle of applications and rejections Guardian to follow lives of eight young people in their search for jobs “I’ve been demoralised by the process, just constantly applying, then interviewing. I’ve just been applying to any jobs that I could find. I’d really like to…",
+          "publishedAt": "2026-11-14T10:00:42+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "59a903ad25c8",
+      "title": "A new policy could help solve the U.S. organ shortage. Critics say it's unethical",
+      "category": "Science",
+      "publishedAt": "2026-11-14T10:00:00+00:00",
+      "summary": "New guidelines are supposed to protect organ donors in a retrieval procedure that keeps blood flowing through livers, kidneys, lungs and hearts. But bioethicists have troubling questions.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "A new policy could help solve the U.S. organ shortage. Critics say it's unethical",
+          "url": "https://www.npr.org/2026/11/14/nx-s1-6032604/organ-transplant-donor-dead-ethics",
+          "excerpt": "New guidelines are supposed to protect organ donors in a retrieval procedure that keeps blood flowing through livers, kidneys, lungs and hearts. But bioethicists have troubling questions.",
+          "publishedAt": "2026-11-14T10:00:00+00:00",
+          "source": "NPR Science",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "4c532d85e884",
+      "title": "Tout offers £1m of U2 tickets on StubHub, raising questions about ‘bot’ clampdown",
+      "category": "Business",
+      "publishedAt": "2026-11-14T08:00:39+00:00",
+      "summary": "Artists and industry figures call for culture secretary to ‘shut down the touts’ by outlawing resale for profit One tout is advertising £1m of tickets for U2’s long-awaited 2027 tour through StubHub, raising questions about the website’s condemnation of professional ticket traders who use “bot” software to scoop up tickets and exploit genuine fans. Seats…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Tout offers £1m of U2 tickets on StubHub, raising questions about ‘bot’ clampdown",
+          "url": "https://www.theguardian.com/money/2026/nov/14/u2-tickets-stubhub-bot-culture-secretary-resale",
+          "excerpt": "Artists and industry figures call for culture secretary to ‘shut down the touts’ by outlawing resale for profit One tout is advertising £1m of tickets for U2’s long-awaited 2027 tour through StubHub, raising questions about the website’s condemnation of professional ticket traders who use “bot” software to scoop up tickets and exploit genuine fans. Seats…",
+          "publishedAt": "2026-11-14T08:00:39+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "1ee028689038",
+      "title": "UK-EU breakthrough will allow airport-style checks at Eurotunnel to avoid border ‘chaos’",
+      "category": "Business",
+      "publishedAt": "2026-11-14T07:00:38+00:00",
+      "summary": "Eurotunnel owner Getlink wants to replicate ‘airport experience’ at Folkestone and Calais, without making people get out of cars Airport-style passport and fingerprinting controls are to be introduced at Eurotunnel in an attempt to prevent “short-term and long-term chaos” in Folkestone and Calais. In a breakthrough for travellers, the European Commission…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "UK-EU breakthrough will allow airport-style checks at Eurotunnel to avoid border ‘chaos’",
+          "url": "https://www.theguardian.com/travel/2026/nov/14/eurotunnel-drive-in-fingerprint-trial-folkestone-calais-border",
+          "excerpt": "Eurotunnel owner Getlink wants to replicate ‘airport experience’ at Folkestone and Calais, without making people get out of cars Airport-style passport and fingerprinting controls are to be introduced at Eurotunnel in an attempt to prevent “short-term and long-term chaos” in Folkestone and Calais. In a breakthrough for travellers, the European Commission…",
+          "publishedAt": "2026-11-14T07:00:38+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "665509d3e15a",
+      "title": "Bristol aims to become UK’s first ‘wetland city’ and reduce flood risk",
+      "category": "Business",
+      "publishedAt": "2026-11-14T07:00:37+00:00",
+      "summary": "Five-year project will create wildlife corridors by building wetlands and increase access to green and blue spaces Bristol could become home to the UK’s first “wetland city” thanks to a charity’s efforts to create vast wildlife corridors that will reduce flood risk and give people more access to green and blue spaces. The Wildfowl & Wetlands Trust (WWT)…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Bristol aims to become UK’s first ‘wetland city’ and reduce flood risk",
+          "url": "https://www.theguardian.com/environment/2026/nov/14/bristol-first-uk-wetland-city-flood",
+          "excerpt": "Five-year project will create wildlife corridors by building wetlands and increase access to green and blue spaces Bristol could become home to the UK’s first “wetland city” thanks to a charity’s efforts to create vast wildlife corridors that will reduce flood risk and give people more access to green and blue spaces. The Wildfowl & Wetlands Trust (WWT)…",
+          "publishedAt": "2026-11-14T07:00:37+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "653d412801c8",
+      "title": "‘An environmental and welfare disaster’: British salmon loses its organic status",
+      "category": "Business",
+      "publishedAt": "2026-11-14T06:00:37+00:00",
+      "summary": "This week the Soil Association withdrew certification from organic salmon after 20 years. What went wrong? The first haul of farmed salmon in Britain was a relatively modest 14 tonnes, produced off the west coast of Scotland near Fort William in 1971. For Unilever, the vast multinational that pioneered salmon farming, it was a triumph after years of…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "‘An environmental and welfare disaster’: British salmon loses its organic status",
+          "url": "https://www.theguardian.com/environment/2026/nov/14/salmon-organic-british-farmed-environmental-welfare",
+          "excerpt": "This week the Soil Association withdrew certification from organic salmon after 20 years. What went wrong? The first haul of farmed salmon in Britain was a relatively modest 14 tonnes, produced off the west coast of Scotland near Fort William in 1971. For Unilever, the vast multinational that pioneered salmon farming, it was a triumph after years of…",
+          "publishedAt": "2026-11-14T06:00:37+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "c79fcc95c6e0",
+      "title": "'We'll get home one day' - US travellers impacted by nationwide ground stop",
+      "category": "World",
+      "publishedAt": "2026-11-14T01:47:36+00:00",
+      "summary": "Passengers throughout the country were impacted over what the Federal Aviation Administration (FAA) describes as “safety and communication issues”.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "'We'll get home one day' - US travellers impacted by nationwide ground stop",
+          "url": "https://www.bbc.co.uk/news/videos/c893ryz7lw33o?at_medium=RSS&at_campaign=rss",
+          "excerpt": "Passengers throughout the country were impacted over what the Federal Aviation Administration (FAA) describes as “safety and communication issues”.",
+          "publishedAt": "2026-11-14T01:47:36+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "ddaf3e08f4b6",
+      "title": "Jojo the gorilla has spent his life alone. Can he finally find a companion?",
+      "category": "World",
+      "publishedAt": "2026-11-14T00:03:56+00:00",
+      "summary": "Jojo was poached as an infant and grew up in captivity. His keepers want to find him a friend - but it's not straightforward.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Jojo the gorilla has spent his life alone. Can he finally find a companion?",
+          "url": "https://www.bbc.co.uk/news/articles/cwm2mn272nqlo?at_medium=RSS&at_campaign=rss",
+          "excerpt": "Jojo was poached as an infant and grew up in captivity. His keepers want to find him a friend - but it's not straightforward.",
+          "publishedAt": "2026-11-14T00:03:56+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "90ede25c95fa",
+      "title": "Arrested generals and a threatened VP: President's son fuels Ugandan succession fever",
+      "category": "World",
+      "publishedAt": "2026-11-14T00:03:52+00:00",
+      "summary": "The 52-year-old general’s provocative posts and military threats have fuelled rumours of a dynastic succession.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Arrested generals and a threatened VP: President's son fuels Ugandan succession fever",
+          "url": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo?at_medium=RSS&at_campaign=rss",
+          "excerpt": "The 52-year-old general’s provocative posts and military threats have fuelled rumours of a dynastic succession.",
+          "publishedAt": "2026-11-14T00:03:52+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "64d4544b04eb",
+      "title": "After a summer win, India's Gen Z protesters face a winter of uncertainty",
+      "category": "World",
+      "publishedAt": "2026-11-13T23:11:51+00:00",
+      "summary": "A new wave of youth dissent swept India this summer, fuelled by frustration and irreverent online satire.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "After a summer win, India's Gen Z protesters face a winter of uncertainty",
+          "url": "https://www.bbc.co.uk/news/articles/cq99e0z4vg1eo?at_medium=RSS&at_campaign=rss",
+          "excerpt": "A new wave of youth dissent swept India this summer, fuelled by frustration and irreverent online satire.",
+          "publishedAt": "2026-11-13T23:11:51+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "3c238cabbefd",
+      "title": "The folly of just-in-time supply chains | Letters",
+      "category": "Business",
+      "publishedAt": "2026-11-13T17:52:48+00:00",
+      "summary": "Hannah Walker says systems designed to minimise expenditure in the name of efficiency can end up less capable of fulfilling their actual purpose The article by Steven Strogatz and Alex Townsend on the dangers of excessive optimisation identifies a problem extending far beyond mathematics and artificial intelligence ( The efficiency trap: why optimising…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "The folly of just-in-time supply chains | Letters",
+          "url": "https://www.theguardian.com/society/2026/nov/13/the-folly-of-just-in-time-supply-chains",
+          "excerpt": "Hannah Walker says systems designed to minimise expenditure in the name of efficiency can end up less capable of fulfilling their actual purpose The article by Steven Strogatz and Alex Townsend on the dangers of excessive optimisation identifies a problem extending far beyond mathematics and artificial intelligence ( The efficiency trap: why optimising…",
+          "publishedAt": "2026-11-13T17:52:48+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "a3ff500aa6c2",
+      "title": "One Man's Quest to Create the Perfect Whiskey Glass",
+      "category": "Technology",
+      "publishedAt": "2026-11-13T17:37:32+00:00",
+      "summary": "Article URL: https://www.nytimes.com/2026/11/13/dining/drinks/kurt-josef-zalto-whiskey-glass.html Comments URL: https://news.ycombinator.com/item?id=50486880 Points: 21 # Comments: 1",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "One Man's Quest to Create the Perfect Whiskey Glass",
+          "url": "https://www.nytimes.com/2026/11/13/dining/drinks/kurt-josef-zalto-whiskey-glass.html",
+          "excerpt": "Article URL: https://www.nytimes.com/2026/11/13/dining/drinks/kurt-josef-zalto-whiskey-glass.html Comments URL: https://news.ycombinator.com/item?id=50486880 Points: 21 # Comments: 1",
+          "publishedAt": "2026-11-13T17:37:32+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "4eb604d65a9d",
+      "title": "Fight the climate crisis or go for growth? There is a way Burnham can do both | Jonathan Freedland",
+      "category": "Business",
+      "publishedAt": "2026-11-13T17:10:23+00:00",
+      "summary": "The environmental and economic dilemmas he faces are formidable but, with a bold plan, he could set an example for leaders around the world For politicians of the centre-left especially, it’s the great dilemma of the age. How do you do what everyone can see is essential to save the planet from boiling – even as your voters demand action to get the economy…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Fight the climate crisis or go for growth? There is a way Burnham can do both | Jonathan Freedland",
+          "url": "https://www.theguardian.com/commentisfree/2026/nov/13/fight-climate-crisis-growth-andy-burnham-economic-leaders",
+          "excerpt": "The environmental and economic dilemmas he faces are formidable but, with a bold plan, he could set an example for leaders around the world For politicians of the centre-left especially, it’s the great dilemma of the age. How do you do what everyone can see is essential to save the planet from boiling – even as your voters demand action to get the economy…",
+          "publishedAt": "2026-11-13T17:10:23+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "1cbd2bca9bd5",
+      "title": "Outbursts from a Massive Star",
+      "category": "Science",
+      "publishedAt": "2026-11-13T16:39:33+00:00",
+      "summary": "Using NASA’s Chandra X-ray Observatory, astronomers have discovered what is triggering repeated outbursts from a giant, unstable star located in the galaxy shown in this image released on Nov. 9, 2026. The volatile star, known as AT 2016blu, is in the spiral galaxy NGC 4559, located about 30 million light-years from Earth. Astronomers estimate the […]",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Outbursts from a Massive Star",
+          "url": "https://www.nasa.gov/image-article/outbursts-from-a-massive-star/",
+          "excerpt": "Using NASA’s Chandra X-ray Observatory, astronomers have discovered what is triggering repeated outbursts from a giant, unstable star located in the galaxy shown in this image released on Nov. 9, 2026. The volatile star, known as AT 2016blu, is in the spiral galaxy NGC 4559, located about 30 million light-years from Earth. Astronomers estimate the […]",
+          "publishedAt": "2026-11-13T16:39:33+00:00",
+          "source": "NASA News",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "17ce9d884138",
+      "title": "Gemini Astronaut Photos Inspired Early Earth Observation Program",
+      "category": "Science",
+      "publishedAt": "2026-11-13T16:05:54+00:00",
+      "summary": "Astronauts James A. Lovell Jr. and Edwin E. “Buzz” Aldrin Jr. orbited Earth from November 11 to 15, 1966, on Gemini XII, the final mission of NASA’s Gemini program. In addition to successfully completing rendezvous maneuvers and spacewalks, procedures vital to sending American astronauts to the Moon, the crew was also spurring the development of […]",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Gemini Astronaut Photos Inspired Early Earth Observation Program",
+          "url": "https://www.nasa.gov/image-article/gemini-astronaut-photos-inspired-early-earth-observation-program/",
+          "excerpt": "Astronauts James A. Lovell Jr. and Edwin E. “Buzz” Aldrin Jr. orbited Earth from November 11 to 15, 1966, on Gemini XII, the final mission of NASA’s Gemini program. In addition to successfully completing rendezvous maneuvers and spacewalks, procedures vital to sending American astronauts to the Moon, the crew was also spurring the development of […]",
+          "publishedAt": "2026-11-13T16:05:54+00:00",
+          "source": "NASA News",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "d025de45c9fb",
+      "title": "Watch: Divers explore US ship sunk off Florida coast to create new reef",
+      "category": "World",
+      "publishedAt": "2026-11-13T15:09:40+00:00",
+      "summary": "The ship was intentionally sunk off the coast of Florida in order to create the world's largest artificial ocean reef.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Watch: Divers explore US ship sunk off Florida coast to create new reef",
+          "url": "https://www.bbc.co.uk/news/videos/ckqx5ryx905qo?at_medium=RSS&at_campaign=rss",
+          "excerpt": "The ship was intentionally sunk off the coast of Florida in order to create the world's largest artificial ocean reef.",
+          "publishedAt": "2026-11-13T15:09:40+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "9cfa16a58d04",
+      "title": "500 Lines or Less A 3D Modeller",
+      "category": "Technology",
+      "publishedAt": "2026-11-13T13:47:42+00:00",
+      "summary": "Article URL: https://aosabook.org/en/500L/a-3d-modeller.html Comments URL: https://news.ycombinator.com/item?id=50483431 Points: 36 # Comments: 4",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "500 Lines or Less A 3D Modeller",
+          "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
+          "excerpt": "Article URL: https://aosabook.org/en/500L/a-3d-modeller.html Comments URL: https://news.ycombinator.com/item?id=50483431 Points: 36 # Comments: 4",
+          "publishedAt": "2026-11-13T13:47:42+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
+      "id": "7f4b634fdd63",
+      "title": "The datacenter industry is using propaganda to fight opposition | Samuel Woolley, Dean Jackson and Maia Woluchem",
+      "category": "Business",
+      "publishedAt": "2026-11-13T13:00:18+00:00",
+      "summary": "Big tech has used misdirection, disinformation and jargon to obscure the harm the facilities can cause to communities “Antifa”. “Commies”. “Chinese bots”. Everyone from tech leaders to the president has called datacenter resistance a “ documented psyop ” and a “ Chinese PR thing ”. But why do they make these claims? Our new research finds that the…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "The datacenter industry is using propaganda to fight opposition | Samuel Woolley, Dean Jackson and Maia Woluchem",
+          "url": "https://www.theguardian.com/commentisfree/2026/nov/13/datacenter-industry-propaganda",
+          "excerpt": "Big tech has used misdirection, disinformation and jargon to obscure the harm the facilities can cause to communities “Antifa”. “Commies”. “Chinese bots”. Everyone from tech leaders to the president has called datacenter resistance a “ documented psyop ” and a “ Chinese PR thing ”. But why do they make these claims? Our new research finds that the…",
+          "publishedAt": "2026-11-13T13:00:18+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "101ef19f377d",
+      "title": "SpaceX's giant rocket may leave NASA in the dust",
+      "category": "Science",
+      "publishedAt": "2026-11-13T10:00:00+00:00",
+      "summary": "As it races to develop its new massive rocket, the space launch company is preparing to retire NASA's main ride to the International Space Station.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "SpaceX's giant rocket may leave NASA in the dust",
+          "url": "https://www.npr.org/2026/11/13/nx-s1-6039312/spacex-nasa-starship-iss-dragon-falcon-musk",
+          "excerpt": "As it races to develop its new massive rocket, the space launch company is preparing to retire NASA's main ride to the International Space Station.",
+          "publishedAt": "2026-11-13T10:00:00+00:00",
+          "source": "NPR Science",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "03c2d7073afe",
+      "title": "APOD: 2026 November 13 – NGC 206 and the Star Clouds of Andromeda",
+      "category": "Science",
+      "publishedAt": "2026-11-13T05:05:00+00:00",
+      "summary": "APOD Science APOD APOD: 2026 November 13 – NGC… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. NGC 206 […]",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "APOD: 2026 November 13 – NGC 206 and the Star Clouds of Andromeda",
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-13-ngc-206-and-the-star-clouds-of-andromeda/",
+          "excerpt": "APOD Science APOD APOD: 2026 November 13 – NGC… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. NGC 206 […]",
+          "publishedAt": "2026-11-13T05:05:00+00:00",
+          "source": "NASA News",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "17b6995f9ce6",
+      "title": "A Global Rebound for Mangroves",
+      "category": "Science",
+      "publishedAt": "2026-11-13T05:01:00+00:00",
+      "summary": "After decades of decline, this ecologically significant type of forest is making a comeback.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "A Global Rebound for Mangroves",
+          "url": "https://science.nasa.gov/earth/earth-observatory/a-global-rebound-for-mangroves/",
+          "excerpt": "After decades of decline, this ecologically significant type of forest is making a comeback.",
+          "publishedAt": "2026-11-13T05:01:00+00:00",
+          "source": "NASA News",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "0daac84b88c6",
+      "title": "Who is Colette Kress, interim Nvidia CEO after Jensen Huang exit?",
+      "category": "Business",
+      "publishedAt": "2026-11-13T03:02:06+00:00",
+      "summary": "Chief financial officer, reportedly disparaged by Huang during summer meeting, to take over on short-term basis The hunt is on for a new Nvidia CEO. It comes after a whirlwind week, which saw the company head and co-founder, Jensen Huang, resign amid multiple allegations of extramarital affairs , including one that involved an alleged Chinese spy and two…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Who is Colette Kress, interim Nvidia CEO after Jensen Huang exit?",
+          "url": "https://www.theguardian.com/technology/2026/nov/12/jensen-huang-nvidia-ceo-replacement",
+          "excerpt": "Chief financial officer, reportedly disparaged by Huang during summer meeting, to take over on short-term basis The hunt is on for a new Nvidia CEO. It comes after a whirlwind week, which saw the company head and co-founder, Jensen Huang, resign amid multiple allegations of extramarital affairs , including one that involved an alleged Chinese spy and two…",
+          "publishedAt": "2026-11-13T03:02:06+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "afc611336791",
+      "title": "Will the Eurovision Song Contest succeed in Asia?",
+      "category": "World",
+      "publishedAt": "2026-11-13T02:24:11+00:00",
+      "summary": "The world’s biggest and longest-running song contest is coming to Asia, with eleven countries competing in Bangkok, Thailand on Saturday.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Will the Eurovision Song Contest succeed in Asia?",
+          "url": "https://www.bbc.co.uk/news/videos/cxvg23n59y1ro?at_medium=RSS&at_campaign=rss",
+          "excerpt": "The world’s biggest and longest-running song contest is coming to Asia, with eleven countries competing in Bangkok, Thailand on Saturday.",
+          "publishedAt": "2026-11-13T02:24:11+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "a265b02155d5",
+      "title": "Military cemetery decorum: The tradition behind Hegseth's Veterans Day reprimand",
+      "category": "World",
+      "publishedAt": "2026-11-12T23:42:52+00:00",
+      "summary": "BBC's Bernd Debusmann breaks down why Defence Secretary Hegseth's group was reprimanded at Arlington National Cemetery and the history behind its strict rules of conduct.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Military cemetery decorum: The tradition behind Hegseth's Veterans Day reprimand",
+          "url": "https://www.bbc.co.uk/news/videos/cv5y1309dg3go?at_medium=RSS&at_campaign=rss",
+          "excerpt": "BBC's Bernd Debusmann breaks down why Defence Secretary Hegseth's group was reprimanded at Arlington National Cemetery and the history behind its strict rules of conduct.",
+          "publishedAt": "2026-11-12T23:42:52+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "2da44aa706db",
+      "title": "This week in science: PTSD prediction, phishing while tired, an exoplanet",
+      "category": "Science",
+      "publishedAt": "2026-11-12T22:24:11+00:00",
+      "summary": "The regular news roundup with NPR's science podcast Short Wave covers a possible use for AI in emergency rooms, a distant planet and the link between cybersecurity and Daylight Saving Time.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "This week in science: PTSD prediction, phishing while tired, an exoplanet",
+          "url": "https://www.npr.org/2026/11/12/nx-s1-6031982/this-week-in-science-ptsd-prediction-phishing-while-tired-an-exoplanet",
+          "excerpt": "The regular news roundup with NPR's science podcast Short Wave covers a possible use for AI in emergency rooms, a distant planet and the link between cybersecurity and Daylight Saving Time.",
+          "publishedAt": "2026-11-12T22:24:11+00:00",
+          "source": "NPR Science",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "341a4664d13d",
+      "title": "I Am Artemis Katie Spicer",
+      "category": "Science",
+      "publishedAt": "2026-11-12T20:10:02+00:00",
+      "summary": "For Katie Spicer, embracing opportunity and challenge has led to giant leaps during her time at NASA. Now as the NASA lander integration lead for Blue Origin’s Blue Moon Mark 2 lander, one of the commercially provided human landing systems for NASA’s Artemis program, Spicer will have her handprint on history. Spicer works in the […]",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "I Am Artemis Katie Spicer",
+          "url": "https://www.nasa.gov/missions/artemis/i-am-artemis-katie-spicer/",
+          "excerpt": "For Katie Spicer, embracing opportunity and challenge has led to giant leaps during her time at NASA. Now as the NASA lander integration lead for Blue Origin’s Blue Moon Mark 2 lander, one of the commercially provided human landing systems for NASA’s Artemis program, Spicer will have her handprint on history. Spicer works in the […]",
+          "publishedAt": "2026-11-12T20:10:02+00:00",
+          "source": "NASA News",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "14c088e766cd",
+      "title": "Heart in the Sky at NASA Kennedy",
+      "category": "Science",
+      "publishedAt": "2026-11-12T19:12:49+00:00",
+      "summary": "The U.S. Air Force Thunderbirds create a heart-shaped smoke trail during a flight maneuver near NASA’s Vehicle Assembly Building during the agency’s MAX POWER expo and air show on Sunday, Nov. 8, 2026, at NASA’s Kennedy Space Center in Florida. NASA’s MAX POWER is an aerospace festival celebrating the past, present, and future of flight […]",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Heart in the Sky at NASA Kennedy",
+          "url": "https://www.nasa.gov/image-article/heart-in-the-sky-at-nasa-kennedy/",
+          "excerpt": "The U.S. Air Force Thunderbirds create a heart-shaped smoke trail during a flight maneuver near NASA’s Vehicle Assembly Building during the agency’s MAX POWER expo and air show on Sunday, Nov. 8, 2026, at NASA’s Kennedy Space Center in Florida. NASA’s MAX POWER is an aerospace festival celebrating the past, present, and future of flight […]",
+          "publishedAt": "2026-11-12T19:12:49+00:00",
+          "source": "NASA News",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "6eff6376874d",
+      "title": "Jensen Huang was a busted flush at Nvidia – he had to go | Nils Pratley",
+      "category": "Business",
+      "publishedAt": "2026-11-12T18:46:48+00:00",
+      "summary": "CEO was viewed as ‘irreplaceable’, but recklessness of affair with a woman regarded by US officials as a Chinese spy made him a political liability Half the tech world made up its mind before the facts could be assessed properly. Jensen Huang was “irreplaceable”, said the chorus at the start of this week. Nvidia would melt without the co-founder’s…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Jensen Huang was a busted flush at Nvidia – he had to go | Nils Pratley",
+          "url": "https://www.theguardian.com/technology/nils-pratley-on-finance/2026/nov/12/jensen-huang-was-a-busted-flush-at-nvidia-he-had-to-go",
+          "excerpt": "CEO was viewed as ‘irreplaceable’, but recklessness of affair with a woman regarded by US officials as a Chinese spy made him a political liability Half the tech world made up its mind before the facts could be assessed properly. Jensen Huang was “irreplaceable”, said the chorus at the start of this week. Nvidia would melt without the co-founder’s…",
+          "publishedAt": "2026-11-12T18:46:48+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "d0db878e429d",
+      "title": "NASA Ames Stars of the Month: November 2026",
+      "category": "Science",
+      "publishedAt": "2026-11-12T17:54:32+00:00",
+      "summary": "The NASA Ames Science Directorate recognizes the outstanding contributions of (pictured left to right) Alyssa Villanueva, Steve Howell, and Samuel LeBlanc. Their commitment to the NASA mission represents the entrepreneurial spirit, technical expertise, and collaborative disposition needed to explore this world and beyond. Space Biosciences Star: Alyssa…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "NASA Ames Stars of the Month: November 2026",
+          "url": "https://www.nasa.gov/general/nasa-ames-stars-of-the-month-november-2026/",
+          "excerpt": "The NASA Ames Science Directorate recognizes the outstanding contributions of (pictured left to right) Alyssa Villanueva, Steve Howell, and Samuel LeBlanc. Their commitment to the NASA mission represents the entrepreneurial spirit, technical expertise, and collaborative disposition needed to explore this world and beyond. Space Biosciences Star: Alyssa…",
+          "publishedAt": "2026-11-12T17:54:32+00:00",
+          "source": "NASA News",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "e8dad5c8e21c",
+      "title": "NASA’s Hubble Offers Cosmic Sampler of Targets for Roman",
+      "category": "Science",
+      "publishedAt": "2026-11-12T13:18:40+00:00",
+      "summary": "A gallery of gravitational lenses captured by NASA’s Hubble Space Telescope showcases the diversity of this cosmic phenomenon and lays the groundwork for follow-up observations by the Nancy Grace Roman Space Telescope.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "NASA’s Hubble Offers Cosmic Sampler of Targets for Roman",
+          "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-offers-cosmic-sampler-of-targets-for-roman/",
+          "excerpt": "A gallery of gravitational lenses captured by NASA’s Hubble Space Telescope showcases the diversity of this cosmic phenomenon and lays the groundwork for follow-up observations by the Nancy Grace Roman Space Telescope.",
+          "publishedAt": "2026-11-12T13:18:40+00:00",
+          "source": "NASA News",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "a685f82f3174",
+      "title": "AI helped UK defy expectations – but will economy’s resilience fizzle out?",
+      "category": "Business",
+      "publishedAt": "2026-11-12T13:08:12+00:00",
+      "summary": "Despite John Healey’s defiance, the economy faces threats from a tech slowdown and energy bills this winter AI helps UK economy grow at fastest pace for more than two years The forecasters were clear when John Healey became chancellor in July: Britain’s resilience to the war in the Middle East would not last. The global economic headwinds were too strong…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "AI helped UK defy expectations – but will economy’s resilience fizzle out?",
+          "url": "https://www.theguardian.com/business/2026/nov/12/ai-uk-economy-john-healey",
+          "excerpt": "Despite John Healey’s defiance, the economy faces threats from a tech slowdown and energy bills this winter AI helps UK economy grow at fastest pace for more than two years The forecasters were clear when John Healey became chancellor in July: Britain’s resilience to the war in the Middle East would not last. The global economic headwinds were too strong…",
+          "publishedAt": "2026-11-12T13:08:12+00:00",
+          "source": "The Guardian Business",
+          "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "82ef7ede2f05",
+      "title": "'We've got to run': Inside ruined Ukraine power plant under constant drone threat",
+      "category": "World",
+      "publishedAt": "2026-11-12T13:02:46+00:00",
+      "summary": "Dan Johnson visits one of the country's largest power stations, barely left standing after a ballistic missile strike by Russia.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "'We've got to run': Inside ruined Ukraine power plant under constant drone threat",
+          "url": "https://www.bbc.co.uk/news/videos/cm93rp3gxn6qo?at_medium=RSS&at_campaign=rss",
+          "excerpt": "Dan Johnson visits one of the country's largest power stations, barely left standing after a ballistic missile strike by Russia.",
+          "publishedAt": "2026-11-12T13:02:46+00:00",
+          "source": "BBC World",
+          "category": "World"
+        }
+      ]
+    },
+    {
+      "id": "8dfedd22892e",
+      "title": "Through NASA’s Lens: Capturing Space Shuttle Endeavour’s Move to LA",
+      "category": "Science",
+      "publishedAt": "2026-11-12T13:00:00+00:00",
+      "summary": "As a new exhibit opens showcasing NASA’s space shuttle Endeavour, NASA photographers look back at the final mission. These photographers documented the iconic images shared around the world on Sept. 21, 2012, while millions watched space shuttle Endeavour fly on top of the agency’s 747 Shuttle Carrier Aircraft for the last time. Endeavour’s new home […]",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Through NASA’s Lens: Capturing Space Shuttle Endeavour’s Move to LA",
+          "url": "https://www.nasa.gov/centers-and-facilities/armstrong/through-nasas-lens-capturing-space-shuttle-endeavours-move-to-la/",
+          "excerpt": "As a new exhibit opens showcasing NASA’s space shuttle Endeavour, NASA photographers look back at the final mission. These photographers documented the iconic images shared around the world on Sept. 21, 2012, while millions watched space shuttle Endeavour fly on top of the agency’s 747 Shuttle Carrier Aircraft for the last time. Endeavour’s new home […]",
+          "publishedAt": "2026-11-12T13:00:00+00:00",
+          "source": "NASA News",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "25b9c6c58b62",
+      "title": "APOD: 2026 November 12 – Moon, Venus and Spica Meet",
+      "category": "Science",
+      "publishedAt": "2026-11-12T05:05:00+00:00",
+      "summary": "APOD Science APOD APOD: 2026 November 12 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Moon, Venus and […]",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "APOD: 2026 November 12 – Moon, Venus and Spica Meet",
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-12-moon-venus-and-spica-meet/",
+          "excerpt": "APOD Science APOD APOD: 2026 November 12 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Moon, Venus and […]",
+          "publishedAt": "2026-11-12T05:05:00+00:00",
+          "source": "NASA News",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "f679d6cf2ccd",
+      "title": "Scientists think they've found ancient remnants of dinosaur blood",
+      "category": "Science",
+      "publishedAt": "2026-11-09T22:00:49+00:00",
+      "summary": "Scientists have studied plenty of dinosaur bones, eggs and footprints. Now, some think they've found their strongest evidence yet of dinosaur blood.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Scientists think they've found ancient remnants of dinosaur blood",
+          "url": "https://www.npr.org/2026/11/09/nx-s1-6026704/scientists-think-theyve-found-ancient-remnants-of-dinosaur-blood",
+          "excerpt": "Scientists have studied plenty of dinosaur bones, eggs and footprints. Now, some think they've found their strongest evidence yet of dinosaur blood.",
+          "publishedAt": "2026-11-09T22:00:49+00:00",
+          "source": "NPR Science",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "cb57b299e077",
+      "title": "Mice can learn to fight by watching tiny rodent cage matches, study finds",
+      "category": "Science",
+      "publishedAt": "2026-11-09T21:39:35+00:00",
+      "summary": "Brain scientists set up \"gladiator style\" cage matches for mice — and found that simply observing fighting matches can rewire a mouse's brain to resemble those who actually fought.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Mice can learn to fight by watching tiny rodent cage matches, study finds",
+          "url": "https://www.npr.org/2026/11/09/nx-s1-6027938/mice-can-learn-to-fight-by-watching-tiny-rodent-cage-matches-study-finds",
+          "excerpt": "Brain scientists set up \"gladiator style\" cage matches for mice — and found that simply observing fighting matches can rewire a mouse's brain to resemble those who actually fought.",
+          "publishedAt": "2026-11-09T21:39:35+00:00",
+          "source": "NPR Science",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "023e9af4583c",
+      "title": "He was diagnosed with cancer. Then he was told he lost his Medicaid",
+      "category": "Science",
+      "publishedAt": "2026-11-09T10:00:00+00:00",
+      "summary": "Health clinics and organizations advocating for poor and working-class Nebraskans say the rollout of Medicaid work requirements has been rife with problems.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "He was diagnosed with cancer. Then he was told he lost his Medicaid",
+          "url": "https://www.npr.org/2026/11/09/nx-s1-6032732/trump-medicaid-health-nebraska-work-insurance",
+          "excerpt": "Health clinics and organizations advocating for poor and working-class Nebraskans say the rollout of Medicaid work requirements has been rife with problems.",
+          "publishedAt": "2026-11-09T10:00:00+00:00",
+          "source": "NPR Science",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "c1496ce38262",
+      "title": "NASA is looking for astronauts to live and work on the Moon",
+      "category": "Science",
+      "publishedAt": "2026-11-08T23:36:47+00:00",
+      "summary": "NASA needs more recruits in order to return to the moon after being gone more than half a century.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "NASA is looking for astronauts to live and work on the Moon",
+          "url": "https://www.npr.org/2026/11/08/nx-s1-6034002/nasa-astronaut-class-applications-2026",
+          "excerpt": "NASA needs more recruits in order to return to the moon after being gone more than half a century.",
+          "publishedAt": "2026-11-08T23:36:47+00:00",
+          "source": "NPR Science",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "ab5c1d3078a8",
+      "title": "Climate change is altering the colors we see in the world: an illustrated journey",
+      "category": "Science",
+      "publishedAt": "2026-11-08T11:00:00+00:00",
+      "summary": "From Arctic landscapes to insect bodies, climate change is shifting the familiar colors of nature.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Climate change is altering the colors we see in the world: an illustrated journey",
+          "url": "https://www.npr.org/2026/11/08/nx-s1-5393776/color-climate-change-coral-lakes",
+          "excerpt": "From Arctic landscapes to insect bodies, climate change is shifting the familiar colors of nature.",
+          "publishedAt": "2026-11-08T11:00:00+00:00",
+          "source": "NPR Science",
+          "category": "Science"
+        }
+      ]
+    },
+    {
+      "id": "b32042b45e5b",
+      "title": "How octopuses squeeze through teeny tiny holes",
+      "category": "Science",
+      "publishedAt": "2026-11-06T22:24:10+00:00",
+      "summary": "Robots used during search and rescue operations need to be able to wriggle through narrow cracks and crevices. Researchers have turned to a natural contortionist for inspiration — the octopus.",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "How octopuses squeeze through teeny tiny holes",
+          "url": "https://www.npr.org/2026/11/06/nx-s1-6027897/how-octopuses-squeeze-through-teeny-tiny-holes",
+          "excerpt": "Robots used during search and rescue operations need to be able to wriggle through narrow cracks and crevices. Researchers have turned to a natural contortionist for inspiration — the octopus.",
+          "publishedAt": "2026-11-06T22:24:10+00:00",
+          "source": "NPR Science",
+          "category": "Science"
+        }
+      ]
     }
   ]
 }

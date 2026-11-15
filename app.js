@@ -83,10 +83,13 @@ function makeElement(tag, className, text) {
 
 function populateFilters(data) {
   const categories = new Map();
-  const sources = new Map();
+  const sources = new Set();
   for (const story of stories) {
     if (story.category) categories.set(story.category, (categories.get(story.category) || 0) + 1);
-    if (story.source) sources.set(story.source, story.source);
+    for (const source of story.sources || []) {
+      const sourceName = source.source || source.name;
+      if (sourceName) sources.add(sourceName);
+    }
   }
 
   categoryNav.replaceChildren();
@@ -99,7 +102,7 @@ function populateFilters(data) {
   sourceFilter.replaceChildren();
   sourceFilter.append(new Option("All sources", "all"));
   const configuredSources = Array.isArray(data.sources) ? data.sources : [];
-  const sourceNames = new Set([...sources.keys(), ...configuredSources.map((source) => source.name).filter(Boolean)]);
+  const sourceNames = new Set([...sources, ...configuredSources.map((source) => source.name).filter(Boolean)]);
   [...sourceNames].sort((a, b) => a.localeCompare(b)).forEach((name) => sourceFilter.append(new Option(name, name)));
 }
 
@@ -120,8 +123,10 @@ function visibleStories() {
   const selectedSource = sourceFilter.value;
   const result = stories.filter((story) => {
     const categoryMatches = activeCategory === "all" || story.category === activeCategory;
-    const sourceMatches = selectedSource === "all" || story.source === selectedSource;
-    const searchable = `${story.title} ${story.excerpt} ${story.source} ${story.category}`.toLocaleLowerCase();
+    const sources = story.sources || [];
+    const sourceMatches = selectedSource === "all" || sources.some((source) => (source.source || source.name) === selectedSource);
+    const sourceText = sources.map((source) => `${source.source || source.name} ${source.title} ${source.excerpt}`).join(" ");
+    const searchable = `${story.title} ${story.summary} ${sourceText} ${story.category}`.toLocaleLowerCase();
     return categoryMatches && sourceMatches && (!query || searchable.includes(query));
   });
   result.sort((first, second) => {
@@ -149,17 +154,26 @@ function renderStory(story, index) {
   titleLink.rel = "noopener noreferrer";
   title.append(titleLink);
   body.append(title);
-  if (story.excerpt) body.append(makeElement("p", "story-excerpt", story.excerpt));
+  if (story.summary) body.append(makeElement("p", "story-excerpt", story.summary));
+  for (const coverage of story.additionalCoverage || []) {
+    if (!coverage.excerpt) continue;
+    const additional = makeElement("p", "story-excerpt additional-coverage");
+    additional.append(makeElement("strong", "", `Also reported by ${coverage.source || coverage.name}: `));
+    additional.append(document.createTextNode(coverage.excerpt));
+    body.append(additional);
+  }
 
   const sourceLine = makeElement("div", "story-source");
-  sourceLine.append(makeElement("span", "", story.source || "Unknown source"));
-  sourceLine.append(makeElement("span", "source-dot"));
-  sourceLine.append(makeElement("span", "", "Original reporting"));
-  const readLink = makeElement("a", "read-link", "Read at source ↗");
-  readLink.href = story.url;
-  readLink.target = "_blank";
-  readLink.rel = "noopener noreferrer";
-  sourceLine.append(readLink);
+  const sources = story.sources || [];
+  sourceLine.append(makeElement("span", "", sources.length > 1 ? "Coverage:" : "Source:"));
+  sources.forEach((source, sourceIndex) => {
+    if (sourceIndex > 0) sourceLine.append(makeElement("span", "source-dot"));
+    const sourceLink = makeElement("a", "read-link", `${source.source || source.name || "Original source"} ↗`);
+    sourceLink.href = source.url;
+    sourceLink.target = "_blank";
+    sourceLink.rel = "noopener noreferrer";
+    sourceLine.append(sourceLink);
+  });
   body.append(sourceLine);
   article.append(meta, body);
   return article;
@@ -188,7 +202,16 @@ async function loadBrief() {
     const response = await fetch("data/feeds.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`Feed data returned ${response.status}`);
     const data = await response.json();
-    stories = Array.isArray(data.entries) ? data.entries.filter((story) => story && /^https?:\/\//i.test(story.url || "")) : [];
+    stories = Array.isArray(data.groups)
+      ? data.groups.filter((group) => group && Array.isArray(group.sources) && group.sources.some((source) => /^https?:\/\//i.test(source.url || "")))
+      : (Array.isArray(data.entries) ? data.entries.filter((story) => story && /^https?:\/\//i.test(story.url || "")).map((story) => ({
+          id: story.url,
+          title: story.title,
+          category: story.category,
+          publishedAt: story.publishedAt,
+          summary: story.excerpt,
+          sources: [{ name: story.source, url: story.url, title: story.title, excerpt: story.excerpt }],
+        })) : []);
     populateFilters(data);
     const generated = safeDate(data.generatedAt);
     updatedAt.textContent = generated ? `UPDATED ${new Intl.DateTimeFormat(undefined, { hour: "2-digit", minute: "2-digit" }).format(generated)}` : "LATEST EDITION";

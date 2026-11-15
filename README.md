@@ -30,15 +30,17 @@ Edit `sources.json`. Each entry has a display name, an RSS/Atom URL, and a categ
 
 Use feeds published by the source itself, check its terms and reuse policy, and keep the source attribution intact. News Aggregator only displays a title and a short excerpt; readers follow a link to read the full article at its original home. Do not remove paywalls, republish full articles, or assume a feed grants permission to reuse copyrighted images or text. If a publisher asks you to stop using its feed, remove it.
 
+During each feed refresh, the collector conservatively groups only cross-publisher entries with strong headline overlap, the same category, and publication times within 48 hours. A grouped card keeps the newest headline, shows the lead feed excerpt, labels any additional feed excerpts by source, and links to every original report. The generated digest retains the raw entries as well as grouped briefings. This is attribution-preserving aggregation, not independent original reporting; add human-written analysis for genuinely original editorial content.
+
 The collector limits each response to 2 MB, each source to 24 entries, each excerpt to 360 characters, and the full digest to 160 entries. It only accepts HTTP(S) story links.
 
 ## Google Search
 
 The site now publishes a canonical URL, `robots.txt`, and `sitemap.xml` at the live Pages hostname. To ask Google to crawl it:
 
-1. Sign in to [Google Search Console](https://search.google.com/search-console/) and add a **URL prefix** property for `https://newsaggregator-gopi.pages.dev/`.
-2. Verify ownership using the HTML-file method. The provided file `google622a2fa14a1f2982.html` is deployed at the site root and must remain there after verification. Open `https://newsaggregator-gopi.pages.dev/google622a2fa14a1f2982.html` to confirm it is reachable, then click **Verify** in Search Console.
-3. In Search Console, open **Sitemaps**, submit `https://newsaggregator-gopi.pages.dev/sitemap.xml`, and use **URL inspection** to request indexing of the homepage.
+1. Sign in to [Google Search Console](https://search.google.com/search-console/) and add a **URL prefix** property for the hostname you want to monitor.
+2. Verify ownership for that property. `google622a2fa14a1f2982.html` is deployed at the root of both sites and must remain there. If Search Console supplies a different verification token for the second hostname, add that file to both deployment bundles and the workflow.
+3. Submit that hostname's `/sitemap.xml` in Search Console and use **URL inspection** to request indexing of its homepage.
 
 Indexing and rankings are not immediate or guaranteed. Search engines may take days or longer to crawl a new site. A feed aggregator should add original summaries, analysis, or other editorial value; simply republishing headlines and excerpts may not rank well and can be insufficient for monetization approval.
 
@@ -66,15 +68,13 @@ The header displays persistent total page views and today's views in UTC. The co
 
 ## Publish for free with Cloudflare Pages
 
-The original site remains live at <https://newsaggregator-gopi.pages.dev>. The separate `goodthingstoknowtoday.pages.dev` project is being set up with its own canonical URL and sitemap; deploying it does not replace the original. The previous <https://fieldnotes-erg.pages.dev> deployment also remains active as a backup.
+The sites are live at <https://goodthingstoknowtoday.pages.dev> and <https://newsaggregator-gopi.pages.dev>. Each deployment has its own canonical URL, sitemap, and robots directive. The previous <https://fieldnotes-erg.pages.dev> deployment also remains active as a backup.
 
-The current Direct Uploads are snapshots of `data/feeds.json`. RSS updates will run automatically every six hours only after this project is pushed to a GitHub repository with Actions enabled. This workspace has not yet been connected to a GitHub repository, so the scheduled workflow is not running yet.
+The project is in the public GitHub repository [pbnkgopiram/newsaggregator](https://github.com/pbnkgopiram/newsaggregator). GitHub Actions refreshes the RSS feeds every six hours, then deploys updated assets to both Pages projects.
 
-1. Create a public GitHub repository and add these project files to its `main` branch.
-2. Create a Cloudflare API token for the account containing the two Pages projects, with **Cloudflare Pages: Edit** permission. Find that Pages account ID in the Cloudflare dashboard. The page-view counter Worker lives in a separate Cloudflare account and does not need to be redeployed for RSS refreshes.
-3. In the GitHub repository, open **Settings → Secrets and variables → Actions** and add repository secrets named `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` with those values. Keep the token private and never put it in project files.
-4. Open **Actions → Refresh and deploy News Aggregator**, choose **Run workflow**, and wait for deployment. The workflow refreshes feeds and publishes hostname-specific static assets to both Pages projects.
-5. After setup, the workflow deploys on pushes to `main` and refreshes on a six-hour schedule. Scheduled jobs may be delayed during busy periods. The Cloudflare free plan currently allows up to 500 Pages builds per month, which is within this schedule's typical usage.
+The workflow requires the repository secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. They are configured in **Settings → Secrets and variables → Actions**. The API token needs **Cloudflare Pages: Edit** access on the account containing both Pages projects. Keep the token private and never put it in project files. Scheduled runs can be delayed by GitHub during busy periods.
+
+The feed collector groups only cross-publisher headlines with strong title overlap, matching category, and publication times within 48 hours. It preserves every publisher link and excerpt. If no stories meet those strict criteria, the site displays individual briefings rather than merging unrelated coverage. Grouped source excerpts are attributed reporting, not original independent reporting.
 
 Cloudflare Pages and GitHub Actions can both be used without charge within their current free-tier quotas. A custom domain and domain registration may cost money. Free service policies and quotas can change, so check the current terms before relying on them for a business.
 

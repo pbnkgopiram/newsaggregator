@@ -7,7 +7,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import fetch_feeds
-from fetch_feeds import clean_excerpt, parse_feed
+from fetch_feeds import clean_excerpt, group_entries, parse_feed
 
 
 class FeedParsingTests(unittest.TestCase):
@@ -39,6 +39,29 @@ class FeedParsingTests(unittest.TestCase):
         excerpt = clean_excerpt("<p>" + ("useful words " * 80) + "</p>", 40)
         self.assertLessEqual(len(excerpt), 40)
         self.assertTrue(excerpt.endswith("…"))
+
+    def test_groups_strong_cross_source_coverage_and_keeps_attributions(self):
+        entries = [
+          {"title": "City council approves new clean water plan", "url": "https://one.example/story", "excerpt": "Council approved the clean water plan.", "publishedAt": "2026-11-15T10:00:00+00:00", "source": "Source One", "category": "World"},
+          {"title": "New clean water plan approved by city council", "url": "https://two.example/story", "excerpt": "The city council approved a clean water plan.", "publishedAt": "2026-11-15T11:00:00+00:00", "source": "Source Two", "category": "World"},
+        ]
+        groups = group_entries(entries)
+        self.assertEqual(len(groups), 1)
+        self.assertEqual(len(groups[0]["sources"]), 2)
+        self.assertIn("Source One", {item["source"] for item in groups[0]["sources"]})
+        self.assertIn("Source Two", {item["source"] for item in groups[0]["sources"]})
+        combined_summary = " ".join([groups[0]["summary"], *(item["excerpt"] for item in groups[0]["additionalCoverage"])])
+        self.assertIn("Council approved", combined_summary)
+        self.assertIn("The city council approved", combined_summary)
+
+    def test_does_not_group_same_source_old_or_different_category(self):
+        base = {"title": "City council approves new clean water plan", "url": "https://one.example/story", "excerpt": "Council approved the clean water plan.", "publishedAt": "2026-11-15T10:00:00+00:00", "source": "Source One", "category": "World"}
+        same_source = {**base, "url": "https://one.example/another", "title": "New clean water plan approved by city council"}
+        old_story = {**base, "url": "https://two.example/old", "title": "New clean water plan approved by city council", "source": "Source Two", "publishedAt": "2026-11-10T10:00:00+00:00"}
+        other_category = {**base, "url": "https://two.example/tech", "title": "New clean water plan approved by city council", "source": "Source Two", "category": "Technology"}
+        self.assertEqual(len(group_entries([base, same_source])), 2)
+        self.assertEqual(len(group_entries([base, old_story])), 2)
+        self.assertEqual(len(group_entries([base, other_category])), 2)
 
     def test_all_sources_failing_preserves_last_good_digest(self):
       with tempfile.TemporaryDirectory() as temporary_directory:

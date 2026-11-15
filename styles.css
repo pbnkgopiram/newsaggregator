@@ -100,6 +100,8 @@ h2 { margin: 0; font-family: var(--serif); font-size: 26px; font-weight: 500; le
 .story-title a { text-decoration: none; text-decoration-color: var(--orange); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .story-title a:hover { text-decoration: underline; }
 .story-excerpt { max-width: 660px; margin: 9px 0 11px; color: #5d6962; font-size: 11px; line-height: 1.65; }
+.additional-coverage { margin-top: 6px; padding-left: 10px; border-left: 1px solid var(--line); }
+.additional-coverage strong { color: var(--ink); font-weight: 600; }
 .story-source { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; color: var(--muted); font-family: var(--mono); font-size: 8px; text-transform: uppercase; letter-spacing: .04em; }
 .source-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--orange); }
 .read-link { margin-left: 3px; color: var(--green); text-decoration: none; font-size: 8px; }

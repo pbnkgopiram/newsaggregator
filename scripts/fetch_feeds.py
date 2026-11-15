@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import email.utils
+import hashlib
 import html
 import json
 import re
@@ -26,6 +27,12 @@ MAX_RESPONSE_BYTES = 2_000_000
 MAX_ITEMS_PER_SOURCE = 24
 MAX_EXCERPT_LENGTH = 360
 MAX_TOTAL_ENTRIES = 160
+MAX_GROUP_AGE_HOURS = 48
+TITLE_STOP_WORDS = {
+    "about", "after", "amid", "and", "are", "around", "been", "before", "being", "but",
+    "for", "from", "have", "into", "its", "more", "new", "over", "said", "says", "than",
+    "that", "the", "their", "them", "there", "they", "this", "under", "with", "will",
+}
 
 
 class _TextExtractor(HTMLParser):
@@ -100,6 +107,78 @@ def _iso_date(value: str) -> str | None:
     if parsed.tzinfo is None:
         parsed = parsed.replace(tzinfo=timezone.utc)
     return parsed.astimezone(timezone.utc).isoformat()
+
+
+def _title_tokens(title: str) -> set[str]:
+    return {
+        token
+        for token in re.findall(r"[a-z0-9]+", title.lower())
+        if len(token) > 2 and token not in TITLE_STOP_WORDS
+    }
+
+
+def _can_group(first: dict[str, Any], second: dict[str, Any]) -> bool:
+    if first["source"] == second["source"] or first["category"] != second["category"]:
+        return False
+    first_date = _iso_date(first.get("publishedAt") or "")
+    second_date = _iso_date(second.get("publishedAt") or "")
+    if first_date and second_date:
+        gap = abs((datetime.fromisoformat(first_date) - datetime.fromisoformat(second_date)).total_seconds())
+        if gap > MAX_GROUP_AGE_HOURS * 3600:
+            return False
+
+    first_tokens = _title_tokens(first["title"])
+    second_tokens = _title_tokens(second["title"])
+    shared = first_tokens & second_tokens
+    smaller_title_size = min(len(first_tokens), len(second_tokens))
+    return smaller_title_size >= 3 and len(shared) >= 3 and len(shared) / smaller_title_size >= 0.6
+
+
+def group_entries(entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    clusters: list[list[dict[str, Any]]] = []
+    for entry in sorted(entries, key=lambda item: item.get("publishedAt") or "", reverse=True):
+        matching_cluster = next(
+            (
+                cluster
+                for cluster in clusters
+                if all(existing["source"] != entry["source"] for existing in cluster)
+                and any(_can_group(existing, entry) for existing in cluster)
+            ),
+            None,
+        )
+        if matching_cluster is None:
+            clusters.append([entry])
+        else:
+            matching_cluster.append(entry)
+
+    groups: list[dict[str, Any]] = []
+    for cluster in clusters:
+        lead = max(cluster, key=lambda item: item.get("publishedAt") or "")
+        excerpts: list[str] = []
+        for item in cluster:
+            if item.get("excerpt") and item["excerpt"] not in excerpts:
+                excerpts.append(item["excerpt"])
+        group_id = hashlib.sha1(lead["url"].encode("utf-8")).hexdigest()[:12]
+        groups.append(
+            {
+                "id": group_id,
+                "title": lead["title"],
+                "category": lead["category"],
+                "publishedAt": lead.get("publishedAt"),
+                "summary": lead.get("excerpt", ""),
+                "additionalCoverage": [
+                    {
+                        "source": item["source"],
+                        "url": item["url"],
+                        "excerpt": item["excerpt"],
+                    }
+                    for item in cluster
+                    if item is not lead and item.get("excerpt") and item["excerpt"] not in {lead.get("excerpt", "")}
+                ],
+                "sources": cluster,
+            }
+        )
+    return groups
 
 
 def parse_feed(xml_bytes: bytes, source: dict[str, str], limit: int = MAX_ITEMS_PER_SOURCE) -> list[dict[str, Any]]:
@@ -177,6 +256,7 @@ def collect(sources: list[dict[str, str]]) -> dict[str, Any]:
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "sources": statuses,
         "entries": entries,
+        "groups": group_entries(entries),
     }
 
 
