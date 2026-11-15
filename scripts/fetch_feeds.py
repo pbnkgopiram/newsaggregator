@@ -53,7 +53,9 @@ def clean_excerpt(value: str, limit: int = MAX_EXCERPT_LENGTH) -> str:
     except Exception:
         text = value
     text = html.unescape(text)
-    text = re.sub(r"(?is)\b(?:Article URL|Comments URL|Source)\s*:?\s*(?:https?://\S+)?", " ", text)
+    text = re.sub(r"(?is)\b(?:Article URL|Comments URL)\s*:?\s*(?:https?://\S+)?", " ", text)
+    text = re.sub(r"(?is)\bSource\s*:\s*\[[^\]]+\]\([^)]*\)", " ", text)
+    text = re.sub(r"(?is)\bSource\s*:\s*https?://\S+", " ", text)
     text = re.sub(r"(?is)\bPoints\s*:\s*\d+\s*", " ", text)
     text = re.sub(r"(?is)#\s*Comments\s*:\s*\d+\s*", " ", text)
     text = re.sub(r"\s+", " ", text).strip()

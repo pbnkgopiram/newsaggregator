@@ -214,7 +214,11 @@ function renderStory(story, index) {
     body.append(teaser);
   }
 
-  if (story.summary) body.append(makeElement("p", "story-excerpt", story.summary));
+  const summaryText = typeof story.summary === "string" ? story.summary.trim() : "";
+  const excerptText = typeof story.excerpt === "string" ? story.excerpt.trim() : "";
+  const teaserText = teaserLines.join(" ").trim();
+  const shouldShowExcerpt = summaryText && summaryText !== teaserText && summaryText !== excerptText ? true : Boolean(summaryText && !teaserText && excerptText !== summaryText);
+  if (shouldShowExcerpt) body.append(makeElement("p", "story-excerpt", summaryText));
   for (const coverage of story.additionalCoverage || []) {
     if (!coverage.excerpt) continue;
     const additional = makeElement("p", "story-excerpt additional-coverage");

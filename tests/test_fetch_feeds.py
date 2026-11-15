@@ -45,6 +45,10 @@ class FeedParsingTests(unittest.TestCase):
         self.assertEqual(excerpt, 'Yes, i really hate "dict[str, ANY]"')
         self.assertEqual(clean_excerpt('Article URL: https://github.com/Tthanh2k6/turbo-browser-mcp Comments URL: https://news.ycombinator.com/item?id=50503930 Points: 14 # Comments: 0'), '')
 
+    def test_removes_markdown_source_link_from_excerpt(self):
+        excerpt = clean_excerpt('It is the latest development in a months-long challenge to the president\'s plans for East Potomac Golf Links. Source: [BBC World](https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o?at_medium=RSS&at_campaign=rss)')
+        self.assertEqual(excerpt, "It is the latest development in a months-long challenge to the president's plans for East Potomac Golf Links.")
+
     def test_groups_strong_cross_source_coverage_and_keeps_attributions(self):
         entries = [
           {"title": "City council approves new clean water plan", "url": "https://one.example/story", "excerpt": "Council approved the clean water plan.", "publishedAt": "2026-11-15T10:00:00+00:00", "source": "Source One", "category": "World"},
