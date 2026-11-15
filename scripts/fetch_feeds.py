@@ -163,6 +163,7 @@ def group_entries(entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
             {
                 "id": group_id,
                 "title": lead["title"],
+                "url": lead.get("url", ""),
                 "category": lead["category"],
                 "publishedAt": lead.get("publishedAt"),
                 "summary": lead.get("excerpt", ""),

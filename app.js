@@ -146,12 +146,24 @@ function renderStory(story, index) {
   if (parsedDate) date.dateTime = parsedDate.toISOString();
   meta.append(category, date);
 
+  const storyUrl = (() => {
+    const candidate = story.url || story.link || (Array.isArray(story.sources) ? story.sources[0]?.url || story.sources[0]?.link : "");
+    return typeof candidate === "string" && /^https?:\/\//i.test(candidate) ? candidate : "";
+  })();
+
   const body = makeElement("div", "story-body");
   const title = makeElement("h3", "story-title");
   const titleLink = makeElement("a", "", story.title || "Untitled story");
-  titleLink.href = story.url;
-  titleLink.target = "_blank";
-  titleLink.rel = "noopener noreferrer";
+  if (storyUrl) {
+    titleLink.href = storyUrl;
+    titleLink.target = "_blank";
+    titleLink.rel = "noopener noreferrer";
+  } else {
+    titleLink.href = "#";
+    titleLink.setAttribute("aria-disabled", "true");
+    titleLink.tabIndex = -1;
+    titleLink.style.pointerEvents = "none";
+  }
   title.append(titleLink);
   body.append(title);
   if (story.summary) body.append(makeElement("p", "story-excerpt", story.summary));
@@ -203,10 +215,17 @@ async function loadBrief() {
     if (!response.ok) throw new Error(`Feed data returned ${response.status}`);
     const data = await response.json();
     stories = Array.isArray(data.groups)
-      ? data.groups.filter((group) => group && Array.isArray(group.sources) && group.sources.some((source) => /^https?:\/\//i.test(source.url || "")))
+      ? data.groups
+          .filter((group) => group && Array.isArray(group.sources) && group.sources.some((source) => /^https?:\/\//i.test(source.url || "")))
+          .map((group) => ({
+            ...group,
+            url: group.url || group.sources?.[0]?.url || "",
+            source: group.source || group.sources?.[0]?.source || group.sources?.[0]?.name || "",
+          }))
       : (Array.isArray(data.entries) ? data.entries.filter((story) => story && /^https?:\/\//i.test(story.url || "")).map((story) => ({
           id: story.url,
           title: story.title,
+          url: story.url,
           category: story.category,
           publishedAt: story.publishedAt,
           summary: story.excerpt,

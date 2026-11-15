@@ -47,6 +47,7 @@ class FeedParsingTests(unittest.TestCase):
         ]
         groups = group_entries(entries)
         self.assertEqual(len(groups), 1)
+        self.assertEqual(groups[0]["url"], "https://two.example/story")
         self.assertEqual(len(groups[0]["sources"]), 2)
         self.assertIn("Source One", {item["source"] for item in groups[0]["sources"]})
         self.assertIn("Source Two", {item["source"] for item in groups[0]["sources"]})
