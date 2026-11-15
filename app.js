@@ -155,6 +155,27 @@ function visibleStories() {
   return result;
 }
 
+function makeStoryTeaser(story) {
+  const raw = (story.summary || story.excerpt || story.title || "").replace(/https?:\/\/\S+/gi, "");
+  const cleaned = raw.replace(/\s+/g, " ").replace(/[\u2018\u2019\u201C\u201D]/g, "").trim();
+  if (!cleaned) return [];
+
+  const words = cleaned.split(/\s+/).filter(Boolean);
+  if (words.length <= 10) return [cleaned];
+
+  const chunkCount = Math.min(5, Math.max(2, Math.ceil(words.length / 12)));
+  const chunkSize = Math.ceil(words.length / chunkCount);
+  const lines = [];
+
+  for (let index = 0; index < words.length; index += chunkSize) {
+    const chunk = words.slice(index, index + chunkSize).join(" ");
+    if (chunk) lines.push(chunk);
+    if (lines.length >= 5) break;
+  }
+
+  return lines.map((line) => line.replace(/\s+/g, " ").trim()).filter(Boolean);
+}
+
 function renderStory(story, index) {
   const article = makeElement("article", "story-card");
   article.style.animationDelay = `${Math.min(index, 8) * 35}ms`;
@@ -185,6 +206,14 @@ function renderStory(story, index) {
   }
   title.append(titleLink);
   body.append(title);
+
+  const teaserLines = makeStoryTeaser(story);
+  if (teaserLines.length) {
+    const teaser = makeElement("div", "story-summary");
+    teaserLines.forEach((line) => teaser.append(makeElement("span", "story-summary-line", line)));
+    body.append(teaser);
+  }
+
   if (story.summary) body.append(makeElement("p", "story-excerpt", story.summary));
   for (const coverage of story.additionalCoverage || []) {
     if (!coverage.excerpt) continue;

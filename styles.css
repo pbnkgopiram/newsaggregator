@@ -99,6 +99,8 @@ h2 { margin: 0; font-family: var(--serif); font-size: 26px; font-weight: 500; le
 .story-title { max-width: 680px; margin: 0; font-family: var(--serif); font-size: 24px; line-height: 1.14; font-weight: 500; letter-spacing: 0; }
 .story-title a { text-decoration: none; text-decoration-color: var(--orange); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .story-title a:hover { text-decoration: underline; }
+.story-summary { margin: 10px 0 12px; padding-left: 12px; border-left: 2px solid var(--green); display: grid; gap: 5px; max-width: 660px; }
+.story-summary-line { display: block; color: #47564f; font-size: 10.5px; line-height: 1.45; }
 .story-excerpt { max-width: 660px; margin: 9px 0 11px; color: #5d6962; font-size: 11px; line-height: 1.65; }
 .additional-coverage { margin-top: 6px; padding-left: 10px; border-left: 1px solid var(--line); }
 .additional-coverage strong { color: var(--ink); font-weight: 600; }
