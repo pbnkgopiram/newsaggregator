@@ -40,6 +40,11 @@ class FeedParsingTests(unittest.TestCase):
         self.assertLessEqual(len(excerpt), 40)
         self.assertTrue(excerpt.endswith("…"))
 
+    def test_removes_hacker_news_metadata_from_excerpt(self):
+        excerpt = clean_excerpt('Yes, i really hate "dict[str, ANY]" Comments URL: https://news.ycombinator.com/item?id=50504072 Points: 28 # Comments: 9')
+        self.assertEqual(excerpt, 'Yes, i really hate "dict[str, ANY]"')
+        self.assertEqual(clean_excerpt('Article URL: https://github.com/Tthanh2k6/turbo-browser-mcp Comments URL: https://news.ycombinator.com/item?id=50503930 Points: 14 # Comments: 0'), '')
+
     def test_groups_strong_cross_source_coverage_and_keeps_attributions(self):
         entries = [
           {"title": "City council approves new clean water plan", "url": "https://one.example/story", "excerpt": "Council approved the clean water plan.", "publishedAt": "2026-11-15T10:00:00+00:00", "source": "Source One", "category": "World"},

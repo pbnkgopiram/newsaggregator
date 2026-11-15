@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T06:42:56.776023+00:00",
+  "generatedAt": "2026-11-15T06:45:33.208903+00:00",
   "sources": [
     {
       "name": "BBC World",
@@ -47,7 +47,7 @@
     {
       "title": "Show HN: Gawain – Require type hints on all Python variables",
       "url": "https://github.com/matheuzgomes/gawain",
-      "excerpt": "Yes, i really hate \"dict[str, ANY]\" Comments URL: https://news.ycombinator.com/item?id=50504072 Points: 28 # Comments: 9",
+      "excerpt": "Yes, i really hate \"dict[str, ANY]\"",
       "publishedAt": "2026-11-15T04:39:25+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -55,7 +55,7 @@
     {
       "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
       "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
-      "excerpt": "Article URL: https://github.com/Tthanh2k6/turbo-browser-mcp Comments URL: https://news.ycombinator.com/item?id=50503930 Points: 19 # Comments: 1",
+      "excerpt": "",
       "publishedAt": "2026-11-15T04:09:11+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -87,7 +87,7 @@
     {
       "title": "My favourite modern NES games",
       "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
-      "excerpt": "Article URL: https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/ Comments URL: https://news.ycombinator.com/item?id=50503465 Points: 22 # Comments: 0",
+      "excerpt": "",
       "publishedAt": "2026-11-15T02:41:25+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -95,7 +95,7 @@
     {
       "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
       "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
-      "excerpt": "Article URL: https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches Comments URL: https://news.ycombinator.com/item?id=50503255 Points: 175 # Comments: 46",
+      "excerpt": "",
       "publishedAt": "2026-11-15T02:00:54+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -103,7 +103,7 @@
     {
       "title": "Court denies motion to dismiss DRAM price fixing case",
       "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
-      "excerpt": "Article URL: https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal Comments URL: https://news.ycombinator.com/item?id=50502988 Points: 45 # Comments: 7",
+      "excerpt": "",
       "publishedAt": "2026-11-15T01:18:36+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -111,7 +111,7 @@
     {
       "title": "Show HN: A custom font based on the Jamaican flag alphabet",
       "url": "https://bobbiec.github.io/jamaican-font.html",
-      "excerpt": "Article URL: https://bobbiec.github.io/jamaican-font.html Comments URL: https://news.ycombinator.com/item?id=50502839 Points: 27 # Comments: 5",
+      "excerpt": "",
       "publishedAt": "2026-11-15T00:56:45+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -151,7 +151,7 @@
     {
       "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
       "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
-      "excerpt": "Article URL: https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html Comments URL: https://news.ycombinator.com/item?id=50501631 Points: 406 # Comments: 201",
+      "excerpt": "",
       "publishedAt": "2026-11-14T22:26:30+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -159,7 +159,7 @@
     {
       "title": "How did Woz write the Apple 1 BASIC before building the computer?",
       "url": "https://retrocomputing.stackexchange.com/questions/17957",
-      "excerpt": "Article URL: https://retrocomputing.stackexchange.com/questions/17957 Comments URL: https://news.ycombinator.com/item?id=50501594 Points: 174 # Comments: 76",
+      "excerpt": "",
       "publishedAt": "2026-11-14T22:22:49+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -183,7 +183,7 @@
     {
       "title": "SpaceX catches the Starship to end Flight 15",
       "url": "https://www.spacex.com/launches/starship-flight-15",
-      "excerpt": "https://x.com/SpaceX/status/2121316300702056595 https://youtu.be/jHlpfNSpBmw?t=3233 Comments URL: https://news.ycombinator.com/item?id=50500963 Points: 1028 # Comments: 688",
+      "excerpt": "https://x.com/SpaceX/status/2121316300702056595 https://youtu.be/jHlpfNSpBmw?t=3233",
       "publishedAt": "2026-11-14T21:22:24+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -231,7 +231,7 @@
     {
       "title": "A family tree of software job titles",
       "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
-      "excerpt": "Article URL: https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/ Comments URL: https://news.ycombinator.com/item?id=50499038 Points: 272 # Comments: 132",
+      "excerpt": "",
       "publishedAt": "2026-11-14T17:45:19+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -239,7 +239,7 @@
     {
       "title": "Lovable apps expose passport details and more than 200K private messages",
       "url": "https://www.crissyfield.de/research/lovable-en/",
-      "excerpt": "Article URL: https://www.crissyfield.de/research/lovable-en/ Comments URL: https://news.ycombinator.com/item?id=50499017 Points: 752 # Comments: 299",
+      "excerpt": "",
       "publishedAt": "2026-11-14T17:43:10+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -279,7 +279,7 @@
     {
       "title": "PyPI's redesigned project pages with clearer security signals are now live",
       "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
-      "excerpt": "Article URL: https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/ Comments URL: https://news.ycombinator.com/item?id=50497892 Points: 228 # Comments: 99",
+      "excerpt": "",
       "publishedAt": "2026-11-14T15:40:52+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -295,7 +295,7 @@
     {
       "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
       "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
-      "excerpt": "Article URL: https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax Comments URL: https://news.ycombinator.com/item?id=50497589 Points: 217 # Comments: 14",
+      "excerpt": "",
       "publishedAt": "2026-11-14T15:04:15+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -311,7 +311,7 @@
     {
       "title": "KDE: The documentary [video]",
       "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
-      "excerpt": "Article URL: https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c Comments URL: https://news.ycombinator.com/item?id=50496976 Points: 433 # Comments: 94",
+      "excerpt": "",
       "publishedAt": "2026-11-14T13:43:28+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -319,7 +319,7 @@
     {
       "title": "Advancing science and engineering with Antigravity's /teamwork",
       "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
-      "excerpt": "Article URL: https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/ Comments URL: https://news.ycombinator.com/item?id=50496811 Points: 189 # Comments: 40",
+      "excerpt": "",
       "publishedAt": "2026-11-14T13:20:43+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -351,7 +351,7 @@
     {
       "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
       "url": "https://projectzero.google/2026/11/disclosure-policy.html",
-      "excerpt": "Article URL: https://projectzero.google/2026/11/disclosure-policy.html Comments URL: https://news.ycombinator.com/item?id=50496051 Points: 223 # Comments: 85",
+      "excerpt": "",
       "publishedAt": "2026-11-14T11:13:17+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -479,7 +479,7 @@
     {
       "title": "One Man's Quest to Create the Perfect Whiskey Glass",
       "url": "https://www.nytimes.com/2026/11/13/dining/drinks/kurt-josef-zalto-whiskey-glass.html",
-      "excerpt": "Article URL: https://www.nytimes.com/2026/11/13/dining/drinks/kurt-josef-zalto-whiskey-glass.html Comments URL: https://news.ycombinator.com/item?id=50486880 Points: 22 # Comments: 2",
+      "excerpt": "",
       "publishedAt": "2026-11-13T17:37:32+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -519,7 +519,7 @@
     {
       "title": "500 Lines or Less A 3D Modeller",
       "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
-      "excerpt": "Article URL: https://aosabook.org/en/500L/a-3d-modeller.html Comments URL: https://news.ycombinator.com/item?id=50483431 Points: 38 # Comments: 4",
+      "excerpt": "",
       "publishedAt": "2026-11-13T13:47:42+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -535,7 +535,7 @@
     {
       "title": "The Evolving Story of How Chemistry Became Biology",
       "url": "https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/",
-      "excerpt": "Article URL: https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/ Comments URL: https://news.ycombinator.com/item?id=50482222 Points: 30 # Comments: 1",
+      "excerpt": "",
       "publishedAt": "2026-11-13T11:55:19+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -551,7 +551,7 @@
     {
       "title": "Memory Safety Bugs in Rust Standard Library",
       "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
-      "excerpt": "Article URL: https://forge-blog.github.io/posts/rust-std-memory-safety/ Comments URL: https://news.ycombinator.com/item?id=50478701 Points: 42 # Comments: 6",
+      "excerpt": "",
       "publishedAt": "2026-11-13T05:22:08+00:00",
       "source": "Hacker News",
       "category": "Technology"
@@ -770,13 +770,13 @@
       "url": "https://github.com/matheuzgomes/gawain",
       "category": "Technology",
       "publishedAt": "2026-11-15T04:39:25+00:00",
-      "summary": "Yes, i really hate \"dict[str, ANY]\" Comments URL: https://news.ycombinator.com/item?id=50504072 Points: 28 # Comments: 9",
+      "summary": "Yes, i really hate \"dict[str, ANY]\"",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "Show HN: Gawain – Require type hints on all Python variables",
           "url": "https://github.com/matheuzgomes/gawain",
-          "excerpt": "Yes, i really hate \"dict[str, ANY]\" Comments URL: https://news.ycombinator.com/item?id=50504072 Points: 28 # Comments: 9",
+          "excerpt": "Yes, i really hate \"dict[str, ANY]\"",
           "publishedAt": "2026-11-15T04:39:25+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -789,13 +789,13 @@
       "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
       "category": "Technology",
       "publishedAt": "2026-11-15T04:09:11+00:00",
-      "summary": "Article URL: https://github.com/Tthanh2k6/turbo-browser-mcp Comments URL: https://news.ycombinator.com/item?id=50503930 Points: 19 # Comments: 1",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
           "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
-          "excerpt": "Article URL: https://github.com/Tthanh2k6/turbo-browser-mcp Comments URL: https://news.ycombinator.com/item?id=50503930 Points: 19 # Comments: 1",
+          "excerpt": "",
           "publishedAt": "2026-11-15T04:09:11+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -865,13 +865,13 @@
       "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
       "category": "Technology",
       "publishedAt": "2026-11-15T02:41:25+00:00",
-      "summary": "Article URL: https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/ Comments URL: https://news.ycombinator.com/item?id=50503465 Points: 22 # Comments: 0",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "My favourite modern NES games",
           "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
-          "excerpt": "Article URL: https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/ Comments URL: https://news.ycombinator.com/item?id=50503465 Points: 22 # Comments: 0",
+          "excerpt": "",
           "publishedAt": "2026-11-15T02:41:25+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -884,13 +884,13 @@
       "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
       "category": "Technology",
       "publishedAt": "2026-11-15T02:00:54+00:00",
-      "summary": "Article URL: https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches Comments URL: https://news.ycombinator.com/item?id=50503255 Points: 175 # Comments: 46",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
           "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
-          "excerpt": "Article URL: https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches Comments URL: https://news.ycombinator.com/item?id=50503255 Points: 175 # Comments: 46",
+          "excerpt": "",
           "publishedAt": "2026-11-15T02:00:54+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -903,13 +903,13 @@
       "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
       "category": "Technology",
       "publishedAt": "2026-11-15T01:18:36+00:00",
-      "summary": "Article URL: https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal Comments URL: https://news.ycombinator.com/item?id=50502988 Points: 45 # Comments: 7",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "Court denies motion to dismiss DRAM price fixing case",
           "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
-          "excerpt": "Article URL: https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal Comments URL: https://news.ycombinator.com/item?id=50502988 Points: 45 # Comments: 7",
+          "excerpt": "",
           "publishedAt": "2026-11-15T01:18:36+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -922,13 +922,13 @@
       "url": "https://bobbiec.github.io/jamaican-font.html",
       "category": "Technology",
       "publishedAt": "2026-11-15T00:56:45+00:00",
-      "summary": "Article URL: https://bobbiec.github.io/jamaican-font.html Comments URL: https://news.ycombinator.com/item?id=50502839 Points: 27 # Comments: 5",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "Show HN: A custom font based on the Jamaican flag alphabet",
           "url": "https://bobbiec.github.io/jamaican-font.html",
-          "excerpt": "Article URL: https://bobbiec.github.io/jamaican-font.html Comments URL: https://news.ycombinator.com/item?id=50502839 Points: 27 # Comments: 5",
+          "excerpt": "",
           "publishedAt": "2026-11-15T00:56:45+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -1017,13 +1017,13 @@
       "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
       "category": "Technology",
       "publishedAt": "2026-11-14T22:26:30+00:00",
-      "summary": "Article URL: https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html Comments URL: https://news.ycombinator.com/item?id=50501631 Points: 406 # Comments: 201",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
           "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
-          "excerpt": "Article URL: https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html Comments URL: https://news.ycombinator.com/item?id=50501631 Points: 406 # Comments: 201",
+          "excerpt": "",
           "publishedAt": "2026-11-14T22:26:30+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -1036,13 +1036,13 @@
       "url": "https://retrocomputing.stackexchange.com/questions/17957",
       "category": "Technology",
       "publishedAt": "2026-11-14T22:22:49+00:00",
-      "summary": "Article URL: https://retrocomputing.stackexchange.com/questions/17957 Comments URL: https://news.ycombinator.com/item?id=50501594 Points: 174 # Comments: 76",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "How did Woz write the Apple 1 BASIC before building the computer?",
           "url": "https://retrocomputing.stackexchange.com/questions/17957",
-          "excerpt": "Article URL: https://retrocomputing.stackexchange.com/questions/17957 Comments URL: https://news.ycombinator.com/item?id=50501594 Points: 174 # Comments: 76",
+          "excerpt": "",
           "publishedAt": "2026-11-14T22:22:49+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -1093,13 +1093,13 @@
       "url": "https://www.spacex.com/launches/starship-flight-15",
       "category": "Technology",
       "publishedAt": "2026-11-14T21:22:24+00:00",
-      "summary": "https://x.com/SpaceX/status/2121316300702056595 https://youtu.be/jHlpfNSpBmw?t=3233 Comments URL: https://news.ycombinator.com/item?id=50500963 Points: 1028 # Comments: 688",
+      "summary": "https://x.com/SpaceX/status/2121316300702056595 https://youtu.be/jHlpfNSpBmw?t=3233",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "SpaceX catches the Starship to end Flight 15",
           "url": "https://www.spacex.com/launches/starship-flight-15",
-          "excerpt": "https://x.com/SpaceX/status/2121316300702056595 https://youtu.be/jHlpfNSpBmw?t=3233 Comments URL: https://news.ycombinator.com/item?id=50500963 Points: 1028 # Comments: 688",
+          "excerpt": "https://x.com/SpaceX/status/2121316300702056595 https://youtu.be/jHlpfNSpBmw?t=3233",
           "publishedAt": "2026-11-14T21:22:24+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -1207,13 +1207,13 @@
       "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
       "category": "Technology",
       "publishedAt": "2026-11-14T17:45:19+00:00",
-      "summary": "Article URL: https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/ Comments URL: https://news.ycombinator.com/item?id=50499038 Points: 272 # Comments: 132",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "A family tree of software job titles",
           "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
-          "excerpt": "Article URL: https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/ Comments URL: https://news.ycombinator.com/item?id=50499038 Points: 272 # Comments: 132",
+          "excerpt": "",
           "publishedAt": "2026-11-14T17:45:19+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -1226,13 +1226,13 @@
       "url": "https://www.crissyfield.de/research/lovable-en/",
       "category": "Technology",
       "publishedAt": "2026-11-14T17:43:10+00:00",
-      "summary": "Article URL: https://www.crissyfield.de/research/lovable-en/ Comments URL: https://news.ycombinator.com/item?id=50499017 Points: 752 # Comments: 299",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "Lovable apps expose passport details and more than 200K private messages",
           "url": "https://www.crissyfield.de/research/lovable-en/",
-          "excerpt": "Article URL: https://www.crissyfield.de/research/lovable-en/ Comments URL: https://news.ycombinator.com/item?id=50499017 Points: 752 # Comments: 299",
+          "excerpt": "",
           "publishedAt": "2026-11-14T17:43:10+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -1321,13 +1321,13 @@
       "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
       "category": "Technology",
       "publishedAt": "2026-11-14T15:40:52+00:00",
-      "summary": "Article URL: https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/ Comments URL: https://news.ycombinator.com/item?id=50497892 Points: 228 # Comments: 99",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "PyPI's redesigned project pages with clearer security signals are now live",
           "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
-          "excerpt": "Article URL: https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/ Comments URL: https://news.ycombinator.com/item?id=50497892 Points: 228 # Comments: 99",
+          "excerpt": "",
           "publishedAt": "2026-11-14T15:40:52+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -1359,13 +1359,13 @@
       "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
       "category": "Technology",
       "publishedAt": "2026-11-14T15:04:15+00:00",
-      "summary": "Article URL: https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax Comments URL: https://news.ycombinator.com/item?id=50497589 Points: 217 # Comments: 14",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
           "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
-          "excerpt": "Article URL: https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax Comments URL: https://news.ycombinator.com/item?id=50497589 Points: 217 # Comments: 14",
+          "excerpt": "",
           "publishedAt": "2026-11-14T15:04:15+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -1397,13 +1397,13 @@
       "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
       "category": "Technology",
       "publishedAt": "2026-11-14T13:43:28+00:00",
-      "summary": "Article URL: https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c Comments URL: https://news.ycombinator.com/item?id=50496976 Points: 433 # Comments: 94",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "KDE: The documentary [video]",
           "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
-          "excerpt": "Article URL: https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c Comments URL: https://news.ycombinator.com/item?id=50496976 Points: 433 # Comments: 94",
+          "excerpt": "",
           "publishedAt": "2026-11-14T13:43:28+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -1416,13 +1416,13 @@
       "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
       "category": "Technology",
       "publishedAt": "2026-11-14T13:20:43+00:00",
-      "summary": "Article URL: https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/ Comments URL: https://news.ycombinator.com/item?id=50496811 Points: 189 # Comments: 40",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "Advancing science and engineering with Antigravity's /teamwork",
           "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
-          "excerpt": "Article URL: https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/ Comments URL: https://news.ycombinator.com/item?id=50496811 Points: 189 # Comments: 40",
+          "excerpt": "",
           "publishedAt": "2026-11-14T13:20:43+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -1492,13 +1492,13 @@
       "url": "https://projectzero.google/2026/11/disclosure-policy.html",
       "category": "Technology",
       "publishedAt": "2026-11-14T11:13:17+00:00",
-      "summary": "Article URL: https://projectzero.google/2026/11/disclosure-policy.html Comments URL: https://news.ycombinator.com/item?id=50496051 Points: 223 # Comments: 85",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
           "url": "https://projectzero.google/2026/11/disclosure-policy.html",
-          "excerpt": "Article URL: https://projectzero.google/2026/11/disclosure-policy.html Comments URL: https://news.ycombinator.com/item?id=50496051 Points: 223 # Comments: 85",
+          "excerpt": "",
           "publishedAt": "2026-11-14T11:13:17+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -1796,13 +1796,13 @@
       "url": "https://www.nytimes.com/2026/11/13/dining/drinks/kurt-josef-zalto-whiskey-glass.html",
       "category": "Technology",
       "publishedAt": "2026-11-13T17:37:32+00:00",
-      "summary": "Article URL: https://www.nytimes.com/2026/11/13/dining/drinks/kurt-josef-zalto-whiskey-glass.html Comments URL: https://news.ycombinator.com/item?id=50486880 Points: 22 # Comments: 2",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "One Man's Quest to Create the Perfect Whiskey Glass",
           "url": "https://www.nytimes.com/2026/11/13/dining/drinks/kurt-josef-zalto-whiskey-glass.html",
-          "excerpt": "Article URL: https://www.nytimes.com/2026/11/13/dining/drinks/kurt-josef-zalto-whiskey-glass.html Comments URL: https://news.ycombinator.com/item?id=50486880 Points: 22 # Comments: 2",
+          "excerpt": "",
           "publishedAt": "2026-11-13T17:37:32+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -1891,13 +1891,13 @@
       "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
       "category": "Technology",
       "publishedAt": "2026-11-13T13:47:42+00:00",
-      "summary": "Article URL: https://aosabook.org/en/500L/a-3d-modeller.html Comments URL: https://news.ycombinator.com/item?id=50483431 Points: 38 # Comments: 4",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "500 Lines or Less A 3D Modeller",
           "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
-          "excerpt": "Article URL: https://aosabook.org/en/500L/a-3d-modeller.html Comments URL: https://news.ycombinator.com/item?id=50483431 Points: 38 # Comments: 4",
+          "excerpt": "",
           "publishedAt": "2026-11-13T13:47:42+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -1929,13 +1929,13 @@
       "url": "https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/",
       "category": "Technology",
       "publishedAt": "2026-11-13T11:55:19+00:00",
-      "summary": "Article URL: https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/ Comments URL: https://news.ycombinator.com/item?id=50482222 Points: 30 # Comments: 1",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "The Evolving Story of How Chemistry Became Biology",
           "url": "https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/",
-          "excerpt": "Article URL: https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/ Comments URL: https://news.ycombinator.com/item?id=50482222 Points: 30 # Comments: 1",
+          "excerpt": "",
           "publishedAt": "2026-11-13T11:55:19+00:00",
           "source": "Hacker News",
           "category": "Technology"
@@ -1967,13 +1967,13 @@
       "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
       "category": "Technology",
       "publishedAt": "2026-11-13T05:22:08+00:00",
-      "summary": "Article URL: https://forge-blog.github.io/posts/rust-std-memory-safety/ Comments URL: https://news.ycombinator.com/item?id=50478701 Points: 42 # Comments: 6",
+      "summary": "",
       "additionalCoverage": [],
       "sources": [
         {
           "title": "Memory Safety Bugs in Rust Standard Library",
           "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
-          "excerpt": "Article URL: https://forge-blog.github.io/posts/rust-std-memory-safety/ Comments URL: https://news.ycombinator.com/item?id=50478701 Points: 42 # Comments: 6",
+          "excerpt": "",
           "publishedAt": "2026-11-13T05:22:08+00:00",
           "source": "Hacker News",
           "category": "Technology"
