@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS page_totals (
+  counter TEXT PRIMARY KEY,
+  views INTEGER NOT NULL DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS daily_views (
+  day TEXT PRIMARY KEY,
+  views INTEGER NOT NULL DEFAULT 0
+);
+
+INSERT OR IGNORE INTO page_totals (counter, views) VALUES ('all', 0);

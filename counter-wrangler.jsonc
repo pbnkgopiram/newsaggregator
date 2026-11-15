@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "newsaggregator-counter",
+  "main": "counter-worker.js",
+  "compatibility_date": "2026-11-14",
+  "workers_dev": true,
+  "preview_urls": false,
+  "d1_databases": [
+    {
+      "binding": "COUNTER_DB",
+      "database_name": "newsaggregator-views",
+      "database_id": "f3b66d75-d780-4657-aacf-d21f4538b035"
+    }
+  ]
+}

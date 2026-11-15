@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3f5ef">
+    <meta name="description" content="A clear, source-linked digest from independent news and research feeds.">
+    <title>News Aggregator | A better reading brief</title>
+    <link rel="canonical" href="https://goodthingstoknowtoday.pages.dev/">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Aggregator | A better reading brief">
+    <meta property="og:description" content="A source-linked reading brief from public news and research feeds.">
+    <meta property="og:url" content="https://goodthingstoknowtoday.pages.dev/">
+    <meta name="twitter:card" content="summary">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="site-config.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="./" aria-label="News Aggregator home"><span class="mark" aria-hidden="true">n.</span> news aggregator</a>
+      <div class="topbar-note"><span class="live-dot" aria-hidden="true"></span> INDEPENDENTLY GATHERED <span class="topbar-divider">/</span> ALWAYS SOURCE-LINKED</div>
+      <a class="donate-link" id="donate-link" hidden><span id="donate-label">Donate</span><span aria-hidden="true">↗</span></a>
+      <a class="about-link" href="#about">About this brief <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow">A small window on a wide world</p>
+          <h1 id="page-title">Good things to<br><em>know today.</em></h1>
+          <p class="intro-description">A considered reading list from trusted publications, research desks, and curious corners of the internet.</p>
+          <div class="visit-stats" aria-label="Page views">
+            <div class="visit-stat"><span class="visit-value" id="total-views" aria-live="polite">—</span><span class="visit-label">Total views</span></div>
+            <div class="visit-stat"><span class="visit-value" id="today-views" aria-live="polite">—</span><span class="visit-label">Today · UTC</span></div>
+          </div>
+        </div>
+        <div class="issue-stamp" aria-label="Updated from public feeds">
+          <span class="stamp-top">THE DAILY</span>
+          <span class="stamp-number">№ <span id="issue-number">01</span></span>
+          <span class="stamp-bottom" id="updated-at">UPDATING…</span>
+        </div>
+      </section>
+
+      <section class="brief" aria-label="Latest stories">
+        <div class="brief-head">
+          <div class="brief-title"><span class="section-index">01</span><h2>The reading list</h2><span class="story-count" id="story-count">— stories</span></div>
+          <div class="controls">
+            <label class="search-box"><span class="sr-only">Search stories</span><span class="search-icon" aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search the brief" autocomplete="off"></label>
+            <label class="select-wrap"><span class="sr-only">Filter by source</span><select id="source-filter"><option value="all">All sources</option></select><span aria-hidden="true">⌄</span></label>
+            <label class="select-wrap sort-select"><span class="sr-only">Sort stories</span><select id="sort-order"><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select><span aria-hidden="true">⌄</span></label>
+          </div>
+        </div>
+
+        <nav class="category-nav" id="category-nav" aria-label="Filter by category">
+          <button class="category-button is-active" type="button" data-category="all" aria-pressed="true">Everything <span class="category-count" data-count="all">0</span></button>
+        </nav>
+
+        <div class="feed-layout">
+          <div class="story-list" id="story-list" aria-live="polite" aria-busy="true">
+            <div class="loading-state"><span class="loading-mark" aria-hidden="true"></span><p>Gathering the latest…</p></div>
+          </div>
+          <aside class="side-note" id="about">
+            <p class="eyebrow">A note on the brief</p>
+            <p class="side-quote">“The first step toward making a difference is seeing clearly.”</p>
+            <div class="side-rule"></div>
+            <p class="side-copy">News Aggregator brings public feeds into one quiet place. Headlines and short summaries point you back to the people who reported them.</p>
+            <p class="side-meta">OPEN WEB, HUMAN CURIOSITY<br>NO PAYWALL BYPASSING</p>
+          </aside>
+        </div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span class="empty-symbol" aria-hidden="true">∅</span>
+          <h3>No stories in this corner.</h3>
+          <p>Try a different search or category.</p>
+          <button type="button" id="reset-filters">Clear filters</button>
+        </div>
+        <div class="error-state" id="error-state" hidden>
+          <h3>The brief hasn’t arrived yet.</h3>
+          <p>There may be a temporary connection issue. Try refreshing in a moment.</p>
+          <button type="button" id="retry-load">Try again</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="footer-mark" href="./">news aggregator<span>.</span></a>
+      <p>Independent sources. Original reporting. Always read the source.</p>
+      <a class="back-top" href="#page-title">Back to top ↑</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+name: Refresh and deploy News Aggregator
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: newsaggregator-deploy
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Test feed parser
+        run: python -m unittest discover -s tests -v
+      - name: Refresh public feeds
+        run: python scripts/fetch_feeds.py
+      - name: Prepare Good Things To Know Today assets
+        run: |
+          mkdir -p dist/data
+          cp index.html styles.css app.js site-config.js dist/
+          cp robots.txt sitemap.xml google622a2fa14a1f2982.html _redirects dist/
+          cp data/feeds.json dist/data/
+      - name: Prepare existing News Aggregator assets
+        run: |
+          mkdir -p dist-newsaggregator-gopi/data
+          cp index.html styles.css app.js site-config.js dist-newsaggregator-gopi/
+          cp data/feeds.json dist-newsaggregator-gopi/data/
+          cp robots.txt sitemap.xml google622a2fa14a1f2982.html _redirects dist-newsaggregator-gopi/
+          sed -i 's#https://goodthingstoknowtoday.pages.dev#https://newsaggregator-gopi.pages.dev#g' dist-newsaggregator-gopi/index.html dist-newsaggregator-gopi/robots.txt dist-newsaggregator-gopi/sitemap.xml
+      - name: Deploy Good Things To Know Today
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4"
+          command: pages deploy dist --project-name=goodthingstoknowtoday --branch=main --commit-dirty=true
+      - name: Deploy existing News Aggregator address
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4"
+          command: pages deploy dist-newsaggregator-gopi --project-name=newsaggregator-gopi --branch=main --commit-dirty=true
