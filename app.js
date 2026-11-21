@@ -7,21 +7,143 @@ const storyCount = document.querySelector("#story-count");
 const updatedAt = document.querySelector("#updated-at");
 const emptyState = document.querySelector("#empty-state");
 const errorState = document.querySelector("#error-state");
+const languageSelect = document.querySelector("#language-select");
+const translationNotice = document.querySelector("#translation-notice");
 const loadingState = storyList.querySelector(".loading-state");
 const categoryColors = ["#27725d", "#e27b4f", "#477a93", "#9b6b46", "#bd664c"];
+const languagePreferenceKey = "news-aggregator-language";
+const localeCatalogVersion = "20261121-brand";
+let supportedLocales = new Set();
 const categoryPriority = {
   World: 0,
   Business: 1,
   Science: 2,
   Technology: 3,
 };
+const fallbackMessages = {
+  allCategories: "Everything",
+  allSources: "All sources",
+  alsoReportedBy: "Also reported by {source}: ",
+  categories: { World: "World", Business: "Business", Science: "Science", Technology: "Technology", General: "General" },
+  coverageLabel: "Coverage:",
+  dateUnknown: "DATE UNKNOWN",
+  donate: "Donate to help us serve you better",
+  donateViaUpi: "Donate via UPI",
+  emptyDescription: "Try a different search or category.",
+  emptyTitle: "No stories in this corner.",
+  feedErrorDescription: "There may be a temporary connection issue. Try refreshing in a moment.",
+  feedErrorTitle: "The brief hasn’t arrived yet.",
+  feedStaleDescription: "Live updates are temporarily unavailable. Try again in a moment.",
+  feedStaleTitle: "Showing the latest saved edition.",
+  latestEdition: "LATEST EDITION",
+  newestFirst: "Newest first",
+  oldestFirst: "Oldest first",
+  originalSource: "Original source",
+  retry: "Try again",
+  searchPlaceholder: "Search the brief",
+  sourceLabel: "Source:",
+  storyCountPlural: "{count} stories",
+  storyCountSingular: "{count} story",
+  storyLinkLabel: "Read the original report from {source}",
+  translationFallback: "Some headlines or summaries remain in English because translation is temporarily unavailable.",
+  updatedAtTemplate: "UPDATED {time} UTC",
+};
 
 let stories = [];
 let activeCategory = "all";
 let storiesLoaded = false;
+let localeCatalog = null;
+let messages = fallbackMessages;
+let activeLocale = "en";
+
+function localeFromPath() {
+  const firstSegment = window.location.pathname.split("/").filter(Boolean)[0] || "";
+  return supportedLocales.has(firstSegment) ? firstSegment : "en";
+}
+
+function text(key) {
+  const value = messages[key] ?? fallbackMessages[key];
+  if (typeof value !== "string") {
+    console.error(`Missing UI message for ${activeLocale}.${key}`);
+    return key;
+  }
+  return value;
+}
+
+function formatMessage(template, values) {
+  return template.replace(/\{(\w+)\}/g, (match, key) => (
+    Object.hasOwn(values, key) ? String(values[key]) : match
+  ));
+}
+
+function applyTranslations() {
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.dataset.i18n;
+    if (typeof messages[key] !== "string") return;
+    const value = key === "noscriptStories"
+      ? formatMessage(messages[key], { count: 12 })
+      : messages[key];
+    element.textContent = value;
+  });
+
+  document.querySelectorAll("[data-i18n-attr]").forEach((element) => {
+    for (const directive of element.dataset.i18nAttr.split(";")) {
+      const [attribute, key] = directive.split(":").map((part) => part.trim());
+      if (attribute && typeof messages[key] === "string") element.setAttribute(attribute, messages[key]);
+    }
+  });
+}
+
+function rememberLanguage(locale) {
+  try {
+    localStorage.setItem(languagePreferenceKey, locale);
+  } catch (error) {
+    console.warn("Could not save the language preference:", error);
+  }
+  try {
+    const secure = window.location.protocol === "https:" ? "; Secure" : "";
+    document.cookie = `${languagePreferenceKey}=${locale}; Max-Age=31536000; Path=/; SameSite=Lax${secure}`;
+  } catch (error) {
+    console.warn("Could not save the language cookie:", error);
+  }
+}
+
+async function loadLocaleCatalog() {
+  const response = await fetch(`/locales.json?v=${localeCatalogVersion}`, { cache: "force-cache" });
+  if (!response.ok) throw new Error(`Locale data returned ${response.status}`);
+  const catalog = await response.json();
+  if (!catalog || !catalog.languages || !catalog.messages) {
+    throw new Error("Locale data is missing language definitions or messages");
+  }
+  supportedLocales = new Set(Object.keys(catalog.languages));
+  activeLocale = localeFromPath();
+  if (!catalog.languages[activeLocale] || !catalog.messages[activeLocale]) {
+    throw new Error(`Locale data is missing ${activeLocale}`);
+  }
+  localeCatalog = catalog;
+  messages = catalog.messages[activeLocale];
+  document.documentElement.lang = activeLocale;
+  languageSelect.replaceChildren(...Object.entries(catalog.languages).map(([code, language]) => new Option(language.name, code)));
+  languageSelect.value = activeLocale;
+  applyTranslations();
+  let savedLocale = null;
+  try {
+    savedLocale = localStorage.getItem(languagePreferenceKey);
+  } catch (error) {
+    console.warn("Could not save the language preference:", error);
+  }
+  rememberLanguage(supportedLocales.has(savedLocale) ? savedLocale : activeLocale);
+}
+
+languageSelect.addEventListener("change", () => {
+  const nextLocale = languageSelect.value;
+  if (!supportedLocales.has(nextLocale)) return;
+  rememberLanguage(nextLocale);
+  window.location.assign(`/${nextLocale}/`);
+});
 
 async function recordPageView() {
-  const config = window.FIELDNOTES_CONFIG || {};
+  const config = window.GOODTHINGS_CONFIG || {};
   if (typeof config.counterApiUrl !== "string" || !config.counterApiUrl.trim()) return;
 
   try {
@@ -43,7 +165,7 @@ async function recordPageView() {
 
 function configureDonationLink() {
   const link = document.querySelector("#donate-link");
-  const config = window.FIELDNOTES_CONFIG || {};
+  const config = window.GOODTHINGS_CONFIG || {};
   const donationUrl = typeof config.donationUrl === "string" ? config.donationUrl.trim() : "";
   const upiId = typeof config.upiId === "string" ? config.upiId.trim() : "";
   const payeeName = typeof config.payeeName === "string" ? config.payeeName.trim() : "";
@@ -54,7 +176,7 @@ function configureDonationLink() {
       link.href = parsedUrl.href;
       link.target = "_blank";
       link.rel = "noopener noreferrer";
-      document.querySelector("#donate-label").textContent = "Donate to help us serve you better";
+      document.querySelector("#donate-label").textContent = text("donate");
       link.hidden = false;
       return;
     }
@@ -63,10 +185,10 @@ function configureDonationLink() {
   }
 
   if (!/^[A-Za-z0-9._-]{2,256}@[A-Za-z0-9.-]{2,64}$/.test(upiId)) return;
-  const payment = new URLSearchParams({ pa: upiId, cu: "INR", tn: "Support Fieldnotes" });
+  const payment = new URLSearchParams({ pa: upiId, cu: "INR", tn: "Support Good things to know today" });
   if (payeeName) payment.set("pn", payeeName);
   link.href = `upi://pay?${payment.toString()}`;
-  document.querySelector("#donate-label").textContent = "Donate via UPI";
+  document.querySelector("#donate-label").textContent = text("donateViaUpi");
   link.hidden = false;
 }
 
@@ -77,8 +199,22 @@ function safeDate(value) {
 
 function formatDate(value) {
   const date = safeDate(value);
-  if (!date) return "DATE UNKNOWN";
-  return new Intl.DateTimeFormat(undefined, { month: "short", day: "numeric" }).format(date).toUpperCase();
+  if (!date) return text("dateUnknown");
+  const locale = localeCatalog?.languages?.[activeLocale]?.locale || activeLocale;
+  return new Intl.DateTimeFormat(locale, { month: "short", day: "numeric" }).format(date);
+}
+
+function categoryLabel(category) {
+  const labels = messages.categories || fallbackMessages.categories;
+  return labels[category] || category || labels.General;
+}
+
+function formatUpdatedAt(value) {
+  const date = safeDate(value);
+  if (!date) return text("latestEdition");
+  const locale = localeCatalog?.languages?.[activeLocale]?.locale || activeLocale;
+  const time = new Intl.DateTimeFormat(locale, { hour: "2-digit", minute: "2-digit", timeZone: "UTC" }).format(date);
+  return formatMessage(text("updatedAtTemplate"), { time });
 }
 
 function makeElement(tag, className, text) {
@@ -105,21 +241,22 @@ function populateFilters(data) {
   }
 
   categoryNav.replaceChildren();
-  const allButton = makeCategoryButton("Everything", "all", stories.length);
+  const allButton = makeCategoryButton(text("allCategories"), "all", stories.length);
   categoryNav.append(allButton);
+  const locale = localeCatalog?.languages?.[activeLocale]?.locale || activeLocale;
   [...categories.entries()].sort(([left], [right]) => {
     const leftValue = categorySortValue(left);
     const rightValue = categorySortValue(right);
-    return leftValue.localeCompare(rightValue);
+    return leftValue.localeCompare(rightValue, locale);
   }).forEach(([name, count], index) => {
-    categoryNav.append(makeCategoryButton(name, name, count, categoryColors[index % categoryColors.length]));
+    categoryNav.append(makeCategoryButton(categoryLabel(name), name, count, categoryColors[index % categoryColors.length]));
   });
 
   sourceFilter.replaceChildren();
-  sourceFilter.append(new Option("All sources", "all"));
+  sourceFilter.append(new Option(text("allSources"), "all"));
   const configuredSources = Array.isArray(data.sources) ? data.sources : [];
   const sourceNames = new Set([...sources, ...configuredSources.map((source) => source.name).filter(Boolean)]);
-  [...sourceNames].sort((a, b) => a.localeCompare(b)).forEach((name) => sourceFilter.append(new Option(name, name)));
+  [...sourceNames].sort((a, b) => a.localeCompare(b, locale)).forEach((name) => sourceFilter.append(new Option(name, name)));
 }
 
 function makeCategoryButton(label, value, count, color) {
@@ -135,14 +272,15 @@ function makeCategoryButton(label, value, count, color) {
 }
 
 function visibleStories() {
-  const query = searchInput.value.trim().toLocaleLowerCase();
+  const locale = localeCatalog?.languages?.[activeLocale]?.locale || activeLocale;
+  const query = searchInput.value.trim().toLocaleLowerCase(locale);
   const selectedSource = sourceFilter.value;
   const result = stories.filter((story) => {
     const categoryMatches = activeCategory === "all" || story.category === activeCategory;
     const sources = story.sources || [];
     const sourceMatches = selectedSource === "all" || sources.some((source) => (source.source || source.name) === selectedSource);
     const sourceText = sources.map((source) => `${source.source || source.name} ${source.title} ${source.excerpt}`).join(" ");
-    const searchable = `${story.title} ${story.summary} ${sourceText} ${story.category}`.toLocaleLowerCase();
+    const searchable = `${story.title} ${story.summary} ${sourceText} ${story.category}`.toLocaleLowerCase(locale);
     return categoryMatches && sourceMatches && (!query || searchable.includes(query));
   });
   result.sort((first, second) => {
@@ -181,7 +319,7 @@ function renderStory(story, index) {
   const article = makeElement("article", "story-card");
   article.style.animationDelay = `${Math.min(index, 8) * 35}ms`;
   const meta = makeElement("div", "story-meta");
-  const category = makeElement("span", "story-category", story.category || "General");
+  const category = makeElement("span", "story-category", categoryLabel(story.category || "General"));
   const date = makeElement("time", "story-date", formatDate(story.publishedAt));
   const parsedDate = safeDate(story.publishedAt);
   if (parsedDate) date.dateTime = parsedDate.toISOString();
@@ -194,7 +332,13 @@ function renderStory(story, index) {
 
   const body = makeElement("div", "story-body");
   const title = makeElement("h3", "story-title");
-  const titleLink = makeElement("a", "", story.title || "Untitled story");
+  const titleLink = makeElement("a", "", story.title || text("originalSource"));
+  const leadSource = (story.sources || [])[0];
+  const leadSourceName = leadSource?.source || leadSource?.name || text("originalSource");
+  titleLink.setAttribute("aria-label", formatMessage(text("storyLinkLabel"), {
+    title: story.title || text("originalSource"),
+    source: leadSourceName,
+  }));
   if (storyUrl) {
     titleLink.href = storyUrl;
     titleLink.target = "_blank";
@@ -223,20 +367,25 @@ function renderStory(story, index) {
   for (const coverage of story.additionalCoverage || []) {
     if (!coverage.excerpt) continue;
     const additional = makeElement("p", "story-excerpt additional-coverage");
-    additional.append(makeElement("strong", "", `Also reported by ${coverage.source || coverage.name}: `));
+    additional.append(makeElement("strong", "", formatMessage(text("alsoReportedBy"), { source: coverage.source || coverage.name || text("originalSource") })));
     additional.append(document.createTextNode(coverage.excerpt));
     body.append(additional);
   }
 
   const sourceLine = makeElement("div", "story-source");
   const sources = story.sources || [];
-  sourceLine.append(makeElement("span", "", sources.length > 1 ? "Coverage:" : "Source:"));
+  sourceLine.append(makeElement("span", "", sources.length > 1 ? text("coverageLabel") : text("sourceLabel")));
   sources.forEach((source, sourceIndex) => {
     if (sourceIndex > 0) sourceLine.append(makeElement("span", "source-dot"));
-    const sourceLink = makeElement("a", "read-link", `${source.source || source.name || "Original source"} ↗`);
+    const sourceName = source.source || source.name || text("originalSource");
+    const sourceLink = makeElement("a", "read-link", `${sourceName} ↗`);
     sourceLink.href = source.url;
     sourceLink.target = "_blank";
     sourceLink.rel = "noopener noreferrer";
+    sourceLink.setAttribute("aria-label", formatMessage(text("storyLinkLabel"), {
+      title: story.title || text("originalSource"),
+      source: sourceName,
+    }));
     sourceLine.append(sourceLink);
   });
   body.append(sourceLine);
@@ -247,7 +396,8 @@ function renderStory(story, index) {
 function render() {
   if (!storiesLoaded) return;
   const results = visibleStories();
-  storyCount.textContent = `${results.length} ${results.length === 1 ? "story" : "stories"}`;
+  const countTemplate = text(results.length === 1 ? "storyCountSingular" : "storyCountPlural");
+  storyCount.textContent = formatMessage(countTemplate, { count: results.length });
   const countElement = categoryNav.querySelector('[data-count="all"]');
   if (countElement) countElement.textContent = String(stories.length);
   categoryNav.querySelectorAll("[data-category]").forEach((button) => {
@@ -263,9 +413,10 @@ async function loadBrief() {
   storyList.setAttribute("aria-busy", "true");
   errorState.hidden = true;
   emptyState.hidden = true;
+  translationNotice.hidden = true;
   if (!stories.length && !storyList.querySelector(".story-card") && loadingState) storyList.replaceChildren(loadingState);
   try {
-    const response = await fetch("data/feeds.json", { cache: "no-store" });
+    const response = await fetch("/data/feeds.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`Feed data returned ${response.status}`);
     const data = await response.json();
     stories = Array.isArray(data.groups)
@@ -274,6 +425,7 @@ async function loadBrief() {
           .map((group) => ({
             ...group,
             url: group.url || group.sources?.[0]?.url || "",
+            id: group.id || group.url || group.sources?.[0]?.url || "",
             source: group.source || group.sources?.[0]?.source || group.sources?.[0]?.name || "",
           }))
       : (Array.isArray(data.entries) ? data.entries.filter((story) => story && /^https?:\/\//i.test(story.url || "")).map((story) => ({
@@ -287,24 +439,70 @@ async function loadBrief() {
         })) : []);
     storiesLoaded = true;
     populateFilters(data);
-    const generated = safeDate(data.generatedAt);
-    updatedAt.textContent = generated ? `UPDATED ${new Intl.DateTimeFormat(undefined, { hour: "2-digit", minute: "2-digit" }).format(generated)}` : "LATEST EDITION";
-    document.querySelector("#issue-number").textContent = String(new Date().getDate()).padStart(2, "0");
+    updatedAt.textContent = formatUpdatedAt(data.generatedAt);
+    const locale = localeCatalog?.languages?.[activeLocale]?.locale || activeLocale;
+    document.querySelector("#issue-number").textContent = new Intl.NumberFormat(locale, { minimumIntegerDigits: 2 }).format(new Date().getDate());
     render();
+    await translateStories();
   } catch (error) {
     console.error("Could not load the brief:", error);
     const hasStories = storyList.querySelector(".story-card") !== null;
     if (hasStories) {
-      errorState.querySelector("h3").textContent = "Showing the latest saved edition.";
-      errorState.querySelector("p").textContent = "Live updates are temporarily unavailable. Try again in a moment.";
+      errorState.querySelector("h3").textContent = text("feedStaleTitle");
+      errorState.querySelector("p").textContent = text("feedStaleDescription");
     } else {
       storyList.replaceChildren();
-      errorState.querySelector("h3").textContent = "The brief hasn’t arrived yet.";
-      errorState.querySelector("p").textContent = "There may be a temporary connection issue. Try refreshing in a moment.";
+      errorState.querySelector("h3").textContent = text("feedErrorTitle");
+      errorState.querySelector("p").textContent = text("feedErrorDescription");
     }
     errorState.hidden = false;
   } finally {
     storyList.setAttribute("aria-busy", "false");
+  }
+}
+
+async function translateStories() {
+  if (activeLocale === "en" || !stories.length) return;
+  for (let offset = 0; offset < stories.length; offset += 12) {
+    const batch = stories.slice(offset, offset + 12);
+    const items = batch.map((story) => ({
+      id: typeof story.id === "string" && story.id ? story.id : story.url,
+      url: story.url,
+      title: story.title,
+      summary: story.summary || story.excerpt || "",
+    }));
+    try {
+      const response = await fetch("/api/translate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ language: activeLocale, items }),
+      });
+      let payload;
+      try {
+        payload = await response.json();
+      } catch {
+        throw new Error("Translation service returned invalid JSON.");
+      }
+      if (!response.ok) throw new Error(payload.error || `Translation service returned ${response.status}`);
+      if (!Array.isArray(payload.translations)) throw new Error("Translation service returned no translations.");
+
+      const byId = new Map(items.map((item, index) => [item.id, batch[index]]));
+      for (const translated of payload.translations) {
+        const story = byId.get(translated.id);
+        if (!story || typeof translated.title !== "string" || typeof translated.summary !== "string") {
+          throw new Error("Translation service returned an invalid item.");
+        }
+        story.title = translated.title;
+        story.summary = translated.summary;
+      }
+      if (payload.translations.length !== batch.length) throw new Error("Translation service returned an incomplete batch.");
+      render();
+    } catch (error) {
+      console.warn("Could not translate news content:", error);
+      translationNotice.textContent = text("translationFallback");
+      translationNotice.hidden = false;
+      break;
+    }
   }
 }
 
@@ -336,6 +534,18 @@ document.querySelector("#reset-filters").addEventListener("click", () => {
 });
 document.querySelector("#retry-load").addEventListener("click", loadBrief);
 
-configureDonationLink();
-recordPageView();
-loadBrief();
+async function initialize() {
+  try {
+    await loadLocaleCatalog();
+  } catch (error) {
+    console.error("Could not load localized UI data:", error);
+    messages = fallbackMessages;
+    translationNotice.textContent = "Language data is unavailable. Some controls may remain in English.";
+    translationNotice.hidden = false;
+  }
+  configureDonationLink();
+  recordPageView();
+  loadBrief();
+}
+
+initialize();

@@ -22,7 +22,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES_PATH = ROOT / "sources.json"
 OUTPUT_PATH = ROOT / "data" / "feeds.json"
-USER_AGENT = "FieldnotesFeedCollector/1.0 (+https://github.com/)"
+USER_AGENT = "GoodThingsToKnowTodayFeedCollector/1.0 (+https://github.com/)"
 MAX_RESPONSE_BYTES = 2_000_000
 MAX_ITEMS_PER_SOURCE = 24
 MAX_EXCERPT_LENGTH = 360

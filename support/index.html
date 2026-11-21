@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3f5ef">
+    <meta name="description" content="Support our platform with a secure one-time contribution.">
+    <title>Support Our Platform | Good things to know today</title>
+    <link rel="canonical" href="https://goodthingstoknowtoday.pages.dev/support/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../site-config.js" defer></script>
+    <script src="support.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="../" aria-label="Good things to know today home"><span class="mark" aria-hidden="true">g.</span> Good things to know today</a>
+      <div class="topbar-note"><span class="live-dot" aria-hidden="true"></span> SUPPORT OUR PLATFORM</div>
+      <a class="support-link is-current" href="./">Support us <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main class="support-shell">
+      <section class="support-hero" aria-labelledby="support-title">
+        <p class="eyebrow">A small contribution goes a long way</p>
+        <h1 id="support-title">Support Our Platform</h1>
+        <p class="support-intro">Your contribution helps keep this reading brief independent, source-linked, and free to read.</p>
+      </section>
+
+      <section class="support-layout" aria-label="Support contribution form">
+        <form id="support-form" class="support-card" novalidate>
+          <div class="support-card-header">
+            <p class="eyebrow accent">One-time contribution</p>
+            <h2>Choose an amount</h2>
+          </div>
+
+          <div class="amount-grid" aria-label="Contribution amounts">
+            <button type="button" class="amount-option is-selected" data-amount="50">₹50</button>
+            <button type="button" class="amount-option" data-amount="100">₹100</button>
+            <button type="button" class="amount-option" data-amount="500">₹500</button>
+            <button type="button" class="amount-option" data-amount="1000">₹1,000</button>
+          </div>
+
+          <label class="field-label" for="custom-amount">Custom amount</label>
+          <div class="field-wrap">
+            <span class="currency">₹</span>
+            <input id="custom-amount" name="custom-amount" type="number" min="50" step="1" value="50" inputmode="numeric" placeholder="Enter amount">
+          </div>
+
+          <div class="two-column">
+            <div>
+              <label class="field-label" for="support-name">Name (optional)</label>
+              <input id="support-name" name="name" type="text" maxlength="80" placeholder="Your name">
+            </div>
+            <div>
+              <label class="field-label" for="support-email">Email (optional)</label>
+              <input id="support-email" name="email" type="email" maxlength="160" placeholder="you@example.com">
+            </div>
+          </div>
+
+          <label class="field-label" for="support-note">Message (optional)</label>
+          <textarea id="support-note" name="note" rows="3" maxlength="240" placeholder="Tell us what keeps you reading."></textarea>
+
+          <div class="support-message" id="support-message" aria-live="polite"></div>
+
+          <button type="submit" class="primary-button" id="pay-button">Continue to secure payment</button>
+        </form>
+
+        <div class="razorpay-button-wrap">
+          <a class="donate-link" href="https://razorpay.me/@gopiramkrishnamurthy" target="_blank" rel="noopener noreferrer"><span>Donate to help us serve you better</span><span aria-hidden="true">↗</span></a>
+        </div>
+
+        <aside class="support-aside">
+          <div class="support-card support-card-muted">
+            <p class="eyebrow accent">Why support this work</p>
+            <ul class="support-list">
+              <li>Keep public feeds curated and well cited.</li>
+              <li>Maintain a source-first reading brief without paywalls.</li>
+              <li>Support research, editorial time, and site upkeep.</li>
+            </ul>
+          </div>
+
+          <div class="support-card support-card-muted">
+            <p class="eyebrow accent">Important note</p>
+            <p class="small-copy">This contribution is a support payment for the platform and is not presented as tax-deductible unless the operator has the required approvals.</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="footer-mark" href="../">Good things to know today</a>
+      <p>Independent sources. Original reporting. Always read the source.</p>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-name: Refresh and deploy News Aggregator
+name: Refresh and deploy Good things to know today
 
 on:
   push:
@@ -26,36 +26,44 @@ jobs:
           python-version: "3.x"
       - name: Test feed parser
         run: python -m unittest discover -s tests -v
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Test translation endpoint
+        run: node --test tests/root-route.test.mjs tests/translate.test.mjs
       - name: Refresh public feeds
         run: python scripts/fetch_feeds.py
-      - name: Prepare Good Things To Know Today assets
+      - name: Prepare Good things to know today deployment
         run: |
-          mkdir -p dist/data
-          cp index.html styles.css app.js site-config.js dist/
-          cp robots.txt sitemap.xml google622a2fa14a1f2982.html _redirects dist/
-          cp data/feeds.json dist/data/
-      - name: Prepare existing News Aggregator assets
+          mkdir -p deploy-good/public/data deploy-good/functions/api
+          cp index.html styles.css app.js site-config.js locales.json deploy-good/public/
+          cp robots.txt sitemap.xml google622a2fa14a1f2982.html _redirects deploy-good/public/
+          cp data/feeds.json deploy-good/public/data/
+          cp functions/index.js deploy-good/functions/
+          cp functions/api/translate.js deploy-good/functions/api/
+          python scripts/prerender.py data/feeds.json deploy-good/public/index.html
+          python scripts/build_locales.py deploy-good/public --base-url https://goodthingstoknowtoday.pages.dev
+      - name: Prepare second Pages deployment
         run: |
-          mkdir -p dist-newsaggregator-gopi/data
-          cp index.html styles.css app.js site-config.js dist-newsaggregator-gopi/
-          cp data/feeds.json dist-newsaggregator-gopi/data/
-          cp robots.txt sitemap.xml google622a2fa14a1f2982.html _redirects dist-newsaggregator-gopi/
-          sed -i 's#https://goodthingstoknowtoday.pages.dev#https://newsaggregator-gopi.pages.dev#g' dist-newsaggregator-gopi/index.html dist-newsaggregator-gopi/robots.txt dist-newsaggregator-gopi/sitemap.xml
-      - name: Pre-render latest stories for initial HTML
-        run: |
-          python scripts/prerender.py data/feeds.json dist/index.html
-          python scripts/prerender.py data/feeds.json dist-newsaggregator-gopi/index.html
-      - name: Deploy Good Things To Know Today
-        uses: cloudflare/wrangler-action@v4
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          wranglerVersion: "4"
-          command: pages deploy dist --project-name=goodthingstoknowtoday --branch=main --commit-dirty=true
-      - name: Deploy existing News Aggregator address
-        uses: cloudflare/wrangler-action@v4
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          wranglerVersion: "4"
-          command: pages deploy dist-newsaggregator-gopi --project-name=newsaggregator-gopi --branch=main --commit-dirty=true
+          mkdir -p deploy-news/public/data deploy-news/functions/api
+          cp index.html styles.css app.js site-config.js locales.json deploy-news/public/
+          cp robots.txt sitemap.xml google622a2fa14a1f2982.html _redirects deploy-news/public/
+          cp data/feeds.json deploy-news/public/data/
+          cp functions/index.js deploy-news/functions/
+          cp functions/api/translate.js deploy-news/functions/api/
+          sed -i 's#https://goodthingstoknowtoday.pages.dev#https://newsaggregator-gopi.pages.dev#g' deploy-news/public/index.html deploy-news/public/robots.txt
+          python scripts/prerender.py data/feeds.json deploy-news/public/index.html
+          python scripts/build_locales.py deploy-news/public --base-url https://newsaggregator-gopi.pages.dev
+      - name: Deploy Good things to know today
+        run: npx --yes wrangler@4 pages deploy public --project-name=goodthingstoknowtoday --branch=main --commit-dirty=true
+        working-directory: deploy-good
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Deploy second Pages project
+        run: npx --yes wrangler@4 pages deploy public --project-name=newsaggregator-gopi --branch=main --commit-dirty=true
+        working-directory: deploy-news
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

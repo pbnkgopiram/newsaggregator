@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T06:45:33.208903+00:00",
+  "generatedAt": "2026-11-15T07:05:32.163257+00:00",
   "sources": [
     {
       "name": "BBC World",
@@ -77,6 +77,14 @@
       "category": "World"
     },
     {
+      "title": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
+      "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
+      "excerpt": "",
+      "publishedAt": "2026-11-15T03:05:54+00:00",
+      "source": "Hacker News",
+      "category": "Technology"
+    },
+    {
       "title": "Pope Leo speaks of community 'suffering' on visit to remote Andes town",
       "url": "https://www.bbc.co.uk/news/articles/cr4gnz0lv2vlo?at_medium=RSS&at_campaign=rss",
       "excerpt": "Santa Cruz de Succhabamba is part of the Diocese of Chiclayo, where the pope served as bishop from 2015 to 2023.",
@@ -147,14 +155,6 @@
       "publishedAt": "2026-11-14T22:37:25+00:00",
       "source": "BBC World",
       "category": "World"
-    },
-    {
-      "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
-      "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
-      "excerpt": "",
-      "publishedAt": "2026-11-14T22:26:30+00:00",
-      "source": "Hacker News",
-      "category": "Technology"
     },
     {
       "title": "How did Woz write the Apple 1 BASIC before building the computer?",
@@ -307,6 +307,14 @@
       "publishedAt": "2026-11-14T14:42:27+00:00",
       "source": "The Guardian Business",
       "category": "Business"
+    },
+    {
+      "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
+      "url": "https://gitlab.com/snipedbywifi/terminactory",
+      "excerpt": "Hey HN readers! I'm snipedbywifi ( https://gitlab.com/snipedbywifi ), and i've been working on terminactory. Please try it out if you'd like to play a cozy factory game while waiting for long agent tasks to finish! The game is a factory game (overused niche, i know xD), but runs in your terminal. Reason i built it? glad you asked: So basically, it started…",
+      "publishedAt": "2026-11-14T14:05:54+00:00",
+      "source": "Hacker News",
+      "category": "Technology"
     },
     {
       "title": "KDE: The documentary [video]",
@@ -547,14 +555,6 @@
       "publishedAt": "2026-11-13T10:00:00+00:00",
       "source": "NPR Science",
       "category": "Science"
-    },
-    {
-      "title": "Memory Safety Bugs in Rust Standard Library",
-      "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
-      "excerpt": "",
-      "publishedAt": "2026-11-13T05:22:08+00:00",
-      "source": "Hacker News",
-      "category": "Technology"
     },
     {
       "title": "APOD: 2026 November 13 – NGC 206 and the Star Clouds of Andromeda",
@@ -841,6 +841,25 @@
       ]
     },
     {
+      "id": "64e86b44ffa8",
+      "title": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
+      "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
+      "category": "Technology",
+      "publishedAt": "2026-11-15T03:05:54+00:00",
+      "summary": "",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
+          "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
+          "excerpt": "",
+          "publishedAt": "2026-11-15T03:05:54+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
+        }
+      ]
+    },
+    {
       "id": "9f25a7bec450",
       "title": "Pope Leo speaks of community 'suffering' on visit to remote Andes town",
       "url": "https://www.bbc.co.uk/news/articles/cr4gnz0lv2vlo?at_medium=RSS&at_campaign=rss",
@@ -1008,25 +1027,6 @@
           "publishedAt": "2026-11-14T22:37:25+00:00",
           "source": "BBC World",
           "category": "World"
-        }
-      ]
-    },
-    {
-      "id": "0322d2a0d024",
-      "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
-      "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
-      "category": "Technology",
-      "publishedAt": "2026-11-14T22:26:30+00:00",
-      "summary": "",
-      "additionalCoverage": [],
-      "sources": [
-        {
-          "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
-          "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
-          "excerpt": "",
-          "publishedAt": "2026-11-14T22:26:30+00:00",
-          "source": "Hacker News",
-          "category": "Technology"
         }
       ]
     },
@@ -1388,6 +1388,25 @@
           "publishedAt": "2026-11-14T14:42:27+00:00",
           "source": "The Guardian Business",
           "category": "Business"
+        }
+      ]
+    },
+    {
+      "id": "5bfa2e37b7da",
+      "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
+      "url": "https://gitlab.com/snipedbywifi/terminactory",
+      "category": "Technology",
+      "publishedAt": "2026-11-14T14:05:54+00:00",
+      "summary": "Hey HN readers! I'm snipedbywifi ( https://gitlab.com/snipedbywifi ), and i've been working on terminactory. Please try it out if you'd like to play a cozy factory game while waiting for long agent tasks to finish! The game is a factory game (overused niche, i know xD), but runs in your terminal. Reason i built it? glad you asked: So basically, it started…",
+      "additionalCoverage": [],
+      "sources": [
+        {
+          "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
+          "url": "https://gitlab.com/snipedbywifi/terminactory",
+          "excerpt": "Hey HN readers! I'm snipedbywifi ( https://gitlab.com/snipedbywifi ), and i've been working on terminactory. Please try it out if you'd like to play a cozy factory game while waiting for long agent tasks to finish! The game is a factory game (overused niche, i know xD), but runs in your terminal. Reason i built it? glad you asked: So basically, it started…",
+          "publishedAt": "2026-11-14T14:05:54+00:00",
+          "source": "Hacker News",
+          "category": "Technology"
         }
       ]
     },
@@ -1958,25 +1977,6 @@
           "publishedAt": "2026-11-13T10:00:00+00:00",
           "source": "NPR Science",
           "category": "Science"
-        }
-      ]
-    },
-    {
-      "id": "4f5cdb8b3c1a",
-      "title": "Memory Safety Bugs in Rust Standard Library",
-      "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
-      "category": "Technology",
-      "publishedAt": "2026-11-13T05:22:08+00:00",
-      "summary": "",
-      "additionalCoverage": [],
-      "sources": [
-        {
-          "title": "Memory Safety Bugs in Rust Standard Library",
-          "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
-          "excerpt": "",
-          "publishedAt": "2026-11-13T05:22:08+00:00",
-          "source": "Hacker News",
-          "category": "Technology"
         }
       ]
     },

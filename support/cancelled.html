@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3f5ef">
+    <meta name="description" content="Payment was cancelled or failed.">
+    <title>Payment cancelled | Good things to know today</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="cancelled.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="../" aria-label="Good things to know today home"><span class="mark" aria-hidden="true">g.</span> Good things to know today</a>
+      <div class="topbar-note"><span class="live-dot" aria-hidden="true"></span> PAYMENT STATUS</div>
+      <a class="support-link is-current" href="./">Support us <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main class="support-shell">
+      <section class="support-state-card" aria-live="polite">
+        <div class="state-badge warn">!</div>
+        <p class="eyebrow accent">Payment cancelled</p>
+        <h1>We did not complete the payment.</h1>
+        <p class="state-copy" id="cancel-message">No charge was made to your payment method.</p>
+        <div class="inline-actions">
+          <a class="primary-button" href="./">Try again</a>
+          <a class="secondary-button" href="../">Return home</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
