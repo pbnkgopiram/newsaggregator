@@ -30,28 +30,37 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Test translation endpoint
-        run: node --test tests/root-route.test.mjs tests/translate.test.mjs
+      - name: Test indexed translations
+        run: node --test tests/*.test.mjs
+      - name: Ensure translation database schema
+        run: npx --yes wrangler@4 d1 execute newsaggregator-views --remote --file=translation-schema.sql --config=translation-wrangler.jsonc
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       - name: Refresh public feeds
         run: python scripts/fetch_feeds.py
       - name: Prepare Good things to know today deployment
         run: |
-          mkdir -p deploy-good/public/data deploy-good/functions/api
+          mkdir -p deploy-good/public/data deploy-good/functions/api 'deploy-good/functions/[locale]/story'
           cp index.html styles.css app.js site-config.js locales.json deploy-good/public/
           cp robots.txt sitemap.xml google622a2fa14a1f2982.html _redirects deploy-good/public/
           cp data/feeds.json deploy-good/public/data/
           cp functions/index.js deploy-good/functions/
-          cp functions/api/translate.js deploy-good/functions/api/
+          cp functions/api/translations.js deploy-good/functions/api/
+          cp functions/sitemap.xml.js deploy-good/functions/
+          cp 'functions/[locale]/story/[id].js' 'deploy-good/functions/[locale]/story/'
           python scripts/prerender.py data/feeds.json deploy-good/public/index.html
           python scripts/build_locales.py deploy-good/public --base-url https://goodthingstoknowtoday.pages.dev
       - name: Prepare second Pages deployment
         run: |
-          mkdir -p deploy-news/public/data deploy-news/functions/api
+          mkdir -p deploy-news/public/data deploy-news/functions/api 'deploy-news/functions/[locale]/story'
           cp index.html styles.css app.js site-config.js locales.json deploy-news/public/
           cp robots.txt sitemap.xml google622a2fa14a1f2982.html _redirects deploy-news/public/
           cp data/feeds.json deploy-news/public/data/
           cp functions/index.js deploy-news/functions/
-          cp functions/api/translate.js deploy-news/functions/api/
+          cp functions/api/translations.js deploy-news/functions/api/
+          cp functions/sitemap.xml.js deploy-news/functions/
+          cp 'functions/[locale]/story/[id].js' 'deploy-news/functions/[locale]/story/'
           sed -i 's#https://goodthingstoknowtoday.pages.dev#https://newsaggregator-gopi.pages.dev#g' deploy-news/public/index.html deploy-news/public/robots.txt
           python scripts/prerender.py data/feeds.json deploy-news/public/index.html
           python scripts/build_locales.py deploy-news/public --base-url https://newsaggregator-gopi.pages.dev
@@ -64,6 +73,11 @@ jobs:
       - name: Deploy second Pages project
         run: npx --yes wrangler@4 pages deploy public --project-name=newsaggregator-gopi --branch=main --commit-dirty=true
         working-directory: deploy-news
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Deploy scheduled translation indexer
+        run: npx --yes wrangler@4 deploy --config translation-wrangler.jsonc
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

@@ -62,7 +62,16 @@ class LocaleBuildTests(unittest.TestCase):
                 self.assertIn("Good things to know today", localized)
                 self.assertNotIn("News Aggregator", localized)
             routes = json.loads((site_dir / "_routes.json").read_text(encoding="utf-8"))
-            self.assertEqual(routes, {"version": 1, "include": ["/", "/api/translate"], "exclude": []})
+            self.assertEqual(routes, {
+                "version": 1,
+                "include": [
+                    "/",
+                    "/api/translations",
+                    "/sitemap.xml",
+                    *[f"/{locale}/story/*" for locale in self.catalog["languages"]],
+                ],
+                "exclude": [],
+            })
 
     def test_catalog_has_all_ten_languages_and_consistent_messages(self):
         languages = self.catalog["languages"]

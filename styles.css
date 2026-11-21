@@ -104,6 +104,12 @@ textarea { min-height: 100px; resize: vertical; }
 }
 
 main { max-width: 1280px; margin: 0 auto; padding: 0 clamp(22px, 6vw, 88px); }
+.story-page { min-height: calc(100vh - 150px); padding-top: clamp(42px, 8vw, 96px); padding-bottom: 90px; }
+.story-page article { max-width: 760px; }
+.story-page h1 { font-size: clamp(38px, 5vw, 64px); line-height: 1.04; }
+.story-page .intro-description { max-width: 760px; font-size: 15px; }
+.story-page .story-source { margin-top: 32px; align-items: flex-start; }
+.story-page .story-source ul { display: flex; flex-wrap: wrap; gap: 12px; margin: 0; padding: 0; list-style: none; text-transform: none; }
 .intro { min-height: 313px; padding: 58px 0 49px; display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid var(--ink); animation: arrive .55s ease-out both; }
 .intro-copy { min-width: 0; }
 .eyebrow { margin: 0 0 15px; color: var(--green); text-transform: uppercase; font-size: 9px; letter-spacing: .12em; }

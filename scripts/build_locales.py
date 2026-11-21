@@ -375,7 +375,16 @@ def build_site(site_dir: Path, base_url: str, locale_file: Path) -> int:
 
     (site_dir / "sitemap.xml").write_text(build_sitemap(base_url, codes), encoding="utf-8")
     (site_dir / "_routes.json").write_text(
-        json.dumps({"version": 1, "include": ["/", "/api/translate"], "exclude": []}, indent=2) + "\n",
+        json.dumps({
+            "version": 1,
+            "include": [
+                "/",
+                "/api/translations",
+                "/sitemap.xml",
+                *[f"/{code}/story/*" for code in codes],
+            ],
+            "exclude": [],
+        }, indent=2) + "\n",
         encoding="utf-8",
     )
     return len(codes)

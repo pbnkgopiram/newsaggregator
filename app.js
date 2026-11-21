@@ -339,7 +339,9 @@ function renderStory(story, index) {
     title: story.title || text("originalSource"),
     source: leadSourceName,
   }));
-  if (storyUrl) {
+  if (story.storyPageUrl) {
+    titleLink.href = story.storyPageUrl;
+  } else if (storyUrl) {
     titleLink.href = storyUrl;
     titleLink.target = "_blank";
     titleLink.rel = "noopener noreferrer";
@@ -443,7 +445,7 @@ async function loadBrief() {
     const locale = localeCatalog?.languages?.[activeLocale]?.locale || activeLocale;
     document.querySelector("#issue-number").textContent = new Intl.NumberFormat(locale, { minimumIntegerDigits: 2 }).format(new Date().getDate());
     render();
-    await translateStories();
+    await loadIndexedTranslations();
   } catch (error) {
     console.error("Could not load the brief:", error);
     const hasStories = storyList.querySelector(".story-card") !== null;
@@ -461,47 +463,47 @@ async function loadBrief() {
   }
 }
 
-async function translateStories() {
-  if (activeLocale === "en" || !stories.length) return;
-  for (let offset = 0; offset < stories.length; offset += 12) {
-    const batch = stories.slice(offset, offset + 12);
-    const items = batch.map((story) => ({
-      id: typeof story.id === "string" && story.id ? story.id : story.url,
-      url: story.url,
-      title: story.title,
-      summary: story.summary || story.excerpt || "",
-    }));
-    try {
-      const response = await fetch("/api/translate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ language: activeLocale, items }),
-      });
-      let payload;
-      try {
-        payload = await response.json();
-      } catch {
-        throw new Error("Translation service returned invalid JSON.");
-      }
-      if (!response.ok) throw new Error(payload.error || `Translation service returned ${response.status}`);
-      if (!Array.isArray(payload.translations)) throw new Error("Translation service returned no translations.");
+async function loadIndexedTranslations() {
+  if (!stories.length) return;
+  try {
+    const response = await fetch(`/api/translations?language=${encodeURIComponent(activeLocale)}`, {
+      cache: "no-store",
+    });
+    if (!response.ok) throw new Error(`Indexed translations returned ${response.status}`);
+    const payload = await response.json();
+    if (!Array.isArray(payload.articles)) throw new Error("Indexed translations returned an invalid response.");
 
-      const byId = new Map(items.map((item, index) => [item.id, batch[index]]));
-      for (const translated of payload.translations) {
-        const story = byId.get(translated.id);
-        if (!story || typeof translated.title !== "string" || typeof translated.summary !== "string") {
-          throw new Error("Translation service returned an invalid item.");
-        }
-        story.title = translated.title;
-        story.summary = translated.summary;
+    const indexedByStoryKey = new Map(payload.articles.map((article) => [article.story_key, article]));
+    let missingTranslations = 0;
+    for (const story of stories) {
+      const storyKey = typeof story.id === "string" && story.id ? story.id : story.url;
+      const indexed = indexedByStoryKey.get(storyKey);
+      if (!indexed) {
+        if (activeLocale !== "en") missingTranslations += 1;
+        continue;
       }
-      if (payload.translations.length !== batch.length) throw new Error("Translation service returned an incomplete batch.");
-      render();
-    } catch (error) {
-      console.warn("Could not translate news content:", error);
+      story.storyPageUrl = `/${activeLocale}/story/${indexed.article_id}`;
+      if (activeLocale !== "en") {
+        if (typeof indexed.title !== "string" || typeof indexed.summary !== "string") {
+          missingTranslations += 1;
+          story.storyPageUrl = "";
+          continue;
+        }
+        story.title = indexed.title;
+        story.summary = indexed.summary;
+      }
+    }
+
+    render();
+    if (missingTranslations) {
       translationNotice.textContent = text("translationFallback");
       translationNotice.hidden = false;
-      break;
+    }
+  } catch (error) {
+    console.warn("Could not load indexed translations:", error);
+    if (activeLocale !== "en") {
+      translationNotice.textContent = text("translationFallback");
+      translationNotice.hidden = false;
     }
   }
 }

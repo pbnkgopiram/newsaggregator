@@ -40,25 +40,25 @@ Each live Pages hostname publishes its own canonical URL, `robots.txt`, and `sit
 
 1. Sign in to [Google Search Console](https://search.google.com/search-console/) and add a **URL prefix** property for the hostname you want to monitor.
 2. Verify ownership for that property. `google622a2fa14a1f2982.html` is deployed at the root of both sites and must remain there. If Search Console supplies a different verification token for the second hostname, add that file to both deployment bundles and the workflow.
-3. Submit that hostname's `/sitemap.xml` in Search Console and use **URL inspection** to request indexing of the homepage and locale routes.
+3. Submit that hostname's `/sitemap.xml` in Search Console and use **URL inspection** to request indexing of the homepage, locale routes, and a translated story URL after the initial indexer run.
 4. Add the hostname to [Bing Webmaster Tools](https://www.bing.com/webmasters/) and submit the same sitemap.
 
 The deployment pre-renders up to 12 source-linked story cards into the homepage HTML. JavaScript then loads the full digest and enables search and filters; if that request fails, the pre-rendered stories remain available.
 
-The deployment publishes `/en/`, `/ta/`, `/hi/`, `/te/`, `/ml/`, `/kn/`, `/bn/`, `/es/`, `/fr/`, and `/de/`. Each route has localized page text and metadata, a self-referencing canonical, and alternate-language links. `/` remains a language-aware entry point: it uses the saved language cookie when present, otherwise the browser's first supported language, and defaults to English. The sitemap lists all locale routes. The build pre-renders source-linked stories into each route so the initial page has crawlable content; client-side translation replaces only story headlines and short summaries when available. Original source names, links, and attribution are retained. Indexing and rankings are not immediate or guaranteed. Search engines may take days or longer to crawl a new site. A feed aggregator should add original summaries, analysis, or other editorial value; simply republishing headlines and excerpts may not rank well and can be insufficient for monetization approval.
+The deployment publishes `/en/`, `/ta/`, `/hi/`, `/te/`, `/ml/`, `/kn/`, `/bn/`, `/es/`, `/fr/`, and `/de/`. Each route has localized page text and metadata, a self-referencing canonical, and alternate-language links. `/` remains a language-aware entry point: it uses the saved language cookie when present, otherwise the browser's first supported language, and defaults to English. The sitemap lists the locale homepages and every indexed, translated story page. Story pages contain only the source headline and short feed summary, preserve source names and links, and point readers to the original publisher for full articles. Indexing and rankings are not immediate or guaranteed. Search engines may take days or longer to crawl a new site. A feed aggregator should add original summaries, analysis, or other editorial value; simply republishing headlines and excerpts may not rank well and can be insufficient for monetization approval.
 
-## Configure multilingual translations
+## Configure indexed multilingual translations
 
-The UI dictionaries live in `locales.json`. News headlines and short summaries are translated on demand by the Cloudflare Pages Function at `/api/translate`; full third-party articles are never sent for translation. The function uses a configurable OpenAI-compatible chat-completions endpoint, and stores results in D1 keyed by article ID, language, and a SHA-256 content version. Translation failures leave the original English text in place and show a notice. The default quota is 100 uncached translation attempts per IP address per UTC day; cached results do not count.
+The UI dictionaries live in `locales.json`. A scheduled Cloudflare Worker pre-translates source headlines and short feed summaries, then stores them in D1 by article, language, and content version. Pages Functions read only those stored translations; they do not call the translation provider at visitor request time. The same D1 records power localized story pages and the dynamic `sitemap.xml`. Full third-party articles are never fetched or translated. Until a translation is indexed, the site keeps the original English headline and summary. The indexer defaults to at most 100 new story-language translations per UTC day; the initial backfill can take several days.
 
-Before enabling translations on either Pages project:
+Before enabling translations:
 
-1. Apply `translation-schema.sql` to the existing `newsaggregator-views` D1 database with `npx wrangler d1 execute newsaggregator-views --remote --file=translation-schema.sql`.
-2. In **Workers & Pages → each Pages project → Settings → Bindings**, add a D1 binding named `TRANSLATION_DB` and select `newsaggregator-views`. Bind the same database to both Pages projects so the translation cache and quotas are shared, then redeploy.
-3. In each Pages project's production environment, configure `AI_TRANSLATION_ENDPOINT` (an HTTPS OpenAI-compatible chat-completions URL), `AI_TRANSLATION_MODEL`, and the secret `AI_TRANSLATION_API_KEY`. Optionally set `TRANSLATION_DAILY_ITEM_QUOTA`; if omitted, the function uses 100.
-4. Push the workflow changes to `main` or run **Refresh and deploy Good things to know today** from GitHub Actions. The deployment bundles contain only the translation Function; they do not include other local, untracked Pages Functions.
+1. The deployment workflow applies `translation-schema.sql` idempotently before publishing. To initialize it manually, run `npx wrangler@4 d1 execute newsaggregator-views --remote --file=translation-schema.sql --config=translation-wrangler.jsonc`. This creates the article index and daily translation-cap tables alongside the existing translation table.
+2. In **Workers & Pages → each Pages project → Settings → Bindings**, add a D1 binding named `TRANSLATION_DB` and select `newsaggregator-views`. Bind the same database to both Pages projects so localized story pages and the sitemap share the index.
+3. The `goodthings-translation-indexer` Worker uses the Cloudflare Workers AI binding with the `@cf/meta/m2m100-1.2b` translation model. Wrangler configures the `AI` binding at deploy time; no external translation endpoint or provider API key is required. The scheduled job runs six-hourly and observes `TRANSLATION_DAILY_ITEM_QUOTA` (default `100`).
+4. Ensure the GitHub Actions Cloudflare token can edit Pages, Workers Scripts, and D1, then push the workflow changes to `main` or run **Refresh and deploy Good things to know today** from GitHub Actions. The workflow deploys the Pages Functions and scheduled indexer.
 
-Keep the API key only in Cloudflare's server-side secret settings, never in `site-config.js`, `locales.json`, or other public assets. The route-level API limit is 12 stories per request and the daily quota prevents repeat uncached calls from using unlimited provider credits.
+Existing cached translations are reused, and the daily cap limits Workers AI usage during the initial backfill and later updates.
 
 ## Configure donations
 
@@ -105,7 +105,7 @@ The sites are live at <https://goodthingstoknowtoday.pages.dev> and <https://new
 
 The project is in the public GitHub repository [pbnkgopiram/newsaggregator](https://github.com/pbnkgopiram/newsaggregator). GitHub Actions refreshes the RSS feeds every six hours, then deploys updated assets to both Pages projects.
 
-The workflow requires the repository secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. They are configured in **Settings → Secrets and variables → Actions**. The API token needs **Cloudflare Pages: Edit** access on the account containing both Pages projects. Keep the token private and never put it in project files. Scheduled runs can be delayed by GitHub during busy periods.
+The workflow requires the repository secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. They are configured in **Settings → Secrets and variables → Actions**. The API token needs **Cloudflare Pages: Edit**, **Workers Scripts: Edit**, and **D1: Edit** access on the account containing both Pages projects and the translation database. Keep the token private and never put it in project files. Scheduled runs can be delayed by GitHub during busy periods.
 
 The feed collector groups only cross-publisher headlines with strong title overlap, matching category, and publication times within 48 hours. It preserves every publisher link and excerpt. If no stories meet those strict criteria, the site displays individual briefings rather than merging unrelated coverage. Grouped source excerpts are attributed reporting, not original independent reporting.
 
