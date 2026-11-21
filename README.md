@@ -34,15 +34,16 @@ During each feed refresh, the collector conservatively groups only cross-publish
 
 The collector limits each response to 2 MB, each source to 24 entries, each excerpt to 360 characters, and the full digest to 160 entries. It only accepts HTTP(S) story links.
 
-## Google Search
+## Search engine discovery
 
-The site now publishes a canonical URL, `robots.txt`, and `sitemap.xml` at the live Pages hostname. To ask Google to crawl it:
+Each live Pages hostname publishes its own canonical URL, `robots.txt`, and `sitemap.xml`. The homepage metadata and structured data describe the site's English-language global news and research brief. To request indexing:
 
 1. Sign in to [Google Search Console](https://search.google.com/search-console/) and add a **URL prefix** property for the hostname you want to monitor.
 2. Verify ownership for that property. `google622a2fa14a1f2982.html` is deployed at the root of both sites and must remain there. If Search Console supplies a different verification token for the second hostname, add that file to both deployment bundles and the workflow.
 3. Submit that hostname's `/sitemap.xml` in Search Console and use **URL inspection** to request indexing of its homepage.
+4. Add the hostname to [Bing Webmaster Tools](https://www.bing.com/webmasters/) and submit the same sitemap.
 
-Indexing and rankings are not immediate or guaranteed. Search engines may take days or longer to crawl a new site. A feed aggregator should add original summaries, analysis, or other editorial value; simply republishing headlines and excerpts may not rank well and can be insufficient for monetization approval.
+The site is currently published in English. Additional languages need genuinely localized pages, canonical URLs, and matching `hreflang` annotations before they can be targeted in search. Indexing and rankings are not immediate or guaranteed. Search engines may take days or longer to crawl a new site. A feed aggregator should add original summaries, analysis, or other editorial value; simply republishing headlines and excerpts may not rank well and can be insufficient for monetization approval.
 
 ## Configure donations
 
