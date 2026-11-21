@@ -9,7 +9,7 @@
     "binding": "AI"
   },
   "triggers": {
-    "crons": ["47 */6 * * *"]
+    "crons": ["* * * * *"]
   },
   "vars": {
     "FEED_DATA_URL": "https://goodthingstoknowtoday.pages.dev/data/feeds.json",
