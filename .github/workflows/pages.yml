@@ -41,6 +41,10 @@ jobs:
           cp data/feeds.json dist-newsaggregator-gopi/data/
           cp robots.txt sitemap.xml google622a2fa14a1f2982.html _redirects dist-newsaggregator-gopi/
           sed -i 's#https://goodthingstoknowtoday.pages.dev#https://newsaggregator-gopi.pages.dev#g' dist-newsaggregator-gopi/index.html dist-newsaggregator-gopi/robots.txt dist-newsaggregator-gopi/sitemap.xml
+      - name: Pre-render latest stories for initial HTML
+        run: |
+          python scripts/prerender.py data/feeds.json dist/index.html
+          python scripts/prerender.py data/feeds.json dist-newsaggregator-gopi/index.html
       - name: Deploy Good Things To Know Today
         uses: cloudflare/wrangler-action@v4
         with:

@@ -43,6 +43,8 @@ Each live Pages hostname publishes its own canonical URL, `robots.txt`, and `sit
 3. Submit that hostname's `/sitemap.xml` in Search Console and use **URL inspection** to request indexing of its homepage.
 4. Add the hostname to [Bing Webmaster Tools](https://www.bing.com/webmasters/) and submit the same sitemap.
 
+The deployment pre-renders up to 12 source-linked story cards into the homepage HTML. JavaScript then loads the full digest and enables search and filters; if that request fails, the pre-rendered stories remain available.
+
 The site is currently published in English. Additional languages need genuinely localized pages, canonical URLs, and matching `hreflang` annotations before they can be targeted in search. Indexing and rankings are not immediate or guaranteed. Search engines may take days or longer to crawl a new site. A feed aggregator should add original summaries, analysis, or other editorial value; simply republishing headlines and excerpts may not rank well and can be insufficient for monetization approval.
 
 ## Configure donations

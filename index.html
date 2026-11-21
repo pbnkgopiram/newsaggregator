@@ -31,7 +31,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="site-config.js" defer></script>
-    <script src="app.js?v=20261121-donate" defer></script>
+    <script src="app.js?v=20261121-prerender" defer></script>
   </head>
   <body>
     <header class="topbar">
@@ -77,7 +77,10 @@
 
         <div class="feed-layout">
           <div class="story-list" id="story-list" aria-live="polite" aria-busy="true">
+            <!-- PRERENDERED_STORIES_START -->
             <div class="loading-state"><span class="loading-mark" aria-hidden="true"></span><p>Gathering the latest…</p></div>
+            <!-- PRERENDERED_STORIES_END -->
+            <noscript><p>12 stories are shown above. Search and filters require JavaScript.</p></noscript>
           </div>
           <aside class="side-note" id="about">
             <p class="eyebrow">A note on the brief</p>

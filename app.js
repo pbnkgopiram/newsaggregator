@@ -18,6 +18,7 @@ const categoryPriority = {
 
 let stories = [];
 let activeCategory = "all";
+let storiesLoaded = false;
 
 async function recordPageView() {
   const config = window.FIELDNOTES_CONFIG || {};
@@ -244,6 +245,7 @@ function renderStory(story, index) {
 }
 
 function render() {
+  if (!storiesLoaded) return;
   const results = visibleStories();
   storyCount.textContent = `${results.length} ${results.length === 1 ? "story" : "stories"}`;
   const countElement = categoryNav.querySelector('[data-count="all"]');
@@ -261,7 +263,7 @@ async function loadBrief() {
   storyList.setAttribute("aria-busy", "true");
   errorState.hidden = true;
   emptyState.hidden = true;
-  if (!stories.length) storyList.replaceChildren(loadingState);
+  if (!stories.length && !storyList.querySelector(".story-card") && loadingState) storyList.replaceChildren(loadingState);
   try {
     const response = await fetch("data/feeds.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`Feed data returned ${response.status}`);
@@ -283,6 +285,7 @@ async function loadBrief() {
           summary: story.excerpt,
           sources: [{ name: story.source, url: story.url, title: story.title, excerpt: story.excerpt }],
         })) : []);
+    storiesLoaded = true;
     populateFilters(data);
     const generated = safeDate(data.generatedAt);
     updatedAt.textContent = generated ? `UPDATED ${new Intl.DateTimeFormat(undefined, { hour: "2-digit", minute: "2-digit" }).format(generated)}` : "LATEST EDITION";
@@ -290,7 +293,15 @@ async function loadBrief() {
     render();
   } catch (error) {
     console.error("Could not load the brief:", error);
-    storyList.replaceChildren();
+    const hasStories = storyList.querySelector(".story-card") !== null;
+    if (hasStories) {
+      errorState.querySelector("h3").textContent = "Showing the latest saved edition.";
+      errorState.querySelector("p").textContent = "Live updates are temporarily unavailable. Try again in a moment.";
+    } else {
+      storyList.replaceChildren();
+      errorState.querySelector("h3").textContent = "The brief hasn’t arrived yet.";
+      errorState.querySelector("p").textContent = "There may be a temporary connection issue. Try refreshing in a moment.";
+    }
     errorState.hidden = false;
   } finally {
     storyList.setAttribute("aria-busy", "false");
