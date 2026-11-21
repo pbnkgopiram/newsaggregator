@@ -3,7 +3,7 @@
   "name": "goodthings-translation-indexer",
   "main": "translation-indexer.js",
   "compatibility_date": "2026-11-14",
-  "workers_dev": true,
+  "workers_dev": false,
   "preview_urls": false,
   "ai": {
     "binding": "AI"
