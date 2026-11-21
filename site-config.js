@@ -1,6 +1,6 @@
 window.FIELDNOTES_CONFIG = {
   counterApiUrl: "https://newsaggregator-counter.ggregator.workers.dev",
-  donationUrl: "",
+  donationUrl: "https://razorpay.me/@gopiramkrishnamurthy",
   upiId: "",
   payeeName: ""
 };

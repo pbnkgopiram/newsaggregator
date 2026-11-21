@@ -47,9 +47,10 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .live-dot { display: inline-block; width: 6px; height: 6px; margin-right: 7px; border-radius: 50%; background: var(--green); vertical-align: 1px; box-shadow: 0 0 0 3px #27725d1c; }
 .about-link { text-decoration: none; color: var(--muted); font-size: 11px; }
 .about-link span { color: var(--orange); }
-.donate-link { display: inline-flex; align-items: center; gap: 7px; padding: 7px 10px; border: 1px solid var(--orange); color: #a64e2c; text-decoration: none; font-size: 10px; white-space: nowrap; }
-.donate-link:hover { color: var(--white); background: var(--orange); }
+.donate-link { display: inline-flex; align-items: center; gap: 7px; padding: 10px 15px; border: 1px solid #1d4ed8; border-radius: 999px; background: #2563eb; color: var(--white); text-decoration: none; font-size: 11px; font-weight: 700; white-space: nowrap; box-shadow: 0 4px 12px rgba(37, 99, 235, .24); transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
+.donate-link:hover { color: var(--white); background: #1d4ed8; transform: translateY(-1px); box-shadow: 0 6px 16px rgba(37, 99, 235, .3); }
 .donate-link[hidden] { display: none; }
+.topbar-actions { display: flex; align-items: center; gap: 16px; }
 
 main { max-width: 1280px; margin: 0 auto; padding: 0 clamp(22px, 6vw, 88px); }
 .intro { min-height: 313px; padding: 58px 0 49px; display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid var(--ink); animation: arrive .55s ease-out both; }
@@ -131,6 +132,9 @@ h2 { margin: 0; font-family: var(--serif); font-size: 26px; font-weight: 500; le
 @keyframes spin { to { transform: rotate(360deg); } }
 @keyframes arrive { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: translateY(0); } }
 
+@media (max-width: 1050px) {
+  .topbar-note { display: none; }
+}
 @media (max-width: 850px) {
   .topbar { padding-right: 25px; padding-left: 25px; }
   main { padding-right: 25px; padding-left: 25px; }
@@ -140,9 +144,10 @@ h2 { margin: 0; font-family: var(--serif); font-size: 26px; font-weight: 500; le
   .search-box { flex: 1; }
 }
 @media (max-width: 620px) {
-  .topbar { height: 58px; padding: 0 18px; }
+  .topbar { height: auto; min-height: 58px; padding: 10px 18px; flex-wrap: wrap; gap: 8px; }
   .topbar-note { display: none; }
-  .donate-link { padding: 6px 7px; font-size: 9px; }
+  .topbar-actions { width: 100%; justify-content: flex-end; flex-wrap: wrap; gap: 10px; }
+  .donate-link { padding: 9px 11px; font-size: 10px; }
   main { padding: 0 19px; }
   .intro { min-height: 270px; padding: 45px 0 34px; align-items: flex-end; }
   h1 { font-size: 57px; }

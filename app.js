@@ -53,7 +53,7 @@ function configureDonationLink() {
       link.href = parsedUrl.href;
       link.target = "_blank";
       link.rel = "noopener noreferrer";
-      document.querySelector("#donate-label").textContent = "Support this brief";
+      document.querySelector("#donate-label").textContent = "Donate to help us serve you better";
       link.hidden = false;
       return;
     }
